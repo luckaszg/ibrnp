@@ -9,7 +9,10 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     document.title = translations[language].appTitle
   }, [language])
 
-  const t = (key: TranslationKey) => translations[language][key]
+  const t = (key: TranslationKey, values?: Record<string, string | number>) =>
+    translations[language][key].replace(/\{(\w+)\}/g, (marker, name: string) =>
+      values && name in values ? String(values[name]) : marker,
+    )
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t }}>

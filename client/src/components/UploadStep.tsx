@@ -6,9 +6,10 @@ interface UploadStepProps {
   files: File[]
   onFilesChange: (files: File[]) => void
   onStart: () => void
+  readFailed: boolean
 }
 
-export default function UploadStep({ files, onFilesChange, onStart }: UploadStepProps) {
+export default function UploadStep({ files, onFilesChange, onStart, readFailed }: UploadStepProps) {
   const { t } = useLanguage()
   const hasVideo = files.some((file) => file.type.startsWith('video/'))
 
@@ -40,6 +41,11 @@ export default function UploadStep({ files, onFilesChange, onStart }: UploadStep
       />
 
       {!hasVideo && <p className="hint">{t('videoRequired')}</p>}
+      {readFailed && (
+        <p className="error" role="alert">
+          {t('readingError')}
+        </p>
+      )}
 
       <button type="button" className="btn btn-primary" disabled={!hasVideo} onClick={onStart}>
         {t('start')}
