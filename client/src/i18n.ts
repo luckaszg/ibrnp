@@ -26,6 +26,16 @@ export const translations = {
     kindAudio: 'Audio',
     kindImage: 'Imagen',
     kindFile: 'Archivo',
+    columnType: 'Tipo',
+    columnName: 'Nombre',
+    columnSize: 'Tamaño',
+    columnActions: 'Acciones',
+    readingTitle: 'Leyendo archivos',
+    readingTotal: 'Total',
+    readingFile: 'Archivo {current} de {total}: {name}',
+    readingChunk: 'Trozo {current} de {total}',
+    cancel: 'Cancelar',
+    readingError: 'No se pudieron leer los archivos. Inténtalo de nuevo.',
   },
   en: {
     appTitle: 'Video Editor',
@@ -50,6 +60,16 @@ export const translations = {
     kindAudio: 'Audio',
     kindImage: 'Image',
     kindFile: 'File',
+    columnType: 'Type',
+    columnName: 'Name',
+    columnSize: 'Size',
+    columnActions: 'Actions',
+    readingTitle: 'Reading files',
+    readingTotal: 'Total',
+    readingFile: 'File {current} of {total}: {name}',
+    readingChunk: 'Chunk {current} of {total}',
+    cancel: 'Cancel',
+    readingError: 'The files could not be read. Please try again.',
   },
 } satisfies Record<Language, Record<string, string>>
 
@@ -58,7 +78,8 @@ export type TranslationKey = keyof (typeof translations)['es']
 interface LanguageContextValue {
   language: Language
   setLanguage: (language: Language) => void
-  t: (key: TranslationKey) => string
+  // Replaces {placeholder} markers in the text with the given values.
+  t: (key: TranslationKey, values?: Record<string, string | number>) => string
 }
 
 export const LanguageContext = createContext<LanguageContextValue | null>(null)
