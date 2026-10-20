@@ -1,0 +1,6 @@
+---
+import CatechismQuestion from '../../../../views/CatechismQuestion.astro';
+export const getStaticPaths = () => Array.from({ length: 114 }, (_, i) => ({ params: { n: String(i + 1) } }));
+---
+
+<CatechismQuestion lang="en" n={Number(Astro.params.n)} />

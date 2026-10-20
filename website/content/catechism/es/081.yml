@@ -1,0 +1,13 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 81
+question: ¿Cuál es el noveno mandamiento?
+answer: "El noveno mandamiento es: «No darás falso testimonio contra tu prójimo»."
+sections:
+  - - q: ¿Es un gran privilegio [tener] un buen nombre?
+      a: Sí. «[Es mejor] que el buen ungüento» (Ecl. 7:1).
+    - q: ¿Existe entonces una ley para [resguardar] la seguridad del buen nombre?
+      a: Sí. La ley ha sido instituida para «los que juran en falso {o perjuros}» (1 Tim. 1:10).
+    - q: ¿Y es necesario que exista {esa ley}?
+      a: Sí, porque «todo prójimo anda calumniando» (Jer. 9:4).

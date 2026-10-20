@@ -1,0 +1,36 @@
+---
+import MarkdownPage from './MarkdownPage.astro';
+import { route, routeAvailable } from '../i18n/routes.ts';
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const _ = t(lang);
+---
+
+<MarkdownPage lang={lang} slug="quienes-somos" routeKey="about">
+  <section class="section section--tint">
+    <div class:list={['container grid', routeAvailable('covenant') ? 'grid--3' : 'grid--2']}>
+      <a class="card" href={route('leadership', lang)}>
+        <span class="label">{_('nav.leadership')}</span>
+        <h3>{lang === 'es' ? 'Quienes sirven' : 'Those who serve'}</h3>
+        <p>{lang === 'es' ? 'Los hermanos que tienen a su cargo la congregación.' : 'The brothers who have charge of the congregation.'}</p>
+      </a>
+      <a class="card" href={route('history', lang)}>
+        <span class="label">{_('nav.history')}</span>
+        <h3>{lang === 'es' ? 'Nuestra herencia' : 'Our heritage'}</h3>
+        <p>{lang === 'es' ? 'De los bautistas particulares del siglo XVII hasta hoy.' : 'From the seventeenth-century Particular Baptists to today.'}</p>
+      </a>
+      {routeAvailable('covenant') && (
+      <a class="card" href={route('covenant', lang)}>
+        <span class="label">{_('nav.covenant')}</span>
+        <h3>{lang === 'es' ? 'Unidos en pacto' : 'Joined in covenant'}</h3>
+        <p>{lang === 'es' ? 'El compromiso de los miembros entre sí y delante de Dios.' : "Members' commitment to one another before God."}</p>
+      </a>
+      )}
+    </div>
+  </section>
+</MarkdownPage>

@@ -1,0 +1,29 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 48
+question: ¿Cuál es el prefacio de los Diez Mandamientos?
+answer: "El prefacio de los Diez Mandamientos se encuentra en estas palabras: «Yo soy el SEÑOR tu Dios, que te saqué de la tierra de Egipto, de la casa de servidumbre»."
+sections:
+  - - q: ¿Estaban los hijos de Israel bajo obligaciones especiales para con Dios?
+      a: Sí. Los sacó «de la tierra de Egipto, de la casa de servidumbre» (Éxo. 20:2).
+    - q: ¿Estaban los hijos de Israel en Egipto en ese tiempo?
+      a: Sí. «Estos son los nombres de los hijos de Israel que fueron a Egipto» (Éxo. 1:1).
+    - q: ¿Estaban allí como extranjeros?
+      a: Sí. «Extranjeros fuisteis vosotros en la tierra de Egipto» (Éxo. 22:21).
+    - q: ¿Estaban allí como esclavos?
+      a: Sí. «Fuiste esclavo en la tierra de Egipto» (Deu. 15:15).
+    - q: ¿Y estuvieron allí mucho tiempo?
+      a: Sí. «Estuvimos por largo tiempo en Egipto» (Núm. 20:15).
+  - - q: ¿Dios los sacó de Egipto?
+      a: Sí. «Yo os saqué de Egipto» (Jue. 2:1).
+    - q: ¿Los sacó de manera milagrosa?
+      a: Sí. «Habéis visto todo lo que el SEÑOR hizo delante de vuestros ojos en la tierra de Egipto […] aquellas grandes señales y maravillas» (Deu. 29:2, 3).
+    - q: ¿[Los sacó] de prisa?
+      a: Sí. «Aprisa saliste de la tierra de Egipto» (Deu. 16:3).
+    - q: ¿Y [los sacó] en el tiempo señalado?
+      a: Sí. «En aquel mismo día, todos los ejércitos del SEÑOR salieron de la tierra de Egipto» (Éxo. 12:41).
+    - q: ¿Esto los obligó a la gratitud?
+      a: Sí. «Esta noche es para el SEÑOR, para ser guardada» (Éxo. 12:42).
+    - q: ¿Y [los obligó] a la obediencia?
+      a: "Sí. «El día que los saqué de la tierra de Egipto […] diciendo: “Escuchad mi voz”» (Jer. 7:22, 23)."

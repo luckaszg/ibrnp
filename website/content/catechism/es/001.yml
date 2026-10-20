@@ -1,0 +1,54 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 1
+question: ¿Quién es el primer y principal Ser?
+answer: Dios es el primer y principal Ser.
+sections:
+  - - q: ¿Es Dios el primero de todos los seres?
+      a: Sí. «Yo soy el primero» (Isa. 44:6).[^21]
+    - q: ¿Es Él la causa primera de todos los seres?
+      a: Sí. «De quien proceden todas las cosas» (1 Cor. 8:6).
+    - q: ¿Están subordinadas todas las demás causas a la primera causa?
+      a: Sí. «¡Ay de Asiria, vara de mi ira y báculo en cuyas manos he puesto mi indignación!» (Isa. 10:5).
+    - q: ¿Es Dios el primero en la creación?
+      a: Sí. «Porque él habló, y fue hecho» (Sal. 33:9).
+    - q: ¿Es Él el primero en la providencia?
+      a: Sí. «Porque en Él vivimos, nos movemos y existimos» (Hch. 17:28).
+    - q: ¿Es Él el primero en gobierno?
+      a: Sí. «Desde la antigüedad está establecido tu trono» (Sal. 93:2).
+    - q: ¿Es Él el primero en el mundo de la gracia?
+      a: Sí. «Y todo esto procede de Dios, quien nos reconcilió consigo mismo» (2 Cor. 5:18).
+    - q: ¿Es Él el primero en la manifestación de Su amor?
+      a: Sí. «Nosotros amamos a Dios, porque Él nos amó primero» (1 Jua. 4:19).
+    - q: ¿Podemos anticiparnos a Dios?
+      a: No. «¿Quién le ha dado a Él primero para que se le tenga que recompensar?» (Rom. 11:35). 3
+  - - q: ¿Debería ser Dios lo primero en nuestros pensamientos?
+      a: Sí. «Al despertar aún estoy contigo» (Sal. 139:18).
+    - q: ¿Y [debería ser Él] lo primero en nuestra estima?
+      a: Sí. «¿A quién tengo yo en los cielos, sino a ti?» (Sal. 73:25).
+    - q: ¿Deberíamos darnos a nosotros mismos primeramente al Señor?
+      a: Sí. «[S]ino que primeramente se dieron a sí mismos al Señor» (2 Cor. 8:5).
+    - q: ¿Debería tener Él los primeros frutos?
+      a: Sí. «Mi alma deseó los primeros frutos» (Miq. 7:1 [RVR60]).
+  - - q: ¿Es Dios el principal de los seres?
+      a: Sí. «¿Quién como tú, Oh Señor?» (Éxo. 15:11).
+    - q: ¿Está Él por encima de todos los pretendientes?
+      a: Sí. «Y Rey grande sobre todos los dioses» (Sal. 95:3).
+    - q: ¿Es Él el principal en el cielo?
+      a: Sí. «¿Quién en el firmamento se puede comparar al Señor?» (Sal. 89:6).
+    - q: ¿Es Él el principal en la Tierra?
+      a: Sí. «Porque tú eres el Señor, el Altísimo sobre toda la tierra» (Sal. 97:9).
+    - q: ¿Es Él solo uno de los principales?
+      a: No. «Clamaré al Dios Altísimo» (Sal. 57:2).[^22]
+    - q: ¿Mantendrá Él para siempre Su preeminencia?
+      a: Sí. «Mas tú, oh Señor, excelso eres eternamente» (Sal. 92:8).
+  - - q: ¿Debería ser Dios nuestro amor principal?
+      a: Sí. «Amarás al Señor tu Dios con todo tu corazón» (Luc. 10:27).
+    - q: ¿Y debería ser Él lo que más tememos?
+      a: Sí. «Más bien temed a Aquel que puede hacer perecer tanto el alma como el cuerpo en el infierno» (Mat. 10:28).
+    - q: ¿Son bienaventurados aquellos que tienen parte con Él?
+      a: Sí. «Bienaventurado el pueblo cuyo Dios es el Señor» (Sal. 144:15).
+notes:
+  "21": En el original, todas las respuestas aparecen impresas con letra cursiva y todas las referencias bíblicas están separadas por una coma (,) de las respuestas correspondientes. En esta traducción, editamos las respuestas con letra redonda y colocamos las referencias bíblicas entre paréntesis para facilitar la lectura.
+  "22": "La versión original cita Salmos 56:2, en donde la versión King James traduce el vocablo hebreo םו ֹֽרָמ como «O thou most High» (Oh, Altísimo). Sin embargo, en nuestras versiones en español, el término no es vertido como una referencia a Dios, sino como figura de la arrogancia con la que los enemigos lo atacan. Se traduce como: «soberbia» (RVR60, LBLA), «arrogantes» (NVI), «altanería» (RVA). La expresión «Altísimo» es una referencia bíblica a Dios que está en muchos lugares de la Escritura. Con el propósito de seguir la idea del autor, hemos puesto de referencia Salmos 57:2, donde nuestras versiones en español utilizan la palabra «Altísimo»."

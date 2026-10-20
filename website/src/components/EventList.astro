@@ -1,0 +1,131 @@
+---
+// List of dated occurrences. Past items are hidden in the browser too, so the
+// list stays correct between rebuilds (AC-2).
+import type { Occurrence } from '../lib/events.ts';
+import { eventIcsPath } from '../i18n/routes.ts';
+import { t, pick, DAYS } from '../i18n/ui.ts';
+import { slugOf } from '../lib/content.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+  items: Occurrence[];
+  showIcs?: boolean;
+}
+const { lang, items, showIcs = true } = Astro.props;
+const _ = t(lang);
+const fmt = (s: string, o: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat(lang === 'es' ? 'es' : 'en-GB', { timeZone: 'UTC', ...o }).format(new Date(s.slice(0, 10) + 'T12:00:00Z'));
+const codes = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
+---
+
+{
+  items.length === 0 ? (
+    <p class="muted">{_('activities.none')}</p>
+  ) : (
+    <ol class="events" data-event-list>
+      {items.map((o) => (
+        <li class="event" data-date={o.start.slice(0, 10)}>
+          <div class="date" aria-hidden="true">
+            <span class="d">{fmt(o.start, { day: 'numeric' })}</span>
+            <span class="m">{fmt(o.start, { month: 'short' })}</span>
+          </div>
+          <div class="body">
+            <p class="label when">
+              <time datetime={o.start}>
+                {fmt(o.start, { weekday: 'long', day: 'numeric', month: 'long' })} · {o.start.slice(11)}
+                {o.end && `–${o.end.slice(11)}`}
+              </time>
+              {o.weekly && <span class="weekly"> · {_('activities.every')} {DAYS[codes[new Date(o.start.slice(0, 10) + 'T12:00:00Z').getUTCDay()]][lang].toLowerCase()}</span>}
+            </p>
+            <h3>{pick(o.event.data.title, lang)}</h3>
+            {o.event.data.description && <p class="desc">{pick(o.event.data.description, lang)}</p>}
+            <p class="meta">
+              {o.event.data.location && <span>{o.event.data.location}</span>}
+              {showIcs && (
+                <a href={eventIcsPath(slugOf(o.event.id), lang)} download>
+                  {_('activities.addToCalendar')}
+                </a>
+              )}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  )
+}
+
+<script>
+  const today = new Date();
+  const iso = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+  document.querySelectorAll<HTMLElement>('[data-event-list] [data-date]').forEach((li) => {
+    if ((li.dataset.date ?? '') < iso) li.hidden = true;
+  });
+</script>
+
+<style>
+  .events {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .event {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    border: 1px solid var(--navy-900);
+    color: var(--navy-900);
+  }
+  .d {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    line-height: 1;
+  }
+  .m {
+    font-family: var(--font-label);
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .when {
+    color: var(--brass-700);
+    margin: 0 0 4px;
+  }
+  .event h3 {
+    font-size: 1.45rem;
+    margin: 0 0 6px;
+  }
+  .desc {
+    margin: 0 0 8px;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--fg-muted);
+  }
+  @media (max-width: 480px) {
+    .event {
+      grid-template-columns: 56px 1fr;
+      gap: 16px;
+    }
+    .date {
+      height: 56px;
+    }
+    .d {
+      font-size: 1.5rem;
+    }
+  }
+</style>

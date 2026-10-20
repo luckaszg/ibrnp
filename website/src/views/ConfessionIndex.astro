@@ -1,0 +1,138 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Search from '../components/Search.astro';
+import { confessionChapters } from '../lib/content.ts';
+import { confessionChapter } from '../i18n/routes.ts';
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const _ = t(lang);
+const chapters = await confessionChapters(lang);
+const title = lang === 'es' ? 'Segunda Confesión Bautista de Fe de Londres' : 'Second London Baptist Confession of Faith';
+const lede =
+  lang === 'es'
+    ? 'Publicada en 1677 y adoptada por la Asamblea General de 1689, es el estándar doctrinal de nuestra iglesia.'
+    : 'Published in 1677 and adopted by the General Assembly of 1689, it is our church’s doctrinal standard.';
+---
+
+<Base lang={lang} mode="reading" title={lang === 'es' ? 'Confesión de Fe de 1689' : '1689 Confession of Faith'} description={lede} alternates={{ es: '/creemos/confesion-1689/', en: '/en/beliefs/1689-confession/' }}>
+  <PageHero lang={lang} eyebrow="1677 · 1689" title={title} lede={lede}>
+    <p class="resume no-print" hidden data-resume-link="confession">
+      <a class="btn" href="#"><span>{_('reader.continue')}</span></a>
+      <span class="resume-where muted"></span>
+    </p>
+  </PageHero>
+
+  <div class="container reading">
+    <div class="reading-col">
+      <Search lang={lang} filter="confession" />
+      <ol class="toc">
+        {
+          chapters.map((c) => (
+            <li>
+              <a href={confessionChapter(c.data.chapter, lang)}>
+                <span class="n">{c.data.chapter}</span>
+                <span class="t">{c.data.title}</span>
+                <span class="c muted">
+                  {c.data.paragraphs.length} §
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ol>
+      <div class="downloads">
+        <h2 class="label">{_('reader.download')}</h2>
+        <ul>
+          <li><a href={`/descargas/confesion-1689-${lang}.epub`} download>EPUB ({lang === 'es' ? 'Kindle, Apple Books…' : 'Kindle, Apple Books…'})</a></li>
+          {lang === 'es' && <li><a href="/descargas/confesion-bautista-1689-edicion-de-lectura.pdf">PDF — Edición de lectura (Editorial Legado Bautista Confesional)</a></li>}
+        </ul>
+      </div>
+      <p class="credit">
+        {
+          lang === 'es'
+            ? 'Traducción © Editorial Legado Bautista Confesional. Usado con permiso.'
+            : 'Text of the 1677 first edition, public domain, with its original spelling.'
+        }
+      </p>
+    </div>
+  </div>
+</Base>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-resume-link]').forEach((box) => {
+    try {
+      const key = `ibrnp-resume-${box.dataset.resumeLink}-${document.documentElement.lang}`;
+      const saved = JSON.parse(localStorage.getItem(key) || 'null');
+      if (!saved?.url) return;
+      box.querySelector('a')!.setAttribute('href', saved.url);
+      box.querySelector('.resume-where')!.textContent = saved.label ?? '';
+      box.hidden = false;
+    } catch {
+      /* storage unavailable */
+    }
+  });
+</script>
+
+<style>
+  .resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 28px;
+  }
+  .resume[hidden] {
+    display: none;
+  }
+  .toc {
+    list-style: none;
+    margin: 0 0 3rem;
+    padding: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .toc a {
+    display: grid;
+    grid-template-columns: 3rem 1fr auto;
+    align-items: baseline;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule);
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .toc a:hover .t {
+    color: var(--accent);
+  }
+  .n {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--accent);
+    text-align: right;
+  }
+  .t {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+  .c {
+    font-family: var(--font-label);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+  }
+  .downloads .label {
+    color: var(--accent);
+  }
+  .downloads ul {
+    padding-left: 1.2em;
+    font-size: 1rem;
+  }
+  .credit {
+    padding-bottom: 4rem;
+  }
+</style>

@@ -1,0 +1,59 @@
+---
+// Popover with the proof texts for one footnote marker (RD-3, RD-14).
+// English: reference + KJV text. Spanish: reference + link to the RVR1960 on YouVersion.
+import { formatRef, parseReferences, youVersionUrl, type Lang, type RefToken } from '../lib/scripture.ts';
+import { kjvVerses } from '../lib/kjv.ts';
+import { t } from '../i18n/ui.ts';
+
+interface Props {
+  id: string;
+  lang: Lang;
+  citation: string;
+  /** e.g. "1.1 · 3" */
+  label: string;
+}
+const { id, lang, citation, label } = Astro.props;
+const _ = t(lang);
+const tokens: RefToken[] = parseReferences(citation);
+---
+
+<div popover id={id} class="note-pop" role="dialog" aria-label={`${_('reader.proofs')} ${label}`} data-pagefind-ignore>
+  <div class="note-head">
+    <span class="label">{_('reader.proofs')} · {label}</span>
+    <button type="button" class="note-close" popovertarget={id} popovertargetaction="hide" aria-label={_('reader.close')}>×</button>
+  </div>
+  <ul class="note-list">
+    {
+      tokens.map((tok) =>
+        tok.type === 'text' ? (
+          <li class="note-text">{tok.value}</li>
+        ) : (
+          <li>
+            <a class="note-ref" href={youVersionUrl(tok.ref, lang)} target="_blank" rel="noopener">
+              {formatRef(tok.ref, lang, 'long')}
+            </a>
+            {lang === 'en' &&
+              (() => {
+                const { verses, truncated } = kjvVerses(tok.ref);
+                return (
+                  <p class="verse">
+                    {verses.map((v) => (
+                      <>
+                        <sup>{v.n}</sup>
+                        {v.text}{' '}
+                      </>
+                    ))}
+                    {truncated && '…'}
+                  </p>
+                );
+              })()}
+          </li>
+        )
+      )
+    }
+  </ul>
+  <p class="note-foot">
+    {lang === 'en' ? 'KJV · ' : 'RVR1960 · '}
+    <span>{_('reader.readOn')} ↗</span>
+  </p>
+</div>

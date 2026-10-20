@@ -1,0 +1,260 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import EventList from '../components/EventList.astro';
+import { getCollection } from 'astro:content';
+import { settings } from '../lib/settings.ts';
+import { occurrences, today } from '../lib/events.ts';
+import { alternates, eventIcsPath } from '../i18n/routes.ts';
+import { t, pick, DAYS } from '../i18n/ui.ts';
+import { slugOf } from '../lib/content.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const _ = t(lang);
+const events = (await getCollection('events')).filter((e) => !(import.meta.env.PROD && e.data.draft));
+const from = today();
+const all = occurrences(events, from, 100);
+const oneOff = all.filter((o) => !o.weekly);
+const weeklyEvents = events.filter((e) => e.data.weekly);
+
+// Weekly meetings: service times (settings) + weekly events, Sunday first.
+const order = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
+const weekly = [
+  ...settings.serviceTimes.map((s) => ({ day: s.day, time: s.time, title: pick(s.label, lang), ics: null as string | null })),
+  ...weeklyEvents.flatMap((e) => e.data.weekly!.days.map((day) => ({ day, time: e.data.start.slice(11), title: pick(e.data.title, lang), ics: eventIcsPath(slugOf(e.id), lang) }))),
+].sort((a, b) => order.indexOf(a.day) - order.indexOf(b.day) || a.time.localeCompare(b.time));
+
+// Month view: this month and next, built at build time.
+const months = [0, 1].map((offset) => {
+  const d = new Date(from.slice(0, 7) + '-01T00:00:00Z');
+  d.setUTCMonth(d.getUTCMonth() + offset);
+  const y = d.getUTCFullYear();
+  const m = d.getUTCMonth();
+  const first = (new Date(Date.UTC(y, m, 1)).getUTCDay() + 6) % 7; // Monday-first grid
+  const days = new Date(Date.UTC(y, m + 1, 0)).getUTCDate();
+  const prefix = `${y}-${String(m + 1).padStart(2, '0')}`;
+  const monthOcc = occurrences(events, prefix + '-01', days - 1);
+  const services = (dow: number) => settings.serviceTimes.filter((s) => order.indexOf(s.day) === dow);
+  const cells = Array.from({ length: days }, (_, i) => {
+    const date = `${prefix}-${String(i + 1).padStart(2, '0')}`;
+    const dow = new Date(date + 'T00:00:00Z').getUTCDay();
+    return {
+      day: i + 1,
+      date,
+      items: [
+        ...services(dow).map((s) => ({ time: s.time, title: pick(s.label, lang) })),
+        ...monthOcc.filter((o) => o.start.startsWith(date)).map((o) => ({ time: o.start.slice(11), title: pick(o.event.data.title, lang) })),
+      ].sort((a, b) => a.time.localeCompare(b.time)),
+    };
+  });
+  const label = new Intl.DateTimeFormat(lang === 'es' ? 'es' : 'en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(d);
+  return { label: label.charAt(0).toUpperCase() + label.slice(1), first, cells };
+});
+const weekdayHeads = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU'].map((c) => DAYS[c][lang].slice(0, 3));
+---
+
+<Base lang={lang} title={_('nav.activities')} alternates={alternates('activities')}>
+  <PageHero
+    lang={lang}
+    title={_('nav.activities')}
+    lede={lang === 'es' ? 'Reuniones de la iglesia y próximos eventos. Todos son bienvenidos.' : 'Church meetings and upcoming events. All are welcome.'}
+    placeholder={events.some((e) => e.data.placeholder)}
+  />
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2>{_('activities.weekly')}</h2>
+      <ul class="weekly">
+        {
+          weekly.map((w) => (
+            <li>
+              <span class="label">
+                {DAYS[w.day][lang]} · {w.time}
+              </span>
+              <span class="w-title">{w.title}</span>
+              {w.ics && (
+                <a href={w.ics} download class="ics">
+                  {_('activities.addToCalendar')}
+                </a>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>{_('activities.upcoming')}</h2>
+      <EventList lang={lang} items={oneOff} />
+    </div>
+  </section>
+
+  <section class="section section--tint no-print">
+    <div class="container">
+      <h2>{_('activities.month')}</h2>
+      <div class="months">
+        {
+          months.map((m) => (
+            <div class="month">
+              <h3 class="m-title">{m.label}</h3>
+              <div class="cal">
+                <div class="row head">
+                  {weekdayHeads.map((h) => (
+                    <span>{h}</span>
+                  ))}
+                </div>
+                <div class="days">
+                  {Array.from({ length: m.first }, () => (
+                    <span class="blank" aria-hidden="true" />
+                  ))}
+                  {m.cells.map((c) => (
+                    <div class:list={['day', { has: c.items.length }]} data-date={c.date}>
+                      <span class="n">{c.day}</span>
+                      {c.items.map((it) => (
+                        <span class="it">
+                          <b>{it.time}</b> {it.title}
+                        </span>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  const d = new Date();
+  const iso = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  document.querySelectorAll<HTMLElement>('.day[data-date]').forEach((el) => {
+    if (el.dataset.date! < iso) el.classList.add('past');
+    if (el.dataset.date === iso) el.classList.add('today');
+  });
+</script>
+
+<style>
+  .weekly {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--navy-200);
+  }
+  .weekly li {
+    display: grid;
+    grid-template-columns: 200px 1fr auto;
+    gap: 8px 24px;
+    align-items: baseline;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--navy-200);
+  }
+  .weekly .label {
+    color: var(--brass-700);
+  }
+  .w-title {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+  }
+  .ics {
+    font-size: 0.95rem;
+  }
+  @media (max-width: 640px) {
+    .weekly li {
+      grid-template-columns: 1fr;
+    }
+  }
+  .months {
+    display: grid;
+    gap: 40px;
+  }
+  @media (min-width: 1080px) {
+    .months {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .m-title {
+    font-size: 1.4rem;
+  }
+  .cal {
+    background: var(--white);
+    border: 1px solid var(--navy-200);
+  }
+  .head {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 1px solid var(--navy-200);
+  }
+  .head span {
+    padding: 8px 6px;
+    font-family: var(--font-label);
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--brass-700);
+  }
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .day,
+  .blank {
+    min-height: 84px;
+    padding: 6px;
+    border-right: 1px solid var(--navy-50);
+    border-bottom: 1px solid var(--navy-50);
+    overflow: hidden;
+  }
+  .n {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+  }
+  .it {
+    display: block;
+    font-size: 0.72rem;
+    line-height: 1.25;
+    margin-top: 3px;
+    color: var(--navy-700);
+  }
+  .it b {
+    font-family: var(--font-label);
+    font-weight: 600;
+    font-size: 0.95em;
+  }
+  .day.past {
+    background: var(--navy-50);
+  }
+  .day.past .n,
+  .day.past .it {
+    color: var(--navy-500);
+  }
+  .day.today {
+    box-shadow: inset 0 0 0 2px var(--brass-700);
+  }
+  @media (max-width: 640px) {
+    .day,
+    .blank {
+      min-height: 56px;
+      padding: 4px;
+    }
+    .it {
+      font-size: 0;
+      width: 6px;
+      height: 6px;
+      background: var(--brass-700);
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 2px;
+    }
+  }
+</style>

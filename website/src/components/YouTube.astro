@@ -1,0 +1,113 @@
+---
+// Click-to-load YouTube player (SE-4): no request to YouTube until the visitor presses play.
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  id: string;
+  title: string;
+  lang: Lang;
+  caption?: string;
+}
+const { id, title, lang, caption } = Astro.props;
+const _ = t(lang);
+---
+
+<div class="yt" data-yt={id} data-title={title}>
+  <button type="button" class="yt-poster">
+    <span class="sr-only">{_('sermons.play')}:</span>
+    <span class="yt-seal" aria-hidden="true">✠</span>
+    <span class="yt-title">{title}</span>
+    {caption && <span class="yt-caption">{caption}</span>}
+    <span class="yt-play" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+    </span>
+  </button>
+  <p class="yt-notice">
+    {_('sermons.playNotice')} · <a href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener">{_('sermons.watchOnYouTube')} ↗</a>
+  </p>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.yt').forEach((box) => {
+    box.querySelector('.yt-poster')?.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${box.dataset.yt}?autoplay=1&rel=0`;
+      iframe.title = box.dataset.title ?? '';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.className = 'yt-frame';
+      box.querySelector('.yt-poster')?.replaceWith(iframe);
+      iframe.focus();
+    });
+  });
+</script>
+
+<style>
+  .yt-poster,
+  :global(.yt-frame) {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+  }
+  .yt-poster {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 24px;
+    background:
+      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.06), transparent 60%),
+      var(--navy-900);
+    color: var(--white);
+    cursor: pointer;
+    text-align: center;
+  }
+  .yt-poster::before {
+    content: '';
+    position: absolute;
+    inset: 14px;
+    border: 1px solid rgba(194, 164, 105, 0.45);
+    pointer-events: none;
+  }
+  .yt-seal {
+    color: var(--brass-400);
+    font-size: 1.2rem;
+  }
+  .yt-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+    line-height: 1.15;
+    max-width: 22ch;
+  }
+  .yt-caption {
+    font-family: var(--font-label);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #b9c6d4;
+  }
+  .yt-play {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    margin-top: 8px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    transition: background-color 120ms ease, color 120ms ease;
+  }
+  .yt-poster:hover .yt-play {
+    background: var(--white);
+    color: var(--navy-900);
+  }
+  .yt-notice {
+    margin: 10px 0 0;
+    font-size: 0.85rem;
+    color: var(--fg-muted);
+  }
+</style>

@@ -1,0 +1,13 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 30
+question: Wherein did Christ's Humiliation consist?
+answer: Christ's Humiliation consisted in his being born, and that in a low Condition[^1]; made under the Law[^2], undergoing the Miseries of this Life[^3], the Wrath of God[^4], and the cursed Death of the Cross[^5]; in being buried[^6], and continuing under the Power of Death for a time[^7]. Mat. 12:40.
+notes:
+  "1": Luke 2:7
+  "2": Gal. 4:4
+  "3": Heb. 12:2–3; Isa. 53:2–3
+  "4": Luke 22:44; Matt. 27:46
+  "5": Phil. 2:8
+  "6": 1 Cor. 15:4
+  "7": Acts 2:24–27, 31

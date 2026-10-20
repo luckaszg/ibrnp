@@ -1,0 +1,37 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 44
+question: ¿Cuál es el deber que Dios demanda del hombre?
+answer: El deber que Dios demanda del hombre es la obediencia a Su voluntad revelada.
+sections:
+  - - q: ¿Ha revelado Dios Su voluntad?
+      a: Sí. «Declara su palabra a Jacob, y sus estatutos y sus ordenanzas a Israel» (Sal. 147:19).
+    - q: ¿La ha revelado claramente?
+      a: Sí. «Para que corra el que la lea» (Hab. 2:2).
+    - q: ¿Y [la ha revelado] de manera completa?
+      a: Sí. «No rehuí declarar a vosotros todo el propósito de Dios» (Hch. 20:27).
+    - q: Por tanto, ¿deberíamos tratar de familiarizarnos con Su voluntad?
+      a: Sí. «Guíame en tu verdad y enséñame» (Sal. 25:5).
+  - - q: ¿Es un deber la obediencia a la voluntad revelada de Dios?
+      a: Sí. «Y ahora, Israel, ¿qué requiere de ti el Señor tu Dios, sino que andes en todos sus caminos?» (Deu. 10:12).
+    - q: ¿Es deber de todos?
+      a: Sí. «Oíd esto, pueblos todos; escuchad, habitantes todos del mundo, tanto humildes como encumbrados, ricos y pobres juntamente» (Sal. 49:1, 2).
+    - q: Pero, ¿[es] especialmente [un deber] de los redimidos?
+      a: Sí. «Por precio habéis sido comprados; por tanto, glorificad a Dios en vuestro cuerpo y en vuestro espíritu, los cuales son de Dios» (1 Cor. 6:20).
+    - q: ¿Y en esto consiste todo el deber del hombre?
+      a: "Sí. «La conclusión, cuando todo se ha oído, es ésta: teme a Dios y guarda sus mandamientos, porque esto concierne a toda persona» (Ecl. 12:13)."
+  - - q: ¿Es razonable obedecer a Dios?
+      a: Sí. «Es [nuestro] culto racional» (Rom. 12:1).
+    - q: ¿Es la obediencia a Él algo que le debemos como nuestro Creador?
+      a: Sí. «Yo te he formado, siervo mío eres» (Isa. 44:21).
+    - q: ¿[Es la obediencia a Él algo que le debemos] como nuestro Preservador?
+      a: Sí. «¿No es [Él] tu padre que te compró? Él te hizo y te estableció» (Deu. 32:6).
+    - q: ¿[Es la obediencia a Él algo que le debemos] como nuestro Señor {lit. Amo}?
+      a: Sí. «Si yo soy señor, ¿dónde está mi temor?» (Mal. 1:6).
+    - q: ¿Y [es la obediencia a Él algo que le debemos] como nuestro Soberano?
+      a: Sí. «Todos los términos de la tierra se acordarán y se volverán al Señor […] porque del SEÑOR es el reino» (Sal. 22:27, 28).
+    - q: Por tanto, ¿deberían los mandamientos de Dios estar antes que los de los hombres?
+      a: Sí. «Vosotros mismos juzgad si es justo delante de Dios obedecer a vosotros antes que a Dios» (Hch. 4:19).
+notes:
+  "62": Aunque la referencia que aparece en el original es Romanos 2:9, el autor también está citando el versículo 8.

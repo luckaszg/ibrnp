@@ -1,0 +1,67 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 45
+question: ¿Qué fue lo primero que Dios reveló al hombre como regla de obediencia?
+answer: La primera regla de obediencia que Dios reveló al hombre fue la ley moral.
+sections:
+  - - q: ¿Hubo instituciones positivas bajo el Antiguo Testamento?
+      a: Sí. «[Tenían] que ver con comidas y bebidas, y diversas abluciones y ordenanzas para el cuerpo» (Heb. 9:10).
+    - q: ¿Eran adecuadas para el estado infantil de la Iglesia?
+      a: Sí. «Así también nosotros, mientras éramos niños, estábamos sujetos a servidumbre bajo las cosas elementales del mundo» (Gál. 4:3).
+    - q: Pero, ¿están abolidas ahora?
+      a: Sí. «Porque sólo fueron impuestas hasta el tiempo de reformar las cosas» (Heb. 9:10).
+    - q: ¿Es una gran misericordia para con nosotros el haber sido librados de estas?
+      a: Sí, porque eran «un yugo que ni nuestros padres ni nosotros hemos podido llevar» (Hch. 15:10).
+    - q: ¿Le debemos esta libertad a Cristo?
+      a: Sí. «Porque cuando se cambia el sacerdocio, necesariamente ocurre también un cambio de la ley» (Heb. 7:12).
+    - q: ¿Y deberíamos permanecer firmes en esta libertad?
+      a: Sí. «No os sometáis otra vez al yugo de esclavitud» (Gál. 5:1).
+  - - q: ¿Existen instituciones positivas bajo el evangelio?
+      a: Sí. «Porque yo recibí del Señor lo mismo que os he enseñado» (1 Cor. 11:23).
+    - q: ¿Y deben ser observadas?
+      a: "[^63] Sí. «Y guardáis las tradiciones como yo os las entregué» (1 Cor. 11:2)."
+    - q: Sin embargo, ¿es la ley moral la principal regla de obediencia?
+      a: Sí. «El SEÑOR nuestro Dios hizo un pacto con nosotros en Horeb» (Deu. 5:2).
+  - - q: ¿Fue escrita esta ley en el corazón del hombre al principio?
+      a: Sí. «Muestran la obra de la ley escrita en sus corazones» (Rom. 2:15).
+    - q: ¿La conciencia natural refuerza esta ley?
+      a: Sí. «Porque cuando los gentiles, que no tienen la ley, cumplen por instinto los dictados de la ley» (Rom. 2:14).
+    - q: Entonces, ¿han pecado los gentiles al quebrantar esta ley?
+      a: Sí. «En las [cosas] que por naturaleza conocen, se corrompen como animales irracionales» (Jud. 10 [RVR60]).
+    - q: ¿Serán castigados por haberla transgredido?
+      a: Sí. «Pues todos los que han pecado sin la ley, sin la ley también perecerán» (Rom. 2:12).
+    - q: Pero, ¿es revelada esta ley más plenamente en la Palabra?
+      a: Sí. «No hizo el Señor este pacto con nuestros padres, sino con nosotros, con todos aquellos de nosotros que estamos vivos aquí hoy» (Deu. 5:3).
+  - - q: ¿Deberíamos suscribir la excelencia de la ley?
+      a: Sí. «La ley es santa […] justa y buena» (Rom. 7:12).
+    - q: ¿Y [deberíamos] indagar sobre sus usos?
+      a: Sí. «¿Para qué fue dada la ley?» (Gál. 3:19).
+    - q: ¿Están los santos bajo la ley como un pacto de obras?
+      a: No. «No estamos bajo la ley, sino bajo la gracia» (Rom. 6:15).
+    - q: Pero, ¿están sometidos a la ley como una regla de vida?
+      a: Sí. «No estoy sin la ley de Dios» (1 Cor. 9:21).
+    - q: ¿Es [la ley] universalmente vinculante?
+      a: Sí. «Estimo rectos todos tus preceptos acerca de todas las cosas» (Sal. 119:128).
+    - q: ¿Y es [universalmente vinculante] para siempre?
+      a: Sí. «¿Anulamos entonces la ley por medio de la fe? ¡De ningún modo!» (Rom. 3:31).
+  - - q: ¿La ley frena el pecado?
+      a: Sí. «No ha sido instituida para el justo, sino para los transgresores y rebeldes» (1 Tim. 1:9).
+    - q: ¿Instruye en el deber?
+      a: Sí, porque «el propósito de nuestra instrucción es el amor» (1 Tim. 1:5).
+    - q: ¿Convence de pecado?
+      a: Sí. «Yo no hubiera llegado a conocer el pecado si no hubiera sido por medio de la ley» (Rom. 7:7).
+    - q: ¿Agrava el pecado?
+      a: Sí. «La ley se introdujo para que abundara la transgresión» (Rom. 5:20).
+    - q: ¿Engendra miedo?
+      a: Sí. «Engendra hijos para ser esclavos» (Gál. 4:24).
+    - q: ¿Silencia las objeciones carnales?
+      a: Sí. «Para que toda boca se calle» (Rom. 3:19).
+    - q: ¿Destruye el principio de justicia propia?
+      a: Sí. «Mediante la ley yo morí a la ley» (Gál. 2:19).
+    - q: ¿Y dirige al pecador a Cristo?
+      a: Sí. «La ley ha venido a ser nuestro ayo para conducirnos a Cristo» (Gál. 3:24).
+    - q: Entonces, ¿es la ley una gran ventaja si se usa correctamente?
+      a: Sí. «Pero nosotros sabemos que la ley es buena, si uno la usa legítimamente» (1 Tim. 1:8).
+notes:
+  "63": "deben ser observadas —«Guardar y cumplir exactamente lo que se manda y ordena» (véase la segunda entrada correspondiente a observar en Diccionario de la lengua española, 23. @@a@@ ed., versión 23.4 en línea [Madrid, España: Real Academia Española, 2014], disponible en: ˂https://dle.rae.es˃)."

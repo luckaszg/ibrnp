@@ -1,0 +1,37 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 80
+question: ¿Qué se prohíbe en el octavo mandamiento?
+answer: El octavo mandamiento prohíbe todo lo que impida o pueda impedir injustamente las riquezas o el bienestar de nosotros mismos o de nuestro prójimo.
+sections:
+  - - q: ¿Prohíbe este mandamiento que la necedad y la extravagancia desperdicien nuestras posesiones?
+      a: Sí. El {hijo} pródigo «partió a un país lejano [y] malgastó su hacienda» (Luc. 15:13).
+    - q: ¿Se [desperdician las posesiones] por intemperancia y lujo?
+      a: Sí. «El borracho y el glotón se empobrecerán» (Pro. 23:21).
+    - q: ¿[Se desperdician las posesiones] por pereza y ociosidad?
+      a: Sí. «Un poco de dormir, un poco de dormitar […] llegará tu pobreza como [uno que camina] (Pro. 24:33, 34). ¿[Se desperdician las posesiones] por mantener mala compañía? Sí. «El que sigue a los ociosos se llenará de pobreza» (Pro. 28:19 [RVR60]). ¿[Se desperdician las posesiones] por un excesivo amor al placer? Sí. «El que ama el placer será pobre» (Pro. 21:17). ¿[Se desperdician las posesiones] por compromisos temerarios e imprudentes en favor de otros? Sí. «No estés […] entre los que salen de fiadores de préstamos […] ¿por qué han de quitarte la cama de debajo de ti?» (Pro. 22:26, 27). ¿Y lo que tiende a la pobreza, tiende también a la injusticia? Sí. «No sea […] que sea menesteroso y robe» (Pro. 30:9).
+  - - q: ¿Es quebrantado este mandamiento por la codicia?
+      a: Sí. «¡Ay del que codicia injusta ganancia!» (Hab. 2:9 [RVR60]).
+    - q: ¿[Es quebrantado este mandamiento] por crueldad y falta de caridad?
+      a: Sí. «El que cierra su oído al clamor del pobre, también él clamará y no recibirá respuesta» (Pro. 21:13).
+    - q: ¿[Es quebrantado este mandamiento] por contratos ilícitos?
+      a: Sí. «Que tu plata perezca contigo, porque pensaste que podías obtener el don de Dios con dinero» (Hch. 8:20).
+    - q: ¿Y por {el uso de} todo tipo de artes injustificables para el aumento de nuestras posesiones?
+      a: Sí. «No sea hallado en ti nadie […] que practique adivinación, ni hechicería, o sea agorero, o hechicero» (Deu. 18:10).
+  - - q: ¿Prohíbe este mandamiento toda exacción y opresión?
+      a: Sí. «No os hagáis mal uno a otro» (Lev. 25:14).
+    - q: ¿[Prohíbe este mandamiento] defraudar y engañar?
+      a: Sí. «¿Puedo justificar balanzas falsas y bolsa de pesas engañosas?» (Miq. 6:11).
+    - q: ¿Y [prohíbe] juicios vejatorios?
+      a: Sí. «Así que, en efecto, es ya un fallo entre vosotros el hecho de que tengáis litigios entre vosotros» (1 Cor. 6:7).
+  - - q: ¿Está prohibido particularmente el hurto en este mandamiento?
+      a: Sí. «“NO HURTES”» (Mar. 10:19).
+    - q: ¿Es pecado que los sirvientes defrauden a sus amos?
+      a: Sí. «Había cierto hombre rico que tenía un mayordomo; y éste fue acusado ante él de derrochar sus bienes» (Luc. 16:1).
+    - q: ¿O que los hijos roben a sus padres?
+      a: "Sí. «El que roba a su padre o a su madre y dice: “No es transgresión”, es compañero del hombre destructor» (Pro. 28:24)."
+    - q: ¿Es pecado incluso robar aquello que es necesario para la vida?
+      a: Sí, porque los tales tienen que pagar «siete veces» (Pro. 6:31).
+    - q: ¿Y es esto igualmente cierto al receptar u ocultar bienes robados?
+      a: Sí. «El que se asocia con un ladrón aborrece su propia vida» (Pro. 29:24).

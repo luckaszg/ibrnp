@@ -1,0 +1,63 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 91
+question: ¿Qué es la fe en Jesucristo?
+answer: La fe en Jesucristo es una gracia salvadora, por medio de la cual lo recibimos y descansamos solo en Él para salvación, tal como Él nos es ofrecido en el evangelio.
+sections:
+  - - q: ¿Es la fe un don gratuito y, por tanto, una gracia?
+      a: Sí. «A vosotros se os ha concedido por amor de Cristo […] creer en Él» (Flp. 1:29).
+    - q: ¿Es particularmente un don del Espíritu?
+      a: Sí. Por eso se dice que Bernabé «era un hombre […] lleno del Espíritu Santo y de fe» (Hch. 11:24).
+    - q: ¿[Es] un don que distingue a los escogidos de Dios de todos los demás?
+      a: Sí. Es «la fe de los escogidos de Dios» (Tit. 1:1).
+    - q: ¿Es una gracia salvadora?
+      a: Sí, porque «[somos] de los que tienen fe para la preservación del alma» (Heb. 10:39).
+    - q: Pero, ¿es [la fe una gracia salvadora] por algún mérito inherente o eficacia propia?
+      a: No, {la fe es una gracia salvadora} porque recibe «el don de la justicia» (Rom. 5:17).
+  - - q: ¿Es Dios el objeto último de la fe?
+      a: Sí. «Creed en Dios» (Jua. 14:1).
+    - q: ¿Y es Cristo el objeto inmediato de esta?
+      a: Sí. «Creed también en mí» (Jua. 14:1).
+    - q: ¿Es el corazón el trono {desde donde opera} la fe?
+      a: Sí. «Con el corazón se cree para justicia» (Rom. 10:10).
+    - q: ¿Son los sujetos de la fe los pecadores sensatos y convencidos?
+      a: Sí. «Los que perecían […] vendrán» (Isa. 27:13).
+    - q: ¿Es la fe imperfecta en la vida presente?
+      a: Sí. «Creo; ayúdame en mi incredulidad» (Mar. 9:24).
+    - q: Pero, ¿será apoyada la fe débil?
+      a: Sí. «NO QUEBRARÁ LACAÑA CASCADA, NI APAGARÁ LA MECHA QUE HUMEA» (Mat. 12:20).
+    - q: ¿Y [será] fortalecida?
+      a: Sí. «Todo lo puedo en Cristo que me fortalece» (Flp. 4:13).
+  - - q: ¿Implica la fe verdadera un asentimiento del entendimiento?
+      a: Sí. «Creo que Jesucristo es el Hijo de Dios» (Hch. 8:37).
+    - q: ¿[Implica] un consentimiento de la voluntad?
+      a: "Sí. «Palabra fiel y digna de ser aceptada por todos: Cristo Jesús vino al mundo para salvar a los pecadores» (1 Tim. 1:15)."
+    - q: ¿Implica un recibimiento de Cristo por parte del alma?
+      a: Sí. «Recibisteis a Cristo Jesús el Señor» (Col. 2:6).
+    - q: ¿[Implica] que el alma ponga su confianza en {lit. sobre} Él?
+      a: Sí. «Habiendo creído en él» (Efe. 1:13 [RVR60]).
+    - q: ¿[Implica] un apego a Él por parte del alma?
+      a: Sí. «Y animaba a todos para que con corazón firme permanecieran fieles al Señor» (Hch. 11:23).
+    - q: ¿Y {un apego del alma a Él} con una total exclusión de todo lo demás?
+      a: Sí. «Por quien lo he perdido todo, y lo considero como basura a fin de ganar a Cristo» (Flp. 3:8).
+  - - q: ¿Hay algo que el alma del que cree encomienda a Cristo?
+      a: Sí. «Sé en quién he creído, y estoy convencido de que es poderoso para guardar mi depósito {lit. lo que le he encomendado}» (2 Tim. 1:12).
+    - q: ¿[Hay] algo que espera de Él?
+      a: Sí. «Esperando ansiosamente la misericordia de nuestro Señor Jesucristo para vida eterna» (Jud. 21).
+    - q: ¿Es la fe verdadera un principio vital?
+      a: Sí. «El justo por su fe vivirá» (Hab. 2:4).
+    - q: ¿[Es] un principio activo?
+      a: Sí. «Obra por amor» (Gál. 5:6).
+    - q: ¿[Es] un principio victorioso?
+      a: "Sí. «Esta es la victoria que ha vencido al mundo: nuestra fe» (1 Jua. 5:4)."
+    - q: ¿[Es] un principio establecedor?
+      a: Sí. «[Por] la fe permanecéis firmes» (2 Cor. 1:24).
+    - q: ¿[Es] un principio que consuela el alma?
+      a: Sí. «Hubiera yo desmayado, si no hubiera creído…» (Sal. 27:13).
+    - q: ¿[Es] un principio que exalta a Dios?
+      a: Sí. «[Abraham] se fortaleció en fe, dando gloria a Dios» (Rom. 4:20).
+    - q: ¿Y es un principio precioso por todas estas razones?
+      a: Sí. «A los que habéis alcanzado […] una fe igualmente preciosa que la nuestra» (2 Ped. 1:1 [RVR60]).
+notes:
+  "98": "La Biblia de las Américas sugiere también la traducción: al reino de los cielos se entra por la fuerza."

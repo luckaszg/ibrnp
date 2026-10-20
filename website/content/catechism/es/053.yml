@@ -1,0 +1,33 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 53
+question: ¿Qué se nos enseña especialmente con estas palabras, («delante de mí») en el primer mandamiento?
+answer: Estas palabras («delante de mí») en el primer mandamiento nos enseñan que Dios, quien ve todas las cosas, toma nota de —y le desagrada mucho—el pecado de tener cualquier otro Dios.
+sections:
+  - - q: ¿Ve Dios todas nuestras acciones?
+      a: Sí. «Si [decimos que] (…) las tinieblas [nos] envolverán, y la luz en torno [nuestro] será noche; ni aun las tinieblas son oscuras para ti» (Sal. 139:11-12).[^69]
+    - q: ¿Ve Él el cumplimiento más secreto de nuestros deberes?
+      a: Sí. «“Yo conozco tus obras y tu fatiga”» (Apo. 2:2).
+    - q: ¿Y esto debería ser un estímulo para el {cumplimiento del} deber?
+      a: Sí. «Tu Padre, que ve en lo secreto, te recompensará» (Mat. 6:4).
+    - q: ¿Ve Él nuestros pecados secretos?
+      a: Sí. «[Él ha] puesto nuestros pecados secretos a la luz de [Su] presencia (Sal. 90:8). ¿Y esto debería disuadirnos de pecar? Sí. «¿Cómo entonces iba yo a hacer esta gran maldad y pecar contra Dios?» (Gén. 39:9).
+  - - q: ¿Se jactan los idólatras a menudo de que Dios no los ve?
+      a: "Sí. «Lo (…) hacen en la oscuridad (…) [y] dicen: “el SEÑOR no nos ve”» (Eze. 8:12)."
+    - q: Pero, ¿Dios los ve?
+      a: Sí. «Si […] hubiéramos extendido nuestras manos a un dios extraño, ¿no se habría dado cuenta Dios de esto?» (Sal. 44:20).
+    - q: ¿Es esto un agravante de su pecado?
+      a: Sí. «De continuo me provoca en mi propio rostro» (Isa. 65:3).
+    - q: ¿Y esto debería guardarnos contra este pecado?
+      a: Sí. Debemos servirle «de todo corazón […] porque el SEÑOR escudriña todos los corazones» (1 Cró. 28:9).
+  - - q: ¿Es la idolatría un robo espiritual?
+      a: Sí. «Yo soy el SEÑOR […] mi gloria a otro no daré» (Isa. 42:8).
+    - q: ¿Y [es] adulterio espiritual?
+      a: Sí. «[Has] abandonado a tu Dios» (Ose. 9:1).
+    - q: Por lo tanto, ¿es desagradado Dios por ello en gran medida?
+      a: Sí. «Le provocaron a celos con dioses extraños» (Deu. 32:16).
+    - q: ¿Y es esta una razón por la que debemos velar contra la idolatría?
+      a: Sí, porque «¿[q]uién conoce el poder de [Su] ira?» (Sal. 90:11).
+notes:
+  "69": En el original, el autor solo parafrasea Salmos 139:11. Para completar la idea, añadimos la frase «ni aun las tinieblas son oscuras para ti» que aparece a continuación en el versículo 12.

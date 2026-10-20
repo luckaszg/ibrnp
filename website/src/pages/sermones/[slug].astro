@@ -1,0 +1,12 @@
+---
+import Sermon from '../../views/Sermon.astro';
+import { sermons, slugOf } from '../../lib/content.ts';
+import type { CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  return (await sermons()).map((sermon) => ({ params: { slug: slugOf(sermon.id) }, props: { sermon } }));
+}
+const { sermon } = Astro.props as { sermon: CollectionEntry<'sermons'> };
+---
+
+<Sermon lang="es" sermon={sermon} />

@@ -1,0 +1,9 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 35
+question: What Benefits do they that are effectually called, partake of in this Life?
+answer: They that are effectually called, do in this Life partake of Justification[^1], Adoption[^2], Sanctification, and the several Benefits which in this Life do either accompany or flow from them[^3].
+notes:
+  "1": Rom. 8:30
+  "2": Eph. 1:5
+  "3": 1 Cor. 1:30

@@ -1,0 +1,53 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 3
+question: ¿Cómo podemos saber que hay un Dios?
+answer: La luz de la naturaleza en el hombre y las obras de Dios declaran lisa y llanamente que hay un Dios, pero solo Su Palabra y Su Espíritu lo declaran plena y eficazmente para la salvación de los pecadores.
+sections:
+  - - q: ¿Hay una luz en el hombre?
+      a: Sí. «Lámpara del SEÑOR es el espíritu del hombre» (Pro. 20:27).
+    - q: ¿Fue esa luz oscurecida por la Caída?
+      a: Sí. «Entenebrecidos en su entendimiento» (Efe. 4:18).
+    - q: Entonces, ¿es esta [luz en el hombre] suficiente para enseñarnos alguna cosa?
+      a: Sí. «¿No os enseña la misma naturaleza?» (1 Cor. 11:14).
+    - q: ¿Nos enseña [esta luz en el hombre] sobre la existencia de un Dios?
+      a: Sí. «[P]orque lo que se conoce acerca de Dios es evidente dentro de ellos, pues Dios se lo hizo evidente» (Rom. 1:19).
+    - q: Sin embargo, ¿está acompañado ese conocimiento que nos brinda [la luz en el hombre] de muchas dudas e incertidumbres?
+      a: Sí. Por tanto, se les dijo a los «atenienses» que «buscaran a Dios, si de alguna manera, palpando, le hallen» (Hch. 17:27).
+    - q: ¿Y hay muchas cosas concernientes a Dios que no pueden ser descubiertas?
+      a: Sí. «El hombre natural no acepta las cosas del Espíritu de Dios, porque se disciernen espiritualmente» (1 Cor. 2:14).
+  - - q: ¿Puede ser conocido Dios por medio de Sus obras de creación?
+      a: Sí. «Porque desde la creación del mundo, sus atributos invisibles, su eterno poder y divinidad, se han visto con toda claridad, siendo entendidos por medio de lo creado» (Rom. 1:20).
+    - q: ¿Pueden probar los cuerpos celestes la existencia de un Dios?
+      a: Sí. «Los cielos proclaman la gloria de Dios» (Sal. 19:1).
+    - q: ¿Y pueden probar nuestros propios cuerpos [la existencia de un Dios]?
+      a: Sí. «Asombrosa y maravillosamente he sido hecho» (Sal. 139:14).
+    - q: ¿Podemos aprender esto también de toda criatura?
+      a: Sí. «Y ahora pregunta a las bestias, y que ellas te enseñen» (Job 12:7).
+  - - q: ¿Es conocido Dios por medio de Sus obras de providencia?
+      a: Sí. «¿Quién entre todos ellos no sabe que la mano del SEÑOR ha hecho esto?» (Job 12:9).
+    - q: ¿Es conocido Él por medio de Sus obras terribles?
+      a: Sí. «El SEÑOR se ha dado a conocer; ha ejecutado juicio» (Sal. 9:16).
+    - q: ¿[Es conocido Dios] por medio de Sus obras de misericordia?
+      a: Sí. «No dejó de dar testimonio de sí mismo, haciendo bien» (Hch. 14:17).
+    - q: ¿Es conocido Dios por medio del cumplimiento de las profecías?
+      a: Sí. «Yo soy Dios, y no hay ninguno como yo, que declaro el fin desde el principio» (Isa. 46:9, 10).
+    - q: ¿Declaran los milagros la existencia de Dios?
+      a: Sí. «Este es el dedo de Dios» (Éxo. 8:19).
+    - q: Sin embargo, ¿han alcanzado los hombres a través de estos medios un conocimiento suficiente de Dios?
+      a: No, porque «el mundo no conoció a Dios por medio de su propia sabiduría» (1 Cor. 1:21).
+  - - q: ¿Es conocido Dios por medio de Su Palabra?
+      a: Sí, porque «es útil para enseñar» (2 Tim. 3:16).
+    - q: ¿Estaban en oscuridad los hombres sin la Palabra?
+      a: Sí, porque esta es «como [...] una lámpara que brilla en el lugar oscuro» (2 Pedro 1:19).
+    - q: Entonces, ¿deberíamos recurrir a la Palabra para el conocimiento de Dios?
+      a: Sí. «A la ley y al testimonio» (Isa. 8:20).
+    - q: ¿Y son culpables aquellos que se satisfacen con nociones no bíblicas con respecto a Él?
+      a: Sí. «Entremetiéndose en lo que no ha visto» (Col. 2:18 [RVR60]).[^23]
+  - - q: ¿Es la Palabra suficiente para proporcionarnos el conocimiento salvífico de Dios?
+      a: No, porque algunos «escuchan bien, pero no entienden» (Isa. 6:9).
+    - q: Entonces, ¿se debe alcanzar el conocimiento salvífico de Dios solamente por medio del Espíritu?
+      a: Sí, porque «la letra mata, pero el Espíritu da vida» (2 Cor. 3:6).
+    - q: ¿Y ha sido prometido el Espíritu para este propósito a todos aquellos que con sinceridad lo piden?
+      a: Sí. «[V]uestro Padre celestial dará el Espíritu Santo a los que se lo pidan» (Luc. 11:13).

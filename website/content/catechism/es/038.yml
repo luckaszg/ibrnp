@@ -1,0 +1,67 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 38
+question: ¿Qué es la santificación?
+answer: La santificación es la obra de la gracia libre y gratuita de Dios, mediante la cual todo nuestro ser es renovado a la imagen de Dios y se nos capacita cada vez más para morir al pecado y vivir para la justicia.
+sections:
+  - - q: ¿Son santificados todos los que han sido justificados?
+      a: Sí, porque Cristo «se hizo para nosotros tanto justificación como santificación» (1 Cor. 1:30).
+    - q: ¿Es necesario que sean santificados todos los que han sido justificados?
+      a: Sí, porque jamás entrará en el Reino de los Cielos nada inmundo (Apo. 21:27).
+    - q: ¿Y es la voluntad de Dios que sean santificados todos los que han sido justificados?
+      a: "Sí. «Porque esta es la voluntad de Dios: vuestra santificación» (1 Tes. 4:3)."
+    - q: ¿Es la muerte de Cristo la causa meritoria de su santificación?
+      a: Sí. Él «se dio a sí mismo por nosotros, para PURIFICAR PARA SÍ UN PUEBLO PARAPOSESIÓN SUYA» (Tit. 2:14).
+    - q: ¿Es el Espíritu la causa eficaz de su santificación?
+      a: Sí. «Mediante la santificación por el Espíritu» (2 Tes. 2:13).
+    - q: ¿Es la Palabra la causa instrumental de su santificación?
+      a: Sí. «Santifícalos en Tu verdad, Tu palabra es verdad» (Jua. 17:17).
+    - q: Pero, ¿es la gracia de Dios la fuente original de la cual fluye esta bendición?
+      a: Sí. «Tu tiempo era tiempo de amores; extendí mi manto sobre ti y te lavé con agua, te limpié la sangre» (Eze. 16:8, 9).
+  - - q: ¿Es la santificación más que una reforma externa?
+      a: Sí. «Limpiáis el exterior del vaso y del plato, pero por dentro están llenos de robo y de desenfreno» (Mat. 23:25).
+    - q: ¿Es [la santificación] más que civilidad[^56] y [tener un] espíritu afable?
+      a: Sí, porque aquel que tenía esto todavía le faltaba una cosa (Mar. 10:21).
+    - q: ¿Es [la santificación] más que una convicción?
+      a: Sí, porque Acab se humilló (1 Reyes 21:29).
+    - q: ¿Es [la santificación] más que una profesión externa?
+      a: Sí, porque algunos tienen apariencia de piedad pero niegan su poder (2 Tim. 3:5).
+  - - q: ¿Implica la santificación un cambio total {lit. universal}?
+      a: Sí. «Las cosas viejas pasaron; he aquí, son hechas nuevas» (2 Cor. 5:17).
+    - q: ¿Se extiende [la santificación] al hombre interior?
+      a: Sí. Somos «renovados en el espíritu de nuestra mente» (Efe. 4:23).
+    - q: ¿Es iluminado el entendimiento?
+      a: Sí. «Erais tinieblas, pero ahora sois luz» (Efe. 5:8).
+    - q: ¿Es sometida la voluntad?
+      a: Sí. «Tu pueblo se ofrecerá voluntariamente en el día de tu poder» (Sal. 110:3).
+    - q: ¿Son hechos espirituales los afectos?
+      a: Sí. «[Ponen] la mira en las cosas de arriba» (Col. 3:2).
+    - q: ¿Se extiende [la santificación] también al hombre exterior?
+      a: Sí. «Teniendo [...] nuestro cuerpo lavado con agua pura» (Heb. 10:22).
+  - - q: ¿Es renovado el santo {i. e., el creyente} a la imagen de Dios?
+      a: Sí. «Os habéis vestido del nuevo hombre, el cual se va renovando [...] conforme a la imagen de aquel que lo creó» (Col. 3:10).
+    - q: ¿Y [es renovado] conforme al modelo de Cristo?
+      a: Sí. «Hijos míos, por quienes de nuevo sufro dolores de parto hasta que Cristo sea formado en vosotros» (Gál. 4:19).
+    - q: ¿Vive ejercitándose en toda gracia?
+      a: Sí. «La vida que ahora vivo en la carne, la vivo por fe en el Hijo de Dios» (Gál. 2:20).
+    - q: ¿Y será hallado en la práctica de todos los deberes?
+      a: Sí. «[Ferviente] en espíritu, sirviendo al Señor» (Rom. 12:11).
+  - - q: ¿Es mortificado el pecado en aquellos que son santificados?
+      a: Sí. «Pues los que son de Cristo Jesús han crucificado la carne» (Gál. 5:24).
+    - q: ¿Es la mortificación del pecado una obra difícil?
+      a: Sí. Leemos acerca de resistir el pecado «hasta el punto de derramar sangre» (Heb. 12:4).
+    - q: Pero, ¿es [la mortificación del pecado] una obra necesaria?
+      a: Sí. «Si tu mano o tu pie te es ocasión de pecar, córtatelo y échalo de ti; te es mejor entrar en la vida manco o cojo, que ser echado en el fuego eterno» (Mat. 18:8).
+    - q: ¿Y puede realizarse [la mortificación del pecado] solo bajo la influencia divina?
+      a: Sí. «Si por el Espíritu hacéis morir las obras de la carne, viviréis» (Rom. 8:13).
+  - - q: ¿Viven a la justicia aquellos que están muertos al pecado?
+      a: Sí. «A fin de que muramos al pecado y vivamos a la justicia» (1 Pedro 2:24).
+    - q: ¿Es imperfecta la obra de santificación en la vida presente?
+      a: Sí. «Yo mismo no considero haberlo ya alcanzado» (Flp. 3:13).
+    - q: No obstante, ¿es progresiva [la obra de santificación en la vida presente]?
+      a: Sí. «Mas la senda de los justos es como la luz de la aurora, que va aumentando» (Pro. 4:18).
+    - q: ¿Y será completada arriba?
+      a: Sí. «Cuando venga lo perfecto, lo incompleto se acabará» (1 Cor. 13:10).
+notes:
+  "56": "civilidad —«Comportamiento de la persona que cumple con sus deberes de ciudadano, respeta las leyes y contribuye así al funcionamiento correcto de la sociedad y al bienestar de los demás miembros de la comunidad» (Diccionario del uso del español de América y España, 1. @@a@@ edición [Barcelona, España: Spes Editorial {Vox}, 2003])."

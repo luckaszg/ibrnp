@@ -1,0 +1,33 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 13
+question: ¿Cómo creó Dios al hombre?
+answer: Dios creó al hombre, varón y hembra, a Su propia imagen, en conocimiento, justicia y santidad, con dominio sobre las criaturas.
+sections:
+  - - q: ¿Hubo hombres antes de Adán?
+      a: No. Él fue «el primer [hombre]» (1 Cor. 15:45).
+    - q: Por lo tanto, ¿provienen todos los hombres de Adán?
+      a: Sí. «De una sangre [Él] ha hecho todo el linaje de los hombres» (Hch. 17:26 [RVR60]).
+    - q: ¿Y la existencia de Adán proviene de Dios?
+      a: Sí. Él era «hijo de Dios» (Luc. 3:38 [RVR60]).
+  - - q: ¿Creó Dios al hombre, varón y hembra?
+      a: Sí. «Varón y hembra los creó» (Gén. 5:2).
+    - q: ¿Hubo alguna diferencia en la forma en que fueron creados?
+      a: Sí. «Porque el hombre no procede de la mujer, sino la mujer del hombre» (1 Cor. 11:8).
+    - q: ¿[Hubo alguna diferencia] en el orden en que fueron creados?
+      a: Sí. «Porque Adán fue creado primero, después Eva» (1 Tim. 2:13).
+    - q: ¿Y [hubo alguna diferencia] en el propósito por el que fueron creados?
+      a: Sí. «Pues en verdad el hombre no fue creado a causa de la mujer, sino la mujer a causa del hombre» (1 Cor. 11:9).
+  - - q: ¿Fue hecho el hombre a imagen de Dios?
+      a: Sí. «Creó, pues, Dios al hombre a imagen suya» (Gén. 1:27).
+    - q: ¿Consistió esa imagen en conocimiento?
+      a: Sí, porque somos «renovados hacia un verdadero conocimiento, conforme a la imagen de aquel que nos creó» (Col. 3:10).
+    - q: ¿[Consistió esa imagen] en justicia y santidad?
+      a: Sí, porque el «nuevo hombre, el cual, en la semejanza de Dios, ha sido creado en la justicia y santidad de la verdad» (Efe. 4:24).
+    - q: ¿Y [consistió esa imagen] en autoridad y gobierno?
+      a: Sí, porque «todo lo has puesto bajo sus pies» (Sal. 8:6).
+    - q: ¿Era este estado del hombre muy glorioso?
+      a: Sí. «Lo coronas de gloria y majestad» (Sal. 8:5).
+    - q: Pero, ¿era un [estado] permanente?
+      a: No. «Mas el hombre, en su honor, no permaneció»[^32] (Sal. 49:12).

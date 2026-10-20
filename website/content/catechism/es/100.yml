@@ -1,0 +1,41 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 100
+question: ¿Cómo se administra correctamente el bautismo?
+answer: El bautismo se administra correctamente por inmersión o sumergiendo todo el cuerpo de la persona en agua, en el nombre del Padre, del Hijo y del Espíritu Santo, conforme a la institución de Cristo y la práctica de los apóstoles; no por rociamiento ni derramamiento de agua, ni sumergiendo {solo} alguna parte del cuerpo, según la tradición de los hombres.
+sections:
+  - - q: ¿Deberíamos preocuparnos por el modo o la manera {en que se hace} el culto religioso?
+      a: Sí. «Que [uno de los sacerdotes] les enseñe la costumbre del [Dios] de la tierra» (2 Rey. 17:27).
+    - q: ¿Y será desagradado Dios si somos negligentes en eso?
+      a: Sí. «El SEÑOR nuestro Dios estalló en ira contra nosotros, ya que no le buscamos conforme a la ordenanza» (1 Cró. 15:13).
+  - - q: ¿Se requiere agua para el bautismo?
+      a: Sí. «Mira, [aquí hay] agua» (Hch. 8:36).
+    - q: ¿[Se requiere] mucha agua?
+      a: Sí. «Juan también bautizaba en Enón, cerca de Salim, porque allí había mucha agua» (Jua. 3:23).
+    - q: ¿Y se utiliza esto para significar un lavado interno?
+      a: Sí. «Y nuestro cuerpo lavado con agua pura» (Heb. 10:22).
+  - - q: ¿Parece que el bautismo es por inmersión por la acción de la persona que lo administra?
+      a: Sí, porque Felipe descendió al agua y bautizó al eunuco (Hch. 8:38).
+    - q: ¿[Parece que es por inmersión por] la acción de la persona a quien se lo administra?
+      a: Sí. «Después de ser bautizado, Jesús salió del agua inmediatamente» (Mat. 3:16).
+    - q: ¿[Parece que es por inmersión por] el lugar donde se administraba?
+      a: Sí. «Eran bautizados por él en el río Jordán» (Mat. 3:6).
+    - q: ¿Y [por] lo que significa?
+      a: Sí. «Habiendo sido sepultados con Él en el bautismo, en el cual también habéis resucitado con Él» (Col. 2:12).
+    - q: Pero, ¿no podemos {practicar} la aspersión o rociamiento del agua también?
+      a: No, porque «hay un solo bautismo» (Efe. 4:5).
+  - - q: ¿Se traía o se llevaba agua a las personas que iban a ser bautizadas?
+      a: No. «Está bautizando y todos van a Él» (Jua. 3:26).
+    - q: ¿No se podría haber aplicado agua a las personas cuando venían?
+      a: No, porque Jesús «fue bautizado por Juan en el Jordán»[^109] (Mar. 1:9).
+    - q: Pero, ¿no podría utilizarse otro método en países fríos?
+      a: No. «Id, pues, y haced discípulos de todas las naciones, bautizándolos (o sumergiéndolos)» (Mat. 28:19; Mar. 16:15).
+  - - q: ¿Fue el paso de los hijos de Israel por el mar Rojo una figura del bautismo?
+      a: Sí. «En Moisés todos fueron bautizados en la nube y en el mar» (1 Cor. 10:1, 2).
+    - q: Entonces, ¿no podemos suponer que fueron rociados por la nube?
+      a: No, porque era una nube de tinieblas para los egipcios pero que alumbraba a los israelitas (Éxo. 14:20).
+    - q: ¿O que fueron lavados por el mar?
+      a: No, porque «las aguas les eran como un muro a su derecha y a su izquierda» (Éxo. 14:22).
+notes:
+  "108": "Cristo no los hizo discípulos al bautizarlos, sino que primero los hacía discípulos y luego los bautizaba. [Nota de los traductores: Esta es una nota al margen del original. Su explicación del texto afirma que los que son destinados para ser discípulos de Cristo son hechos discípulos en algún momento en sus vidas, como los discípulos en este texto, quienes no nacieron siendo ya discípulos. Por lo tanto, el derecho al bautismo se reserva para los discípulos, y se les concede cuando se hacen discípulos en su vida; no es un derecho que es concedido al nacer.]"

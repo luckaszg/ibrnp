@@ -1,0 +1,114 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Provisional from '../components/Provisional.astro';
+import Seal from '../components/Seal.astro';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import { alternates } from '../i18n/routes.ts';
+import { pick } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const leaders = (await getCollection('leaders')).sort((a, b) => a.data.order - b.data.order);
+const groups = [
+  {
+    office: 'leader',
+    title: lang === 'es' ? 'Encargados' : 'Leaders',
+    text: '',
+  },
+  {
+    office: 'elder',
+    title: lang === 'es' ? 'Ancianos' : 'Elders',
+    text:
+      lang === 'es'
+        ? 'Cristo gobierna Su Iglesia por medio de una pluralidad de ancianos (también llamados pastores u obispos), que enseñan la Palabra, pastorean la grey y velan por las almas (1 Timoteo 3:1–7; Tito 1:5–9; Hechos 20:28).'
+        : 'Christ rules His Church through a plurality of elders (also called pastors or overseers), who teach the Word, shepherd the flock and watch over souls (1 Timothy 3:1–7; Titus 1:5–9; Acts 20:28).',
+  },
+  {
+    office: 'deacon',
+    title: lang === 'es' ? 'Diáconos' : 'Deacons',
+    text:
+      lang === 'es'
+        ? 'Los diáconos sirven a la iglesia en sus necesidades prácticas y en el cuidado de los necesitados, para que los ancianos puedan dedicarse a la oración y al ministerio de la Palabra (Hechos 6:1–6; 1 Timoteo 3:8–13).'
+        : 'Deacons serve the church in its practical needs and in caring for those in need, so that the elders can give themselves to prayer and the ministry of the Word (Acts 6:1–6; 1 Timothy 3:8–13).',
+  },
+].filter((g) => leaders.some((l) => l.data.office === g.office));
+---
+
+<Base lang={lang} title={lang === 'es' ? 'Liderazgo' : 'Leadership'} alternates={alternates('leadership')}>
+  <PageHero
+    lang={lang}
+    eyebrow={lang === 'es' ? 'Quiénes somos' : 'About us'}
+    title={lang === 'es' ? 'Liderazgo' : 'Leadership'}
+    lede={lang === 'es' ? 'Quienes sirven a la congregación.' : 'Those who serve the congregation.'}
+    placeholder={leaders.some((l) => l.data.placeholder)}
+  />
+  {
+    groups.map((g, i) => (
+      <section class:list={['section', { 'section--tint': i % 2 === 1 }]}>
+        <div class="container">
+          <div class="section-head">
+            <h2>{g.title}</h2>
+            {g.text && <p class="lede">{g.text}</p>}
+          </div>
+          <div class="grid grid--2 people">
+            {leaders
+              .filter((l) => l.data.office === g.office)
+              .map((l) => (
+                <article class="person card">
+                  <div class="photo">
+                    {l.data.photo ? (
+                      <Image src={l.data.photo} alt={l.data.photoAlt ?? l.data.name} width={160} height={160} class="duotone" />
+                    ) : (
+                      <Seal size={120} />
+                    )}
+                  </div>
+                  <div>
+                    <Provisional lang={lang} show={l.data.placeholder} />
+                    <span class="label">{pick(l.data.title, lang)}</span>
+                    <h3>{l.data.name}</h3>
+                    {l.data.bio && <p>{pick(l.data.bio, lang)}</p>}
+                  </div>
+                </article>
+              ))}
+          </div>
+        </div>
+      </section>
+    ))
+  }
+</Base>
+
+<style>
+  .person {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  .photo :global(img) {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  .person h3 {
+    margin: 4px 0 8px;
+  }
+  .person p {
+    font-size: 1rem;
+  }
+  /* Navy duotone for photos (§5.3). */
+  .photo :global(.duotone) {
+    filter: grayscale(1) contrast(1.05);
+    mix-blend-mode: multiply;
+    background: var(--navy-200);
+  }
+  @media (max-width: 520px) {
+    .person {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

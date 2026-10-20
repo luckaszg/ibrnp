@@ -1,0 +1,37 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 12
+question: ¿Qué es la obra de la creación?
+answer: La obra de la creación es que Dios hizo todas las cosas de la nada, por la Palabra de Su poder, en el lapso de seis días, y todas muy buenas.
+sections:
+  - - q: ¿Creó Dios el mundo?
+      a: Sí. «TÚ, SEÑOR, EN EL PRINCIPIOPUSISTE LOS CIMIENTOS DE LA TIERRA, Y LOS CIELOS SON OBRA DETUS MANOS» (Heb. 1:10).
+    - q: ¿Y [creó Dios] todas las cosas que están en él?
+      a: Sí. «Dios hizo el mundo y todo lo que en él hay» (Hch. 17:24).
+    - q: ¿Creó Él el alma del hombre?
+      a: Sí. Él es quien «forma el espíritu del hombre dentro de él» (Zac. 12:1).
+    - q: ¿Y [creó Él] el cuerpo del hombre?
+      a: Sí. «En tu libro fueron escritos todos mis miembros»[^31] (Sal. 139:16).
+    - q: ¿Creó Él los ángeles más encumbrados?
+      a: Sí. «En Él fueron creadas todas las cosas; ya sean tronos, etc.» (Col. 1:16).
+    - q: ¿[Creó Él] los insectos más insignificantes?
+      a: Sí. «Hizo Dios [...] todo lo que se arrastra sobre la tierra según su género» (Gén. 1:25).
+    - q: ¿Fue aprobado por la omnisciencia lo que fue forjado por la omnipotencia?
+      a: Sí. «Vio Dios todo lo que había hecho, y he aquí que era bueno en gran manera» (Gén. 1:31).
+  - - q: ¿Necesitó Dios alguna ayuda en Su obra?
+      a: No. «¿Quién me ha dado algo para que yo se lo restituya?» (Job 41:11).
+    - q: ¿Hizo Él todas las cosas a partir de la nada?
+      a: Sí. «Lo que se ve no fue hecho de cosas visibles» (Heb. 11:3).
+    - q: ¿[Hizo Él todas las cosas] por Su Palabra?
+      a: "Sí. «Dijo Dios: Sea la luz, y hubo luz» (Gén. 1:3)."
+    - q: ¿[Hizo Él todas las cosas] en seis días?
+      a: Sí. «En seis días hizo el SEÑOR los cielos y la tierra» (Éxo. 20:11).
+    - q: ¿Designó Él a cada criatura su puesto y uso apropiados?
+      a: Sí. «Haya lumbreras en la expansión de los cielos, y sean para señales y para estaciones y para días y para años» (Gén. 1:14).
+    - q: ¿Continúa Dios creando?
+      a: No. «Reposó Dios en el día séptimo de toda la obra que había hecho» (Gén. 2:2).
+notes:
+  "29": «Mi propio brazo trajo salvación» es una traducción literal de la forma en que la King James Bible antigua traduce este versículo. En español, la frase יִ֔ע ֹרְז ֙יִל עַֽׁשוֹּ֤תַו es traducida como «me salvó mi brazo» (LBLA y RVR60) y «Mi propio brazo me dio la victoria» (NVI y BTX).
+  "30": "inextricables —La palabra inglesa antigua utilizada es «inextricable» y tiene una equivalencia exacta en español. Viene de una palabra latina compuesta: inextricabilis (in [no] + extricare [descifrar, desenredar]). En este sentido, significa: aquello que no se puede desenmarañar o aquello que no puede ser descifrado. El Diccionario de la Real Academia Española lo define como un adjetivo que califica a «aquello que no se puede desenredar, muy intrincado y confuso». Es muy cercano al término inescrutable."
+  "31": "Esta es una traducción literal al español de la forma en que la King James Bible antigua tradujo este versículo. En español, esta parte del versículo se vierte como «en tu libro se escribieron todos los días que me fueron dados» (LBLA). La evidente diferencia entre la King James y las demás versiones (incluso en inglés) pareciera ser resultado de la forma de interpretar la expresión hebrea: ּוב ֵ֥תָּ֫כִי םָּ֪לֻּכ ֮8ְרְפִס־לַֽעְו —lit. «en tu libro todos ellos fueron escritos». ¿A qué se refiere la palabra םָּ֪ל ֻּכ (todos ellos)? Los traductores de la versión King James antigua entendieron que debía estar conectado con el contexto, es decir, con el término יִ֤מ ְלָּג (mi embrión); por lo tanto, agregaron la expresión «my members» (mis miembros) para que la frase se entendiera con mayor claridad: «en tu libro fueron escritos todos mis miembros o todas las partes de mi embrión». Este fue el entendimiento que muchos tuvieron en el pasado sobre este texto (véase los comentarios bíblicos de Matthew Henry, Matthew Poole, John Gill, etc.). Las demás traducciones y versiones lo relacionaron con el término subsiguiente םי ִ֥מָי (días), por eso traducen: «en tu libro fueron escritos todos mis días». El hecho de que Dios formó nuestros cuerpos puede ser proclamado muy claramente con las Escrituras (Gén. 2:7; Job 10:11; Sal. 119:73; 139:13; Isa. 44:24, etc.)."

@@ -1,0 +1,31 @@
+---
+// A page whose body comes from content/pages/{lang}/{slug}.md.
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { render } from 'astro:content';
+import { page } from '../lib/content.ts';
+import { alternates, type RouteKey } from '../i18n/routes.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+  slug: string;
+  routeKey: RouteKey;
+  mode?: 'institutional' | 'reading';
+  eyebrow?: string;
+}
+const { lang, slug, routeKey, mode = 'institutional', eyebrow } = Astro.props;
+const { entry, untranslated } = await page(slug, lang);
+const { Content } = await render(entry);
+---
+
+<Base lang={lang} title={entry.data.title} description={entry.data.description} alternates={alternates(routeKey)} mode={mode} untranslated={untranslated}>
+  <PageHero lang={lang} eyebrow={eyebrow} title={entry.data.title} lede={entry.data.description} placeholder={entry.data.placeholder} />
+  <slot name="before" />
+  <div class:list={['container', { reading: mode === 'reading' }]} style="padding-bottom: clamp(56px, 8vw, 104px)">
+    <div class="prose" lang={untranslated ? 'es' : undefined}>
+      <Content />
+    </div>
+  </div>
+  <slot />
+</Base>

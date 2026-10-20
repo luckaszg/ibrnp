@@ -1,0 +1,194 @@
+---
+// All questions and answers, with a hide-answers mode for memorization (RD-9).
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import ReaderBar from '../components/ReaderBar.astro';
+import Search from '../components/Search.astro';
+import { catechismQuestions } from '../lib/content.ts';
+import { catechismQuestionPath } from '../lib/catechism.ts';
+import { renderInline } from '../lib/richtext.ts';
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const _ = t(lang);
+const questions = await catechismQuestions(lang);
+const title = lang === 'es' ? 'Una exposición bíblica del Catecismo Bautista' : 'The Baptist Catechism';
+const lede =
+  lang === 'es'
+    ? 'El Catecismo Bautista, con las preguntas y respuestas bíblicas de Benjamin Beddome (1752), para la instrucción de las familias y de la iglesia.'
+    : 'The Baptist Catechism of 1695, with proof texts — the instruction we use with young and old.';
+---
+
+<Base lang={lang} mode="reading" title={lang === 'es' ? 'Catecismo' : 'Catechism'} description={lede} alternates={{ es: '/creemos/catecismo/', en: '/en/beliefs/catechism/' }}>
+  <ReaderBar lang={lang} title={title} />
+  <PageHero lang={lang} eyebrow={lang === 'es' ? 'Benjamin Beddome · 1752' : '1695'} title={title} lede={lede}>
+    <p class="no-print" style="margin-top: 1.5rem">
+      <label class="toggle">
+        <input type="checkbox" data-hide-answers />
+        <span>{_('catechism.hideAnswers')}</span>
+      </label>
+    </p>
+  </PageHero>
+
+  <div class="container reading" data-reading data-pagefind-filter="section:catechism">
+    <div class="reading-col">
+      {lang === 'en' && <p class="notice">{_('catechism.enNotice')}</p>}
+      <Search lang={lang} filter="catechism" />
+      <ol class="qa-list">
+        {
+          questions.map((q) => {
+            const n = q.data.number;
+            const subCount = q.data.sections.flat().length;
+            return (
+              <li class="qa" id={`p-${n}`} data-resume-point data-label={`${_('catechism.question')} ${n}`}>
+                <h2 class="q">
+                  <a class="qn" href={`#p-${n}`}>{n}.</a> {q.data.question}
+                </h2>
+                <div class="a" data-answer>
+                  <Fragment set:html={renderInline(q.data.answer)} />
+                </div>
+                <button type="button" class="reveal no-print" data-reveal hidden>
+                  {_('catechism.showAnswer')}
+                </button>
+                <p class="more no-print">
+                  <a href={catechismQuestionPath(n, 'es')} hreflang="es" lang="es">
+                    {lang === 'es' ? `${_('catechism.exposition')} (${subCount} ${_('catechism.subQuestions')}) →` : `${_('catechism.readSpanish')} →`}
+                  </a>
+                  {lang === 'en' && <a href={catechismQuestionPath(n, 'en')}>{_('reader.proofs')} →</a>}
+                </p>
+              </li>
+            );
+          })
+        }
+      </ol>
+      <div class="downloads">
+        <h2 class="label">{_('reader.download')}</h2>
+        <ul>
+          <li><a href={`/descargas/catecismo-${lang}.epub`} download>EPUB (Kindle, Apple Books…)</a></li>
+          {lang === 'es' && <li><a href="/descargas/beddome-exposicion-biblica-del-catecismo-bautista.pdf">PDF — Editorial Legado Bautista Confesional</a></li>}
+        </ul>
+      </div>
+      <p class="credit">
+        {
+          lang === 'es'
+            ? 'Traducción de Jorge A. Rodríguez Vega; revisión de Taylor E. Walls. © Editorial Legado Bautista Confesional, 2021. Usado con permiso. Citas bíblicas de La Biblia de las Américas salvo que se indique otra versión.'
+            : 'The Baptist Catechism (1695), public domain. Verse text from the King James Version.'
+        }
+      </p>
+    </div>
+  </div>
+</Base>
+
+<script>
+  const box = document.querySelector<HTMLInputElement>('[data-hide-answers]');
+  const apply = () => {
+    const hide = !!box?.checked;
+    document.documentElement.classList.toggle('hide-answers', hide);
+    document.querySelectorAll<HTMLElement>('.qa').forEach((qa) => {
+      qa.classList.remove('revealed');
+      const btn = qa.querySelector<HTMLButtonElement>('[data-reveal]');
+      if (btn) btn.hidden = !hide;
+    });
+  };
+  box?.addEventListener('change', apply);
+  document.querySelectorAll<HTMLButtonElement>('[data-reveal]').forEach((b) =>
+    b.addEventListener('click', () => {
+      b.closest('.qa')?.classList.add('revealed');
+      b.hidden = true;
+    }),
+  );
+  apply();
+</script>
+
+<style>
+  .toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-label);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .toggle input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--navy-900);
+  }
+  .qa-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .qa {
+    padding: 28px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .q {
+    font-size: 1.35em;
+    font-weight: 550;
+    line-height: 1.3;
+    margin-bottom: 0.5em;
+  }
+  .qn {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 450;
+  }
+  .a {
+    margin: 0 0 10px;
+  }
+  :global(html.hide-answers) .qa:not(.revealed) .a {
+    display: none;
+  }
+  .reveal {
+    background: none;
+    border: 1px dashed var(--rule);
+    padding: 10px 16px;
+    color: var(--fg-muted);
+    font-family: var(--font-label);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .more {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 24px;
+    margin: 0;
+    font-family: var(--font-label);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .more a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .more a:hover {
+    text-decoration: underline;
+  }
+  .credit {
+    padding-bottom: 4rem;
+  }
+  .downloads {
+    margin-top: 3rem;
+  }
+  .downloads .label {
+    color: var(--accent);
+  }
+  .downloads ul {
+    padding-left: 1.2em;
+    font-size: 1rem;
+  }
+</style>

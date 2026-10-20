@@ -1,0 +1,57 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 87
+question: ¿Puede algún hombre guardar perfectamente los mandamientos de Dios?
+answer: Desde la Caída, ningún simple hombre es capaz de guardar perfectamente los mandamientos de Dios en esta vida; por el contrario, diariamente los quebranta en pensamiento, palabra y obra.
+sections:
+  - - q: ¿Era Adán perfecto antes de la Caída?
+      a: Sí, porque «a imagen y semejanza de Dios lo creó» (Gén. 1:27).
+    - q: ¿Era Cristo, quien no era un simple hombre, perfecto?
+      a: Sí. «No conoció pecado» (2 Cor. 5:21).
+    - q: ¿Y son perfectos los santos en el Cielo?
+      a: Sí. «En su boca no fue hallado engaño» (Apo. 14:5).
+    - q: Pero, ¿es perfecto algún simple hombre en esta vida desde la Caída?
+      a: No, porque «no hay hombre justo en la tierra» (Ecl. 7:20).
+    - q: ¿Y lo han reconocido los mejores hombres?
+      a: Sí. «Todos nosotros somos como el inmundo […] y nuestras iniquidades, como el viento, nos arrastran» (Isa. 64:6).
+  - - q: ¿Pecó el padre de los fieles por incredulidad?
+      a: Sí, porque negó a su mujer para que los egipcios no lo mataran (Gén. 12:12, 19).
+    - q: ¿Fue Jacob, un hombre común, culpable de engaño?
+      a: "Sí, porque Isaac le preguntó: «¿Eres en verdad mi hijo Esaú? Y él respondió: Yo soy». (Gén. 27:24)."
+    - q: ¿Se ofendió con cólera {lit. pasión} el hombre más manso?
+      a: Sí. «Porque provocaron su espíritu, de modo que habló precipitadamente con sus labios»[^92] (Sal. 106:33).
+    - q: ¿[Se ofendió] con impaciencia el hombre más paciente?
+      a: Sí, porque maldijo el día de su nacimiento (Job 3:1).
+    - q: ¿Fue culpable de la mayor insensatez el hombre más sabio?
+      a: Sí, porque «cuando Salomón era ya viejo, sus [esposas] desviaron su corazón tras otros dioses» (1 Rey. 11:4).
+    - q: ¿Pecó con debilidad y temor el más resuelto de los discípulos de Cristo?
+      a: "Sí, porque «comenzó a maldecir y a jurar: ¡Yo no conozco a este hombre!» (Mar. 14:71)."
+    - q: ¿Y falló el apóstol Pablo en alcanzar la perfección, quien con tanto ahínco la buscaba?
+      a: Sí. «Soy carnal, vendido a la esclavitud del pecado» (Rom. 7:14).
+  - - q: ¿Pecan los mejores santos con sus pensamientos?
+      a: Sí. «¿Por qué pensáis mal en vuestros corazones?» (Mat. 9:4).
+    - q: ¿[Pecan] de palabra?
+      a: Sí. «No habéis hablado de mí lo que es recto» (Job 42:7).
+    - q: ¿Y de hecho?
+      a: Sí. «Con este hecho has dado ocasión de blasfemar a los enemigos del SEÑOR» (2 Sam. 12:14).
+    - q: ¿Son culpables de muchos pecados que conocen?
+      a: Sí. «Mi pecado está siempre delante de mí» (Sal. 51:3).
+    - q: ¿Y [son culpables] de muchos más que no conocen?
+      a: Sí, porque «¿quién puede discernir sus propios errores?» (Sal. 19:12).
+  - - q: ¿Son santificados los santos en todas sus partes?
+      a: Sí. En alma, cuerpo y espíritu (1 Tes. 5:23).
+    - q: Sin embargo, ¿son santificados solo en parte {o parcialmente}?
+      a: Sí, porque Dios completará «lo que falta» (1 Tes. 3:10).
+    - q: ¿Son sinceramente obedientes?
+      a: Sí. «Te ruego, oh SEÑOR, que te acuerdes ahora de cómo yo he andado delante de ti en verdad» (Isa. 38:3).
+    - q: ¿Pero son perfectamente obedientes?
+      a: No, porque no podemos hacer lo que deseamos (Gál. 5:17).
+    - q: ¿Tienen una perfección relativa en Cristo?
+      a: Sí. Estamos «completos en Él» (Col. 2:10).
+    - q: Pero, ¿tienen una perfección personal en sí mismos?
+      a: No. «No os fijéis en que soy morena» (Cnt. 1:6).
+    - q: Entonces, ¿es imposible la justificación por medio de nuestras propias obras?
+      a: Sí, porque «SEÑOR, si tú tuvieras en cuenta las iniquidades, ¿quién, oh Señor, podría permanecer?» (Sal. 130:3).[^93]
+notes:
+  "92": Esta es una traducción directa de la versión inglesa (KJV) usada por el autor.

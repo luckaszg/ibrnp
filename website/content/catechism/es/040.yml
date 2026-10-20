@@ -1,0 +1,71 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 40
+question: ¿Qué beneficios reciben de Cristo los creyentes al morir?
+answer: Al morir los creyentes, sus almas son hechas perfectas en santidad y pasan inmediatamente a la gloria; y sus cuerpos, estando todavía unidos al de Cristo, reposan en sus sepulcros hasta la resurrección.
+sections:
+  - - q: ¿Mueren los creyentes al igual que los demás?
+      a: Sí. «“Vuestros padres, ¿dónde están? Y los profetas, ¿viven para siempre?”» (Zac. 1:5).
+    - q: ¿Deben morir [los creyentes] al igual que los demás?
+      a: Sí. «Sabiendo que mi separación del cuerpo terrenal es inminente» (2 Pedro 1:14).
+    - q: ¿No vivirían si pudieran?
+      a: No. «No he de vivir para siempre» (Job 7:16).
+    - q: Pero, ¿hay una diferencia manifiesta entre su muerte y la de los demás?
+      a: Sí. «Estimada a los ojos del SEÑOR es la muerte de Sus santos» (Sal. 116:15).
+  - - q: ¿Es la muerte una ventaja para los santos?
+      a: Sí. «Pues para mí [...] el morir es ganancia» (Flp. 1:21).
+    - q: ¿Muere el alma con el cuerpo?
+      a: No, porque los hombres pueden «[matar] el cuerpo, pero no pueden matar el alma» (Mat. 10:28).
+    - q: ¿Duerme [el alma] junto con el cuerpo?
+      a: No, porque «vuelve a Dios que [la] dio» (Ecl. 12:7).
+    - q: ¿Entra inmediatamente [el alma] en un estado de separación?
+      a: Sí, porque cuando estamos «ausentes del cuerpo», estamos «presentes al Señor» (2 Cor. 5:8 [RVR60]).
+  - - q: ¿Libera la muerte a los santos de todos sus dolores?
+      a: "Sí. «Ningún habitante dirá: Estoy enfermo» (Isa. 33:24)."
+    - q: ¿Los libera de todas las corrupciones remanentes?
+      a: Sí, «pues son sin mancha delante del trono de Dios» (Apo. 14:5 [RVR60]).
+    - q: ¿Los pone a una distancia eterna de todos sus enemigos espirituales?
+      a: Sí. «Porque el acusador de los hermanos […] ha sido arrojado» (Apo. 12:10).
+    - q: ¿Pone fin a todas sus pruebas y trabajos?
+      a: Sí. «[Descansan] de sus trabajos» (Apo. 14:13).
+    - q: ¿Y los introduce en un estado de perfección absoluta?
+      a: Sí, porque «los espíritus de los justos [son] hechos ya perfectos» (Heb. 12:23).
+  - - q: ¿Entran los creyentes en un estado de conocimiento perfecto al morir?
+      a: Sí. «Porque ahora vemos por un espejo, veladamente, pero entonces veremos cara a cara» (1 Cor. 13:12).
+    - q: ¿[Entran los creyentes en un estado] de santidad perfecta?
+      a: Sí, «porque han lavado sus vestiduras y las han emblanquecido en la sangre del Cordero» (Apo. 7:14).
+    - q: ¿Y [entran los creyentes en un estado] de completa gloria?
+      a: Sí. «Con tu consejo me guiarás, y después me recibirás en gloria» (Sal. 73:24).
+    - q: ¿Son recibidos en un lugar glorioso?
+      a: Sí, «porque la gloria de Dios [los] ilumina, y el Cordero es su lumbrera» (Apo. 21:23).
+    - q: ¿Son unidos a una compañía gloriosa?
+      a: Sí. «[Han sido acercados] a miríadas de ángeles […] a Dios, el Juez de todos […] y a Jesús, el mediador del nuevo pacto» (Heb. 12:22, 23).
+    - q: ¿Portan los creyentes una imagen gloriosa?
+      a: Sí. «Estaré satisfecho cuando despierte a tu semejanza» (Sal. 17:15 [RVR60]).
+    - q: ¿Son empleados en obras gloriosas?
+      a: Sí. «Sirven [a Dios] día y noche en [Su] templo» (Apo. 7:15).
+    - q: ¿Y reciben una recompensa gloriosa?
+      a: Sí. «Recibiréis la corona inmarcesible de gloria» (1 Pedro 5:4).
+  - - q: ¿Son entregados al sepulcro los cuerpos de los creyentes?
+      a: Sí. «Entonces volverá el polvo a la tierra como lo que era» (Ecl. 12:7).
+    - q: ¿Es el sepulcro el receptáculo común de la humanidad?
+      a: Sí. «Entonces volverá el polvo a la tierra como lo que era» (Ecl. 12:7).[^57]
+    - q: ¿Se ha negado a veces un entierro decente a hombres malvados?
+      a: Sí. «Con entierro de asno, será enterrado» (Jer. 22:19).[^58]
+    - q: Pero, ¿se promete [un entierro decente] a los santos?
+      a: Sí. «Tú irás a tus padres en paz; y serás sepultado en buena vejez» (Gén. 15:15).
+    - q: ¿Es el sepulcro un lugar de descanso para los santos?
+      a: Sí. «Descansan en sus lechos» (Isa. 57:2).
+    - q: ¿Anhelan a veces ese lugar de descanso?
+      a: Sí. «¡Oh, si me escondieras en el Seol!» (Job 14:13).
+    - q: ¿Y hacen provisiones para ello?
+      a: Sí. «Dadme en propiedad una sepultura entre vosotros» (Gén. 23:4).
+  - - q: ¿La muerte separa a los santos del amor de Dios?
+      a: No. «Ni la muerte ni la vida […] nos [puede] separar del amor de Dios» (Rom. 8:38).
+    - q: ¿O disuelve la unión de ellos con Cristo?
+      a: No, porque duermen en Jesús (1 Tes. 4:14).
+    - q: Por tanto, ¿podrán afrontar la muerte sin miedo?
+      a: Sí. «¿DÓNDE ESTÁ, OH MUERTE, TU VICTORIA? ¿DÓNDE, OH SEPULCRO, TU AGUIJÓN?» (1 Cor. 15:55).
+notes:
+  "57": Sic. En otras ocasiones, cuando se repite un mismo versículo, el autor lo ha sustituido por (Ibíd.), pero aquí no lo hizo así.

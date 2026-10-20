@@ -1,0 +1,41 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 73
+question: ¿Qué se exige en el sexto mandamiento?
+answer: El sexto mandamiento exige {que hagamos} todos los esfuerzos lícitos para preservar nuestra propia vida, y la vida de los demás.
+sections:
+  - - q: ¿Es la autopreservación parte de la ley de la naturaleza?
+      a: Sí. «¡Piel por piel! Sí, todo lo que el hombre tiene dará por su vida» (Job 2:4).
+    - q: Pero, ¿ha sido quebrantada esta ley?
+      a: Sí, porque algunos escogen la asfixia en lugar de la vida (Job 7:15).
+    - q: Por tanto, ¿era necesario que [esta ley] se hiciera cumplir mediante un mandato expreso?
+      a: Sí. «No te hagas ningún mal» (Hch. 16:28).
+  - - q: ¿Deberíamos utilizar todos los métodos lícitos para la preservación de nuestra salud?
+      a: Sí. «Usa un poco de vino por causa de tu estómago» (1 Tim. 5:23).
+    - q: ¿Deberíamos ser moderados en el uso de carnes y bebidas para este propósito?
+      a: Sí. «Cuando te sientes a comer con un gobernante […] pon cuchillo a tu garganta» (Pro. 23:1, 2).
+    - q: ¿[Deberíamos] evitar todos los actos de mortificación innecesarios?
+      a: Sí. «No seas demasiado justo […] ¿Por qué has de destruirte? (Ecl. 7:16). ¿[Deberíamos] defendernos de la violencia? Sí. «El que no tenga espada, venda su manto y compre una» (Luc. 22:36). ¿[Deberíamos] huir de la persecución? Sí. «Cuando os persigan en esta ciudad, huid a la otra» (Mat. 10:23). ¿Y no [deberíamos] correr peligro sin causa? No. «Que no se oiga tu voz entre nosotros, no sea que caigan sobre ti hombres fieros y pierdas tu vida» (Jue. 18:25).
+  - - q: ¿Todo lo que hagamos para la preservación de nuestra propia vida debe tener como objetivo la gloria de Dios?
+      a: Sí. «Pues si vivimos, para el Señor vivimos» (Rom. 14:8).
+    - q: Por tanto, ¿es ilícito cometer pecado incluso para salvar una vida?
+      a: Sí. «Porque el que quiera salvar su vida, la perderá» (Mat. 16:25).
+  - - q: ¿Deberíamos cuidar de la vida de los demás?
+      a: "Sí. «Y Judá dijo[…]: ¿Qué ganaremos con matar a nuestro hermano y ocultar su sangre?» (Gén. 37:26)."
+    - q: ¿Deberíamos orar por la salud de los demás?
+      a: Sí. «Ruego que seas prosperado en todo […] y que tengas buena salud» (3 Jua. 2).
+    - q: ¿[Deberíamos] poner al descubierto maquinaciones en contra de los demás?
+      a: Sí. «Pero el hijo de la hermana de Pablo se enteró de la emboscada, y fue […] y dio aviso a Pablo» (Hch. 23:16).
+    - q: ¿[Deberíamos] esconderlos de la furia injusta de sus enemigos?
+      a: Sí. «Abdías tomó a cien profetas y los escondió de cincuenta en cincuenta en una cueva» (1 Rey. 18:4).
+    - q: ¿Y [deberíamos] evitar todo aquello que pueda poner en peligro las vidas de los demás?
+      a: Sí. «Harás [pretil] a tu azotea, para que no traigas culpa de sangre sobre tu casa si alguno se cayera de ella» (Deu. 22:8).
+  - - q: ¿Deberían defender los magistrados a los inocentes?
+      a: Sí. Deben librar «a los que son llevados a la muerte» (Pro. 24:11).
+    - q: ¿[Deberían] socorrer los ricos a los pobres?
+      a: Sí. «Venía sobre mí la bendición del que estaba a punto de perecer» (Job 29:13).
+    - q: ¿Deberíamos tener cuidado para no ofender?
+      a: Sí. «Si es posible, estad en paz con todos los hombres» (Rom. 12:18).
+    - q: ¿Y también [deberíamos tener cuidado] para no vengarnos?
+      a: Sí. «Amados, nunca os venguéis vosotros mismos» (Rom. 12:19).

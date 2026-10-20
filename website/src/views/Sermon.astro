@@ -1,0 +1,159 @@
+---
+import Base from '../layouts/Base.astro';
+import YouTube from '../components/YouTube.astro';
+import Provisional from '../components/Provisional.astro';
+import SermonCard from '../components/SermonCard.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+import { sermons, slugOf } from '../lib/content.ts';
+import { route, sermonPath, seriesPath } from '../i18n/routes.ts';
+import { t, pick, formatDate } from '../i18n/ui.ts';
+import { formatRef, parseReferences, refsOnly, youVersionUrl, type Lang, passageRefs } from '../lib/scripture.ts';
+import { settings } from '../lib/settings.ts';
+
+interface Props {
+  lang: Lang;
+  sermon: CollectionEntry<'sermons'>;
+}
+const { lang, sermon } = Astro.props;
+const _ = t(lang);
+const slug = slugOf(sermon.id);
+const d = sermon.data;
+const title = pick(d.title, lang);
+const preacher = await getEntry(d.preacher);
+const series = d.series ? await getEntry(d.series) : undefined;
+const refs = passageRefs(d.passage);
+const passage = refs.map((r) => formatRef(r, lang, 'long')).join('; ');
+const related = series ? (await sermons()).filter((s) => s.data.series?.id === series.id && s.id !== sermon.id).slice(0, 3) : [];
+const url = new URL(sermonPath(slug, lang), Astro.site).toString();
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: title,
+  description: pick(d.description, lang) || title,
+  uploadDate: d.date.toISOString().slice(0, 10),
+  embedUrl: `https://www.youtube-nocookie.com/embed/${d.youtube}`,
+  thumbnailUrl: `https://i.ytimg.com/vi/${d.youtube}/hqdefault.jpg`,
+  author: { '@type': 'Person', name: preacher?.data.name },
+  publisher: { '@type': 'Church', name: settings.name },
+};
+---
+
+<Base lang={lang} title={title} description={pick(d.description, lang) || `${title} — ${passage}`} alternates={{ es: sermonPath(slug, 'es'), en: sermonPath(slug, 'en') }} jsonLd={[jsonLd]}>
+  <article>
+    <header class="page-hero">
+      <div class="container narrow">
+        <Provisional lang={lang} show={d.placeholder} />
+        <p class="eyebrow"><a href={route('sermons', lang)} style="color: inherit; text-decoration: none">{_('nav.sermons')}</a>{series && <> · <a href={seriesPath(series.id, lang)} style="color: inherit">{pick(series.data.title, lang)}</a></>}</p>
+        <h1>{title}</h1>
+        <p class="passage">
+          {refs.map((r, i) => (
+            <>
+              {i > 0 && '; '}
+              <a href={youVersionUrl(r, lang)} target="_blank" rel="noopener">{formatRef(r, lang, 'long')}</a>
+            </>
+          ))}
+        </p>
+        <p class="meta label">
+          {preacher?.data.name} · <time datetime={d.date.toISOString().slice(0, 10)}>{formatDate(d.date, lang)}</time>
+          {d.language !== lang && <> · {_('sermons.preachedIn')}</>}
+        </p>
+      </div>
+    </header>
+
+    <div class="container narrow video">
+      <YouTube id={d.youtube} title={title} caption={passage} lang={lang} />
+    </div>
+
+    <div class="container narrow body">
+      {d.description && <p class="desc">{pick(d.description, lang)}</p>}
+      {
+        d.notesPdf && (
+          <p>
+            <a class="btn btn--outline" href={d.notesPdf}>
+              {_('sermons.notes')}
+            </a>
+          </p>
+        )
+      }
+      <div class="share no-print">
+        <span class="label">{_('sermons.share')}</span>
+        <a href={`https://wa.me/?text=${encodeURIComponent(`${title} — ${url}`)}`} target="_blank" rel="noopener">WhatsApp</a>
+        <a href={`mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(url)}`}>Email</a>
+        <button type="button" data-copy={url} data-done="✓">{_('sermons.copyLink')}</button>
+        <a href={`https://www.youtube.com/watch?v=${d.youtube}`} target="_blank" rel="noopener">YouTube ↗</a>
+      </div>
+    </div>
+  </article>
+
+  {
+    related.length > 0 && (
+      <section class="section section--tint">
+        <div class="container">
+          <h2 class="label rel">{_('sermons.inSeries')}</h2>
+          <div class="grid grid--3">
+            {related.map((s) => (
+              <SermonCard sermon={s} lang={lang} />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+</Base>
+
+<script>
+  import { initCopyLinks } from '../scripts/reader.ts';
+  initCopyLinks();
+</script>
+
+<style>
+  .page-hero {
+    text-align: left;
+    padding-bottom: 32px;
+  }
+  .passage {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .passage a {
+    color: var(--navy-700);
+  }
+  .meta {
+    color: var(--fg-muted);
+  }
+  .body {
+    padding-block: 32px clamp(56px, 8vw, 96px);
+  }
+  .desc {
+    font-size: 1.15rem;
+  }
+  .share {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 20px;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.95rem;
+  }
+  .share .label {
+    color: var(--brass-700);
+  }
+  .share button {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: var(--navy-900);
+    text-decoration: underline;
+    font: inherit;
+    cursor: pointer;
+  }
+  .rel {
+    color: var(--brass-700);
+    margin-bottom: 20px;
+  }
+</style>

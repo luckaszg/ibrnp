@@ -1,0 +1,43 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 79
+question: ¿Qué se exige en el octavo mandamiento?
+answer: El octavo mandamiento exige procurar y hacer progresar de forma lícita las riquezas y el bienestar de nosotros mismos y de los demás.
+sections:
+  - - q: ¿Nos es lícito buscar nuestro propio beneficio temporal?
+      a: Sí. «Y ahora, ¿cuándo proveeré yo también para mi propia casa?» (Gén. 30:30).
+    - q: ¿Deberíamos buscar [nuestro propio beneficio temporal] aplicándonos a algún llamado legítimo?
+      a: Sí. «Que tengáis por vuestra ambición el llevar una vida tranquila, y os ocupéis en vuestros propios asuntos» (1 Tes. 4:11).
+    - q: ¿[Deberíamos buscar nuestro propio beneficio temporal] siendo diligentes en ese llamado?
+      a: Sí. «No seáis perezosos en lo que requiere diligencia» (Rom. 12:11).
+    - q: ¿[Deberíamos buscar nuestro propio beneficio temporal] mediante la moderación {lit. frugalidad}?
+      a: Sí. «El que recoge en el verano es hijo sabio» (Pro. 10:5).
+    - q: ¿[Deberíamos buscar nuestro propio beneficio temporal] con una conducta discreta?
+      a: Sí, porque «con sabiduría se edifica una casa» (Pro. 24:3).
+    - q: ¿Y deberíamos acompañar todo esto con oración ferviente?
+      a: Sí. «“Aún permitiré a la casa de Israel que me pida hacer esto por ellos”» (Eze. 36:37).
+  - - q: ¿Debemos ser justos con todos los que lidiamos?
+      a: Sí. «Pagad a todos lo que debáis» (Rom. 13:7).
+    - q: ¿No debemos aprovecharnos de los ignorantes?
+      a: No. «Que nadie peque y defraude a su hermano» (1 Tes. 4:6).
+    - q: ¿Ni oprimir al indigente?
+      a: No. No debemos «comprar por dinero a los desvalidos [ni] a los pobres por un par de sandalias» (Amó. 8:6).
+    - q: Por el contrario, ¿deberíamos aliviarlos?
+      a: Sí. «“En caso de que un hermano tuyo empobrezca y su mano decaiga,[^84] tú lo sustentarás» (Lev. 25:35).
+    - q: ¿Y [deberíamos] estar dispuestos a hacerlo?
+      a: Sí. Debemos ser «generosos y prontos a compartir» (1 Tim. 6:18).
+  - - q: ¿Debemos cumplir fielmente nuestras promesas?
+      a: Sí. «Les hice jurar que harían conforme a esta promesa» (Neh. 5:12).
+    - q: ¿[Debemos] ser fieles a lo que se nos ha encomendado {lit. a los fideicomisos}?
+      a: Sí. «Se requiere de los administradores que cada uno sea hallado fiel» (1 Cor. 4:2).
+    - q: ¿[Debemos] devolver lo que hemos pedido prestado?
+      a: Sí, porque «el impío pide prestado y no paga» (Sal. 37:21).
+    - q: ¿[Debemos] saldar nuestras deudas cabalmente?
+      a: Sí. «No debáis a nadie nada» (Rom. 13:8).
+    - q: ¿[Debemos] restituir donde se ha hecho mal?
+      a: Sí. «Devolverá lo que tomó al robar, o lo que obtuvo mediante extorsión» (Lev. 6:4).
+    - q: ¿Y es esta honestidad la mejor política?
+      a: Sí. «Porque mejor es lo poco del justo que la abundancia de muchos impíos» (Sal. 37:16).
+notes:
+  "84": Esta es la lectura alternativa que propone LBLA.

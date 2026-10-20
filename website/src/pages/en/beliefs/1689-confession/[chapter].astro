@@ -1,0 +1,6 @@
+---
+import ConfessionChapter from '../../../../views/ConfessionChapter.astro';
+export const getStaticPaths = () => Array.from({ length: 32 }, (_, i) => ({ params: { chapter: String(i + 1) } }));
+---
+
+<ConfessionChapter lang="en" chapter={Number(Astro.params.chapter)} />

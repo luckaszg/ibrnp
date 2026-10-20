@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Search from '../components/Search.astro';
+import { alternates } from '../i18n/routes.ts';
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const _ = t(lang);
+---
+
+<Base lang={lang} title={_('nav.search')} alternates={alternates('search')} searchable={false}>
+  <PageHero lang={lang} title={_('nav.search')} />
+  <div class="container narrow" style="padding-bottom: 6rem">
+    <Search lang={lang} autofocus />
+  </div>
+</Base>

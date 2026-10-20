@@ -1,0 +1,93 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 36
+question: ¿Qué es la justificación?
+answer: La justificación es un acto de la gracia libre y gratuita de Dios en el que Él perdona todos nuestros pecados y nos acepta como justos ante Sus ojos, solo por la justicia de Cristo que nos es imputada, y que recibimos solo por la fe.
+sections:
+  - - q: ¿Es la justificación un acto de Dios?
+      a: Sí. «Dios es el que justifica» (Rom. 8:33).
+    - q: ¿Y [es un acto] de Su gracia libre y gratuita?
+      a: Sí. «Para que justificados por su gracia fuésemos hechos herederos» (Tit. 3:7).
+    - q: ¿Acaso esta gracia deja de lado todo mérito en la criatura?
+      a: Sí. «Pero si es por gracia, ya no es a base de obras» (Rom. 11:6).
+    - q: Pero, ¿[acaso esta gracia] deja de lado todo mérito en Cristo?
+      a: No. «Siendo justificados gratuitamente por su gracia por medio de la redención que es en Cristo Jesús» (Rom. 3:24).
+  - - q: ¿Incluye la justificación el perdón de los pecados?
+      a: Sí. «En Él tenemos redención mediante su sangre, el perdón de nuestros pecados» (Efe. 1:7).
+    - q: ¿Es el perdón de los pecados un acto de poder?
+      a: Sí. «El Hijo del Hombre tiene autoridad en la tierra para perdonar pecados» (Mat. 9:6).
+    - q: ¿[Es el perdón de los pecados un acto] de gracia?
+      a: Sí. Él tiene «MISERICORDIA DE SUS INIQUIDADES» (Heb. 8:12).
+    - q: ¿[Es el perdón de los pecados un acto] de justicia?
+      a: Sí. «Si confesamos nuestros pecados, Él es fiel y justo para perdonarnos los pecados» (1 Jua. 1:9).
+    - q: ¿Perdona Dios el pecado como un Padre?
+      a: Sí. «Yo los perdonaré como un hombre perdona al hijo que le sirve» (Mal. 3:17).
+    - q: ¿[Perdona Dios el pecado] como un Soberano?
+      a: Sí. «¿Qué Dios hay como tú, que perdona la iniquidad?» (Miq. 7:18).
+    - q: ¿Perdona Dios muchos pecados?
+      a: Sí. «Sus pecados, que son muchos, han sido perdonados» (Luc. 7:47).
+    - q: ¿Y [perdona Dios] grandes pecados?
+      a: Sí. «Aunque vuestros pecados sean como la grana, como la nieve serán emblanquecidos» (Isa. 1:18).
+    - q: Pero, ¿todo pecado necesita perdón?
+      a: Sí. «Si alguno quisiera contender con Él, no podría contestarle ni una vez entre mil» (Job 9:3).
+  - - q: ¿Incluye la justificación la aceptación de nuestras personas?
+      a: Sí. «Él nos hizo aceptos en el Amado» (Efe. 1:6 [RVR60]).
+    - q: ¿[E incluye la justificación la aceptación] de nuestro servicio?
+      a: Sí. «El SEÑOR miró con agrado a Abel y a su ofrenda» (Gén. 4:4).
+    - q: ¿Mira Dios a los justificados con complacencia?
+      a: Sí. «Los rectos contemplarán su rostro» (Sal. 11:7).
+    - q: ¿Habla [Dios] de los justificados con aprobación?
+      a: Sí. «Toda tú eres hermosa, amada mía, y no hay defecto en ti» (Cnt. 4:7).
+    - q: ¿Y trata [Dios] a los justificados con intimidad y cariño?
+      a: Sí. «Los secretos del SEÑOR son para los que le temen, y Él les dará a conocer Su pacto» (Sal. 25:14).
+  - - q: ¿Fueron los sacrificios ceremoniales insuficientes para la justificación del hombre?
+      a: Sí. «Porque es imposible que estos quiten los pecados» (Heb. 10:4).[^55]
+    - q: ¿Y son los deberes morales igualmente insuficientes ahora [para la justificación del hombre]?
+      a: Sí, porque «el hombre no es justificado por las obras de la ley» (Gál. 2:16).
+    - q: ¿Son los deberes posteriores a la fe tan insuficientes [para la justificación del hombre] como los [deberes] anteriores [a la fe]?
+      a: Sí, porque «como trapo de inmundicia son todas nuestras obras justas» (Isa. 64:6).
+    - q: Por tanto, ¿es el intento de justificarse de esta manera un ejemplo evidente de necedad e ignorancia?
+      a: Sí. «Pues desconociendo la justicia de Dios y procurando establecer la suya propia, no se sometieron a la justicia de Dios» (Rom. 10:3).
+    - q: ¿Y tendrá esto como resultado la ruina y destrucción completa?
+      a: "Sí. «Esto os vendrá de mi mano: en tormento yaceréis» (Isa. 50:11)."
+  - - q: ¿Somos justificados solo por la justicia de Cristo?
+      a: Sí. «No teniendo mi propia justicia derivada de la ley, sino la que es por la fe en Cristo» (Flp. 3:9).
+    - q: ¿Cumplió Cristo lo que la ley exigía?
+      a: Sí. No se halló pecado en Su boca (1 Pedro 2:22).
+    - q: ¿Es esto parte de nuestra justicia justificadora?
+      a: Sí. «Por la obediencia de uno los muchos serán constituidos justos» (Rom. 5:19).
+    - q: ¿Sufrió Cristo lo que amenazaba la ley?
+      a: Sí, porque Él fue «molido por nuestras iniquidades» (Isa. 53:5).
+    - q: ¿Y es esto la otra parte de nuestra justicia justificadora?
+      a: Sí. «Tú fuiste inmolado, y con tu sangre compraste para Dios» (Apo. 5:9).
+    - q: ¿Satisface a Dios esta justicia?
+      a: Sí. «El SEÑOR se complació por causa de Su justicia» (Isa. 42:21).
+    - q: ¿[Es] suficiente para el hombre esta justicia?
+      a: Sí, «para que así [...] la gracia reine por medio de la justicia para vida eterna, mediante Jesucristo nuestro Señor» (Rom. 5:21).
+    - q: ¿Y nunca será abrogada [esta justicia]?
+      a: No. «Mi justicia no menguará» (Isa. 51:6).
+  - - q: ¿Esta justicia llega a ser nuestra por imputación?
+      a: Sí. «Como también David habla de la bendición que viene sobre el hombre a quien Dios atribuye justicia aparte de las obras» (Rom. 4:6).
+    - q: ¿Depende esta imputación de algún acto en [i. e., por parte de] la criatura?
+      a: No, porque es «el don de la justicia» (Rom. 5:17).
+    - q: ¿Debe ser recibida la justicia de Cristo [por parte del pecador] además de ser imputada [por Dios el Padre]?
+      a: Sí. «Hemos recibido la reconciliación» (Rom. 5:11).
+    - q: ¿Es la fe el instrumento para recibir la justicia de Cristo?
+      a: Sí. «Dios exhibió públicamente [a Cristo] como propiciación por su sangre a través de la fe» (Rom. 3:25).
+    - q: ¿Es la justificación menos de gracia porque es a través de la fe?
+      a: No. «Por eso es por fe, para que esté de acuerdo con la gracia» (Rom. 4:16).
+  - - q: ¿Glorifica esta doctrina [de la justificación] la sabiduría divina?
+      a: Sí. «Que Dios ha hecho abundar para con nosotros[,] en toda sabiduría y discernimiento» (Efe. 1:8).
+    - q: ¿Magnifica [esta doctrina de la justificación] la bondad divina?
+      a: "Sí. «En esto consiste el amor: no en que nosotros hayamos amado a Dios, sino en que Él nos amó a nosotros y envió a su Hijo como propiciación por nuestros pecados» (1 Jua. 4:10)."
+    - q: ¿Contribuye [esta doctrina de la justificación] al consuelo de las conciencias afligidas?
+      a: Sí. «Por tanto, habiendo sido justificados por la fe, tenemos paz para con Dios» (Rom. 5:1).
+    - q: ¿[Contribuye esta doctrina de la justificación] a la destrucción del orgullo y la vanagloria?
+      a: Sí. «¿Dónde está, pues, la jactancia? Queda excluida. ¿Por cuál ley? ¿La de las obras? No, sino por la ley de la fe» (Rom. 3:27).
+    - q: ¿Es [esta doctrina de la justificación] un motivo poderoso para la santidad y la religión práctica?
+      a: Sí. Es una doctrina que es «conforme a la piedad» (1 Tim. 6:3).
+    - q: ¿Y es [esta doctrina de la justificación] un fundamento eterno para la gratitud y la alabanza?
+      a: Sí. «En gran manera me gozaré en el SEÑOR, mi alma se regocijará en mi Dios; porque Él me ha vestido de ropas de salvación, me ha envuelto en manto de justicia» (Isa. 61:10).
+notes:
+  "55": La referencia bíblica original es Hebreos 10:14, pero debería ser Hebreos 10:4.

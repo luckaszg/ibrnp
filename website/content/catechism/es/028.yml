@@ -1,0 +1,71 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 28
+question: ¿Cómo ejerce Cristo el oficio de Sacerdote?
+answer: Cristo ejerce el oficio de Sacerdote al haberse ofrecido a Sí mismo como sacrificio una sola vez para satisfacer la justicia divina y reconciliarnos con Dios, y al hacer intercesión continua por nosotros.
+sections:
+  - - q: ¿Es Cristo Sacerdote?
+      a: Sí. «Si a semejanza de Melquisedec se levanta otro sacerdote» (Heb. 7:15).
+    - q: ¿Es Cristo Sumo Sacerdote?
+      a: Sí. «Tenemos un gran sacerdote sobre la casa de Dios» (Heb. 10:21).
+    - q: ¿Es Cristo un gran Sumo Sacerdote?
+      a: Sí. «Teniendo, pues, un gran sumo sacerdote» (Heb. 4:14).
+    - q: ¿Es Cristo [un gran Sumo Sacerdote] en Su Persona?
+      a: Sí. «Porque Él es exaltado más allá de los cielos» (Heb. 7:26).
+    - q: ¿Es Cristo [un gran Sumo Sacerdote] por la gran confianza depositada en Él?
+      a: Sí, porque Él es el «Sumo Sacerdote de los bienes futuros, a través de un mayor y más perfecto tabernáculo» (Heb. 9:11).
+    - q: ¿[Es Cristo un gran Sumo Sacerdote] por la gran solemnidad de Su ordenación?
+      a: Sí. Fue a través de un juramento (Heb. 7:20).
+    - q: ¿Y [es Cristo un gran Sumo Sacerdote] con respecto a la continuidad de Su oficio?
+      a: "Sí. «EL SEÑOR HA JURADO Y NOCAMBIARÁ: TÚ ERES SACERDOTE PARA SIEMPRE» (Heb. 7:21)."
+  - - q: ¿Supone el sacerdocio de Cristo la culpabilidad del hombre?
+      a: Sí, porque «uno murió por todos, por consiguiente, todos murieron» (2 Cor. 5:14).
+    - q: ¿[Supone el sacerdocio de Cristo] la impotencia del hombre?
+      a: Sí. «Busqué entre ellos alguno que levantara un muro y se pusiera en pie en la brecha [...] pero no lo hallé» (Eze. 22:30).
+    - q: ¿Implica [el sacerdocio de Cristo] la deidad de Cristo?
+      a: Sí. «Teniendo, pues, un gran Sumo Sacerdote que trascendió los cielos, Jesús, el Hijo de Dios» (Heb. 4:14).
+    - q: ¿[Implica el sacerdocio de Cristo] la humanidad de Cristo?
+      a: Sí. «Porque tanto el que santifica como los que son santificados, son todos de un Padre» (Heb. 2:11).
+    - q: ¿Implica también [el sacerdocio de Cristo] la designación de Cristo por parte del Padre?
+      a: Sí. «Nadie toma este honor para sí mismo, sino que lo recibe cuando es llamado por Dios» (Heb. 5:4).
+  - - q: ¿Hizo Cristo, como Sacerdote, satisfacción por los pecados de Su pueblo?
+      a: Sí. «Él hizo expiación por la iniquidad» (Dan. 9:24).
+    - q: ¿Hizo esto mediante sacrificio?
+      a: Sí, porque «sin derramamiento de sangre no hay perdón» (Heb. 9:22).
+    - q: ¿[Hizo esto] mediante el sacrificio de Sí mismo?
+      a: Sí. «Se ha manifestado para destruir el pecado por el sacrificio de Sí mismo» (Heb. 9:26).
+    - q: ¿Era necesario ofrecer este sacrificio?
+      a: Sí. «Por tanto, fue necesario que las representaciones de las cosas en los cielos fueran purificadas de esta manera, pero las cosas celestiales mismas, con mejores sacrificios que [estos]» (Heb. 9:23).
+    - q: Pero, ¿es necesario repetir [este sacrificio]?
+      a: No. «Pero Él, habiendo ofrecido un solo sacrificio por los pecados para siempre, SE SENTÓ A LA DIESTRA DE DIOS» (Heb. 10:12).
+  - - q: ¿Fue voluntaria la ofrenda de Cristo?
+      a: Sí. «Nadie me la quita, sino que yo la doy de mi propia voluntad» (Jua. 10:18).
+    - q: ¿Fue preciosa [la ofrenda de Cristo]?
+      a: Sí. «Porque la redención de su alma es muy costosa [o preciosa]» (Sal. 49:8).
+    - q: ¿Fue completa y satisfactoria [la ofrenda de Cristo]?
+      a: Sí. «Él se dio a Sí mismo por nosotros, ofrenda y sacrificio a Dios, como fragante aroma» (Efe. 5:2).
+  - - q: ¿Hace Cristo intercesión como Sacerdote?
+      a: Sí. «Si alguno peca, Abogado tenemos para con el Padre» (1 Jua. 2:1).
+    - q: ¿Es Él un Abogado defensor competente?
+      a: Sí. «[El SEÑOR ha] ayudado a un poderoso» (Sal. 89:19).
+    - q: ¿Es Él un Abogado defensor sabio y hábil?
+      a: Sí. Él es de un entendimiento «diligente en el temor de Jehová» (Isa. 11:3 [RVR60]).
+    - q: ¿Es Él un Abogado defensor justo?
+      a: Sí. Él es «Jesucristo el justo» (1 Jua. 2:1).
+    - q: ¿Es Él un Abogado defensor bondadoso y afectuoso?
+      a: Sí. Él es «un misericordioso y fiel sumo sacerdote» (Heb. 2:17).
+    - q: ¿Es Él un Abogado defensor constante?
+      a: Sí. Él «vive perpetuamente para interceder por ellos» (Heb. 7:25).
+    - q: ¿Es Él un Abogado defensor exitoso?
+      a: Sí. «Yo sabía que siempre me oyes» (Jua. 11:42).
+    - q: ¿Y es Él el único Abogado defensor?
+      a: Sí. «Hay [...] un solo mediador entre Dios y los hombres» (1 Tim. 2:5).
+  - - q: ¿Se limita la obra de Cristo como Abogado defensor a aquellos por quienes Él murió?
+      a: Sí. «No ruego por el mundo» (Jua. 17:9).
+    - q: ¿Y se extiende [la obra de Cristo como Abogado defensor] a cada uno de ellos en particular?
+      a: Sí. «Yo he rogado por ti para que tu fe no falle» (Luc. 22:32).
+    - q: ¿Debería esto animar a la oración?
+      a: Sí. «Acerquémonos con confianza al trono de la gracia» (Heb. 4:16).
+    - q: ¿Y proporciona esto alegría en todas las condiciones de la vida?
+      a: Sí. «Hablo esto en el mundo para que tengan mi gozo completo en sí mismos» (Jua. 17:13).

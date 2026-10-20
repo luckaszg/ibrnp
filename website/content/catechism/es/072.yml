@@ -1,0 +1,13 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 72
+question: ¿Cuál es el sexto mandamiento?
+answer: "El sexto mandamiento es: «No matarás»."
+sections:
+  - - q: ¿Son preciosas las vidas de los hombres por naturaleza propia?
+      a: Sí. «La vida es más que el alimento» (Mat. 6:25).
+    - q: Por tanto, ¿ha puesto Dios un cerco alrededor de las vidas de los hombres?
+      a: Sí. «De todo hombre […] demandaré la vida del hombre» (Gén. 9:5).
+    - q: ¿Era necesario que Él lo hiciera?
+      a: Sí. «Porque del corazón provienen […] homicidios» (Mat. 15:19).

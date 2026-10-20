@@ -1,0 +1,84 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 4
+question: ¿Qué es la Palabra de Dios?
+answer: Las Santas Escrituras del Antiguo y Nuevo Testamento son la Palabra de Dios, y es la única regla segura de fe y obediencia.
+sections:
+  - - q: ¿Son las Escrituras del Antiguo y Nuevo Testamento la Palabra de Dios?
+      a: Sí. «Toda Escritura es inspirada por Dios» (2 Tim. 3:16).
+    - q: ¿Podría haber sido impuesta esta revelación sobre nosotros por espíritus malignos?
+      a: No. «Si Satanás está dividido contra sí mismo; ¿cómo puede entonces mantenerse en pie su reino?» (Mat. 12:26).
+    - q: ¿Podría ser impuesta esta [revelación] sobre nosotros por hombres malvados y calculadores?
+      a: No. «¿Acaso se recogen uvas de los espinos o higos de los abrojos?» (Mat. 7:16).
+    - q: ¿Podría ser esta [revelación] el fruto del trabajo piadoso de hombres buenos?
+      a: No. «Digo la verdad en Cristo, no miento» (Rom. 9:1).
+  - - q: ¿Fueron movidos los santos hombres a hablar lo que hablaron?
+      a: Sí. «Los santos hombres de Dios hablaron siendo inspirados por el Espíritu Santo» (2 Pedro 1:21 [RVR60]).
+    - q: ¿Fueron movidos a escribir lo que hablaron?
+      a: "Sí. «El SEÑOR dijo: Escribe la visión y grábala en tablas» (Hab. 2:2)."
+    - q: ¿Le pertenece a Dios lo que los hombres han escrito de esta manera como Suyo?
+      a: Sí. «Le escribí diez mil preceptos de mi ley» (Ose. 8:12).
+    - q: ¿Fueron inspirados los escritos del Antiguo Testamento?
+      a: Sí. «Ninguna profecía fue dada jamás por un acto de voluntad humana» (2 Pedro 1:21).
+    - q: ¿Y puede afirmarse lo mismo con respecto al Nuevo [Testamento]?
+      a: Sí. «La revelación de Jesucristo, que Dios envió por medio de su ángel a su siervo Juan» (Apo. 1:1).
+  - - q: ¿Estuvieron satisfechos los escritores de las Sagradas Escrituras con su propia inspiración?
+      a: Sí. «Dijo el Dios de Israel, me habló la Roca de Israel» (2 Sam. 23:3).
+    - q: Pero, ¿acaso no podrían haber sido engañados?
+      a: No. «No seguimos fábulas ingeniosamente inventadas» (2 Pedro 1:16).
+    - q: ¿Escribieron lo que sabían?
+      a: Sí. «Lo que hemos visto y oído, os proclamamos también a vosotros» (1 Jua. 1:3).
+    - q: ¿Sabían ellos lo mismo que sus contemporáneos?
+      a: Sí. «Pues esto no se ha hecho en secreto» (Hch. 26:26).
+    - q: ¿Hicieron uso de algún método indebido para ganar crédito?
+      a: No. «Ni mi mensaje ni mi predicación fueron con palabras persuasivas de sabiduría» (1 Cor. 2:4).
+    - q: ¿Tenían objetivos seculares?
+      a: No. «Que por esto mismo trabajamos y sufrimos oprobios» (1 Tim. 4:10 [RVR60]).
+  - - q: ¿Fueron confirmados los escritos divinos por milagros?
+      a: Sí. «Testificando Dios juntamente con ellos, tanto por señales como por prodigios» (Heb. 2:4).
+    - q: ¿Obtuvo crédito el evangelio desde temprano?
+      a: Sí. «Por toda la tierra ha salido Su voz, y hasta los confines del mundo Sus palabras» (Rom. 10:18).
+    - q: ¿Muchos han confirmado y sellado el evangelio con su sangre?
+      a: Sí. «Habían sido muertos a causa de la palabra de Dios» (Apo. 6:9).
+    - q: ¿Y tiene el evangelio un testimonio en el corazón de todo creyente verdadero?
+      a: Sí. «El que cree en el Hijo de Dios tiene el testimonio en sí mismo» (1 Jua. 5:10).
+  - - q: ¿Es la Palabra de Dios una regla?
+      a: Sí. «Lámpara es a mis pies tu palabra, y luz para mi camino» (Sal. 119:105).
+    - q: ¿Necesitamos una regla así?
+      a: Sí. «Todos nosotros nos descarriamos como ovejas» (Isa. 53:6).
+    - q: ¿Es la Palabra de Dios una regla suficiente?
+      a: Sí. «La ley del SEÑOR es perfecta» (Sal. 19:7).
+    - q: ¿Es una regla clara?
+      a: Sí. «Justas son todas las razones de mi boca, todas ellas son rectas al que entiende» (Pro. 8:8, 9).
+    - q: ¿Es una regla vasta?
+      a: "[^24] Sí. «Amplio sobremanera es tu mandamiento» (Sal. 119:96)."
+    - q: ¿Es una regla permanente?
+      a: Sí. «La palabra de Dios que vive y permanece para siempre» (1 Pedro 1:23).
+    - q: ¿Es la única regla?
+      a: Sí. «Si alguno añade a ellas, Dios traerá sobre él las plagas que están escritas en este libro» (Apo. 22:18).
+  - - q: ¿Son las tradiciones no escritas una regla?
+      a: No. «Invalidasteis la palabra de Dios por causa de vuestra tradición» (Mat. 15:6).
+    - q: ¿Es la autoridad de la iglesia una regla?
+      a: No. «Para que vuestra fe no descanse en la sabiduría de los hombres» (1 Cor. 2:5).
+    - q: ¿Son los sentimientos [o el sentir] de los grandes hombres una regla?
+      a: No. «El sacerdote y el profeta dan traspiés» (Isa. 28:7).
+    - q: ¿Es la luz de la naturaleza una regla suficiente?
+      a: No, porque se dice de aquellos que son guiados por esta que «la senda de la paz no han conocido» (Rom. 3:17).
+    - q: ¿Es la luz interior una regla segura?
+      a: No. «No depende del hombre su camino» (Jer. 10:23).
+    - q: ¿Acaso no es el ejemplo de muchos una regla?
+      a: No. «No seguirás a la multitud para hacer el mal» (Éxo. 23:2).
+    - q: ¿Acaso no es el ejemplo de los buenos una regla suficiente?
+      a: No. Deberíamos «ser imitadores» de ellos solo cuando «lo son de Cristo» (1 Cor. 11:1).
+    - q: ¿Acaso no podemos depender de lo que los ángeles dicen como una regla segura?
+      a: No. «Si un ángel del cielo, os anunciara otro evangelio contrario al que os hemos anunciado, sea anatema (Gál. 1:8). ¿O de una voz del Cielo? No. «Tenemos la palabra profética más segura» (2 Pedro 1:19).
+  - - q: Entonces, ¿es necesario traducir las Escrituras?
+      a: Sí. «Si yo voy a vosotros hablando en lenguas, ¿de qué provecho os seré?» (1 Cor. 14:6).
+    - q: ¿Deberíamos recibirlas y abrazarlas diligentemente?
+      a: Sí. «Recibieron la palabra con toda solicitud» (Hch. 17:11).
+    - q: ¿Deberíamos hacer de estas nuestra regla?
+      a: Sí. «Continuemos viviendo según la misma norma» (Flp. 3:16).
+notes:
+  "23": "Aquí hemos utilizado la RVR60 porque su traducción de este texto es más cercana a lo que dice la versión inglesa de la Biblia usada por el autor. El texto en inglés dice: «Intruding into the things they have not seen». LBLA traduce este texto: «basándose en las visiones que ha visto». La diferencia entre estas dos traducciones tiene que ver con una variante textual. En algunos manuscritos no aparece la partícula negativa griega ουκ (la RVR60 se basa en los manuscritos donde sí aparece). Por esa razón, LBLA pone esta frase de sentido positivo. En cualquiera de los dos casos, el principio es el mismo. Pablo está advirtiendo sobre los falsos maestros que enseñan doctrinas de hombres basándose en sus ideas, visiones y en lo que no saben ni han visto, pero no en la verdad eterna de la Palabra de Dios."
+  "24": vasta —extensa, que abarca mucho.

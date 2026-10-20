@@ -1,0 +1,15 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 7
+question: What is God?
+answer: God is a Spirit[^1], Infinite[^2], Eternal[^3], and Unchangeable[^4], in his Being[^5], Wisdom[^6], Power[^7], Holiness[^8], Justice, Goodness and Truth[^9].
+notes:
+  "1": John 4:24
+  "2": Job 11:7–9
+  "3": Ps. 90:2
+  "4": Jas. 1:17
+  "5": Exod. 3:14
+  "6": Ps. 147:5
+  "7": Rev. 4:8
+  "8": Rev. 15:4
+  "9": Exod. 34:6–7

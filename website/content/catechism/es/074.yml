@@ -1,0 +1,67 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 74
+question: ¿Qué se prohíbe en el sexto mandamiento?
+answer: El sexto mandamiento prohíbe absolutamente quitarnos la vida, {quitar} la vida a nuestro prójimo injustamente, o cualquier cosa que tienda a ello.
+sections:
+  - - q: ¿Es pecado destruirnos nosotros mismos?
+      a: Sí. «¿Por qué has de morir antes de tu tiempo?» (Ecl. 7:17).
+    - q: ¿Es esto a menudo fruto del orgullo?
+      a: Sí. «Viendo Ahitofel que no habían seguido su consejo […] fue a su casa […] y se ahorcó» (2 Sam. 17:23).
+    - q: ¿[Es esto a menudo fruto] de la envidia?
+      a: Sí. «La envidia es carcoma de los huesos» (Pro. 14:30 [RVR60]).
+    - q: ¿[Es esto a menudo fruto] de la pasión?
+      a: Sí. «Tengo razón para enojarme hasta la muerte» (Jon. 4:9).
+    - q: ¿[Es esto a menudo fruto] de la inmundicia?
+      a: Sí. «El fornicario peca contra su propio cuerpo» (1 Cor. 6:18).
+    - q: ¿[Es esto a menudo fruto] de la intemperancia?
+      a: Sí. «Pero al final como serpiente muerde, y como víbora pica» (Pro. 23:32).
+    - q: ¿Y de un cuidado inmoderado y de la tristeza?
+      a: Sí. «La tristeza del mundo produce muerte» (2 Cor. 7:10).
+  - - q: ¿Es quitarnos la vida una usurpación de la prerrogativa de Dios?
+      a: Sí, porque Él es el que hace morir y hace vivir (Deu. 32:39).
+    - q: ¿Es el cumplimiento[^80] de las tentaciones de Satanás?
+      a: Sí, porque «él fue un homicida desde el principio» (Jua. 8:44).
+    - q: Pero, ¿podemos exponer nuestras vidas para mantener una buena conciencia?
+      a: Sí. «No amaron sus vidas, llegando hasta sufrir la muerte» (Apo. 12:11).
+    - q: ¿Y [podemos] arriesgar nuestras vidas por una buena causa?
+      a: Sí. «Zabulón y Neftalí arriesgaron sus vidas en las alturas del campo» (Jue. 5:18).
+  - - q: ¿Es una violación de este mandamiento el que los magistrados quiten la vida a los ofensores [que hayan cometido crímenes] capitales?
+      a: No. «Harás conforme a los términos de la sentencia […] el hombre que proceda con presunción […] ese hombre morirá» (Deu. 17:10, 12).
+    - q: ¿[Es una violación de este mandamiento el] que un hombre mate a otro en una guerra legítima?
+      a: No. «Ataca a Amalec […] da muerte tanto a hombres como a mujeres, a niños como a niños de pecho» (1 Sam. 15:3).
+    - q: ¿[Es una violación de este mandamiento el que un hombre mate a otro] por accidente?
+      a: No. «Cuando mate a su amigo sin querer, sin haberlo odiado anteriormente […] él puede huir a una de estas ciudades [de refugio]» (Deu. 19:4, 5).
+    - q: ¿O en defensa propia?
+      a: No, porque «si el ladrón es sorprendido forzando una casa, y es herido y muere, no habrá culpabilidad de sangre» (Éxo. 22:2).
+  - - q: Pero, ¿es un gran pecado el homicidio voluntario?
+      a: "Sí. «Habéis oído que se dijo a los antepasados: “NO MATARÁS”» (Mat. 5:21)."
+    - q: ¿Es un pecado que clama {por castigo}?
+      a: Sí. «La voz de la sangre de tu hermano clama a mí desde la tierra» (Gén. 4:10).
+    - q: ¿Es un pecado que clama por un castigo en el presente?
+      a: Sí. «Lo tomarás aun de mi altar para que muera» (Éxo. 21:14).
+    - q: ¿Y expone {a quien lo comete} a una condenación futura?
+      a: Sí. «Ningún homicida tiene vida eterna» (1 Jua. 3:15).
+    - q: Por tanto, ¿debemos orar para que Dios nos guarde de esto?
+      a: Sí. «Líbrame de delitos de sangre, oh Dios» (Sal. 51:14).
+  - - q: ¿Es una infracción de este mandamiento aconsejar la muerte de otros?
+      a: Sí. «Lo has matado con la espada de los hijos de Amón» (2 Sam. 12:9).
+    - q: ¿[Es una infracción de este mandamiento] consentir la muerte de otros?
+      a: Sí. «[A Jesús] clavasteis en una cruz por manos de impíos y le matasteis» (Hch. 2:23).
+    - q: ¿[Es una infracción de este mandamiento] tener alguna parte en la muerte de otros?
+      a: Sí. «He pecado entregando sangre inocente» (Mat. 27:4).
+    - q: ¿[Es una infracción de este mandamiento] regocijarse por la muerte de otros?
+      a: Sí. «¿Me he alegrado en la destrucción de mi enemigo?» (Job 31:29).
+    - q: ¿O estar en el poder y ser negligente en el castigo?
+      a: Sí. «No tomaréis rescate por la vida de un asesino […] sino que de cierto se le dará muerte […] no contaminaréis la tierra en que estáis» (Núm. 35:31, 33).
+  - - q: ¿Es la ira injusta e inmoderada una violación de este mandamiento?
+      a: Sí. «Todo aquel que esté enojado con su hermano [sin causa][^81] será culpable ante la corte» (Mat. 5:22).
+    - q: ¿[Es] el lenguaje obsceno y provocador [una violación de este mandamiento]?
+      a: "Sí. «Cualquiera que diga: “Raca” […] “Idiota” [a su hermano], será reo del infierno de fuego» (Ibíd.)."
+    - q: ¿Y la malicia y el odio?
+      a: Sí. «Todo el que aborrece a su hermano es homicida» (1 Jua. 3:15).
+    - q: ¿Existe el asesinato de almas?
+      a: Sí. «Si no le adviertes […] yo demandaré su sangre de tu mano» (Eze. 3:18).
+notes:
+  "80": cumplimiento —Entiéndase cumplir los deseos de Satanás, acatar sus órdenes, rendirse ante sus demandas.

@@ -1,0 +1,269 @@
+---
+// One catechism question. Spanish: Beddome's exposition (sub-questions answered with Scripture).
+// English: the 1695 answer with its proof texts and KJV verse text.
+import Base from '../layouts/Base.astro';
+import ReaderBar from '../components/ReaderBar.astro';
+import ProofNote from '../components/ProofNote.astro';
+import { catechismQuestions } from '../lib/content.ts';
+import { catechismQuestionPath } from '../lib/catechism.ts';
+import { renderInline, linkCitations, plainText } from '../lib/richtext.ts';
+import { kjvVerses } from '../lib/kjv.ts';
+import { t } from '../i18n/ui.ts';
+import { formatRef, parseReferences, refsOnly, youVersionUrl, type Lang, type ScriptureRef } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+  n: number;
+}
+const { lang, n } = Astro.props;
+const _ = t(lang);
+const all = await catechismQuestions(lang);
+const q = all.find((x) => x.data.number === n)!;
+const prev = all.find((x) => x.data.number === n - 1);
+const next = all.find((x) => x.data.number === n + 1);
+const notes = q.data.notes;
+const state: { last?: ScriptureRef } = {};
+const sub = (html: string) => linkCitations(renderInline(html, { noteId: (k) => (notes[k] ? `tn-${k}` : null), noteLabel: lang === 'es' ? 'Nota' : 'Note' }), lang, state);
+const toc = all.map((x) => ({ href: catechismQuestionPath(x.data.number, lang), label: `${x.data.number}. ${x.data.question}`, current: x.data.number === n }));
+const indexHref = lang === 'es' ? '/creemos/catecismo/' : '/en/beliefs/catechism/';
+---
+
+<Base
+  lang={lang}
+  mode="reading"
+  title={`${_('catechism.question')} ${n}: ${q.data.question}`}
+  description={plainText(q.data.answer).slice(0, 155)}
+  alternates={{ es: catechismQuestionPath(n, 'es'), en: catechismQuestionPath(n, 'en') }}
+>
+  <ReaderBar lang={lang} title={`${_('nav.catechism')} · ${n}`} toc={toc} resumeKey={`catechism-${lang}`} resumeLabel={`${_('catechism.question')} ${n}`} />
+
+  <article class="container reading" data-reading data-pagefind-filter="section:catechism">
+    <header class="chapter-head reading-col">
+      <p class="eyebrow"><a href={indexHref} style="color: inherit; text-decoration: none">{_('nav.catechism')}</a></p>
+      <span class="chapter-num" aria-hidden="true">{n}</span>
+      <h1 class="question"><span class="sr-only">{_('catechism.question')} {n}: </span>{q.data.question}</h1>
+    </header>
+
+    <div class="reading-col">
+      <div class="answer" id="respuesta">
+        <span class="label">{_('catechism.answer')}</span>
+        <p set:html={renderInline(q.data.answer, { noteId: (k) => (lang === 'en' && notes[k] ? `cq-${n}-${k}` : null), noteLabel: _('reader.proofs') })} />
+      </div>
+
+      <div class="ornament" aria-hidden="true"><span>✠</span></div>
+
+      {
+        lang === 'es' ? (
+          <>
+            <div class="sub-tools no-print">
+              <h2 class="label">{_('catechism.exposition')}</h2>
+              <label class="toggle">
+                <input type="checkbox" data-hide-sub />
+                <span>{_('catechism.hideAnswers')}</span>
+              </label>
+            </div>
+            {q.data.sections.map((section, si) => (
+              <section class="sub-section" id={`s-${si + 1}`}>
+                <span class="sect" aria-hidden="true">
+                  §
+                </span>
+                <dl>
+                  {section.map((item, ii) => (
+                    <div class="item" id={`s-${si + 1}-${ii + 1}`} data-resume-point data-label={`§${si + 1}`}>
+                      {item.q && <dt set:html={sub(item.q)} />}
+                      <dd set:html={sub(item.a)} />
+                    </div>
+                  ))}
+                </dl>
+              </section>
+            ))}
+            {Object.entries(notes).map(([k, text]) => (
+              <div popover id={`tn-${k}`} class="note-pop" data-pagefind-ignore>
+                <div class="note-head">
+                  <span class="label">Nota de los traductores</span>
+                  <button type="button" class="note-close" popovertarget={`tn-${k}`} popovertargetaction="hide" aria-label={_('reader.close')}>
+                    ×
+                  </button>
+                </div>
+                <p style="margin: 0" set:html={renderInline(text)} />
+              </div>
+            ))}
+          </>
+        ) : (
+          <>
+            <p class="notice">{_('catechism.enNotice')}</p>
+            <h2 class="label proofs-title">{_('reader.proofs')}</h2>
+            <ol class="proofs">
+              {Object.entries(notes).map(([k, citation]) => (
+                <li value={Number(k)}>
+                  {refsOnly(parseReferences(citation)).map((ref) => (
+                    <div class="proof">
+                      <a class="note-ref" href={youVersionUrl(ref, 'en')} target="_blank" rel="noopener">
+                        {formatRef(ref, 'en', 'long')}
+                      </a>
+                      <p class="verse">
+                        {kjvVerses(ref, 8).verses.map((v) => (
+                          <>
+                            <sup>{v.n}</sup>
+                            {v.text}{' '}
+                          </>
+                        ))}
+                      </p>
+                    </div>
+                  ))}
+                </li>
+              ))}
+            </ol>
+            {Object.entries(notes).map(([k, c]) => (
+              <ProofNote id={`cq-${n}-${k}`} lang={lang} citation={c} label={`${n} · ${k}`} />
+            ))}
+            <p>
+              <a class="btn btn--outline" href={catechismQuestionPath(n, 'es')} hreflang="es">
+                {_('catechism.readSpanish')} →
+              </a>
+            </p>
+          </>
+        )
+      }
+
+      <nav class="chapter-nav no-print" aria-label={_('reader.contents')} data-pagefind-ignore>
+        {
+          prev && (
+            <a class="prev" href={catechismQuestionPath(prev.data.number, lang)} rel="prev">
+              <span class="label">← {_('common.previous')}</span>
+              <span class="t">
+                {prev.data.number}. {prev.data.question}
+              </span>
+            </a>
+          )
+        }
+        {
+          next && (
+            <a class="next" href={catechismQuestionPath(next.data.number, lang)} rel="next">
+              <span class="label">{_('common.next')} →</span>
+              <span class="t">
+                {next.data.number}. {next.data.question}
+              </span>
+            </a>
+          )
+        }
+      </nav>
+      <p class="credit" data-pagefind-ignore>
+        {
+          lang === 'es'
+            ? 'Benjamin Beddome, Una exposición bíblica del Catecismo Bautista (1752). Traducción © Editorial Legado Bautista Confesional, 2021. Usado con permiso. Citas bíblicas de La Biblia de las Américas salvo que se indique otra versión.'
+            : 'The Baptist Catechism (1695), public domain. Verse text from the King James Version.'
+        }
+      </p>
+    </div>
+  </article>
+</Base>
+
+<script>
+  const box = document.querySelector<HTMLInputElement>('[data-hide-sub]');
+  box?.addEventListener('change', () => document.documentElement.classList.toggle('hide-sub', box.checked));
+  document.querySelectorAll<HTMLElement>('.item').forEach((item) =>
+    item.querySelector('dt')?.addEventListener('click', () => item.classList.toggle('revealed')),
+  );
+</script>
+
+<style>
+  .question {
+    max-width: 24ch;
+  }
+  .answer {
+    padding: 24px 28px;
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+  }
+  .answer .label {
+    color: var(--accent);
+  }
+  .answer p {
+    margin: 6px 0 0;
+    font-family: var(--font-display);
+    font-size: 1.35em;
+    line-height: 1.45;
+  }
+  .sub-tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+  }
+  .sub-tools .label {
+    color: var(--accent);
+    margin: 0;
+  }
+  .toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-label);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .toggle input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--navy-900);
+  }
+  .sub-section {
+    position: relative;
+    padding: 0 0 0 2rem;
+    margin-bottom: 2rem;
+  }
+  .sect {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: var(--font-display);
+    font-size: 1.4em;
+    line-height: 1.2;
+    color: var(--accent);
+  }
+  dl {
+    margin: 0;
+  }
+  .item {
+    margin-bottom: 0.9em;
+  }
+  dt {
+    font-weight: 600;
+    color: var(--heading);
+  }
+  dd {
+    margin: 0.1em 0 0;
+  }
+  :global(html.hide-sub) .item:not(.revealed) dd {
+    visibility: hidden;
+    height: 0.6em;
+    overflow: hidden;
+  }
+  :global(html.hide-sub) dt {
+    cursor: pointer;
+  }
+  dd :global(.cite-ref) {
+    color: var(--accent);
+    text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  }
+  .proofs-title {
+    color: var(--accent);
+  }
+  .proofs {
+    padding-left: 1.4em;
+  }
+  .proofs li::marker {
+    color: var(--accent);
+    font-family: var(--font-label);
+    font-size: 0.8em;
+  }
+  .proof {
+    margin-bottom: 1rem;
+  }
+</style>

@@ -1,0 +1,29 @@
+---
+// The church seal. Always shown as a circle, never stretched or recoloured (§5.3).
+import seal from '../assets/seal.png';
+import { Image } from 'astro:assets';
+
+interface Props {
+  size: number;
+  class?: string;
+  eager?: boolean;
+}
+const { size, class: className, eager = false } = Astro.props;
+---
+
+<Image
+  src={seal}
+  alt="Sello de la Iglesia Bautista Reformada Nuevo Pacto — 1689"
+  width={size}
+  height={size}
+  densities={[1, 2]}
+  loading={eager ? 'eager' : 'lazy'}
+  class:list={['seal', className]}
+/>
+
+<style>
+  .seal {
+    border-radius: 50%;
+    flex: none;
+  }
+</style>

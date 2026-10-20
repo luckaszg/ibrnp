@@ -1,0 +1,8 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 51
+question: What is required in the first Commandment?
+answer: The first Commandment requireth us, to know and acknowledge God to be the only true God, and our God[^1]; and to worship and glorify him accordingly[^2].
+notes:
+  "1": 1 Chron. 28:9; Deut. 26:17
+  "2": Matt. 4:10; Ps. 29:2

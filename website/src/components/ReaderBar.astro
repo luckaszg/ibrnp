@@ -1,0 +1,362 @@
+---
+// Sticky toolbar for reading pages: contents, reader settings, focus mode,
+// side-by-side view, print and a progress bar (RD-4, RD-5, RD-6, RD-8, RD-12).
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  /** Table of contents: [href, label, current?] */
+  toc?: { href: string; label: string; current?: boolean }[];
+  parallel?: boolean;
+  /** Key under which "continue reading" position is stored, e.g. "confession-es". */
+  resumeKey?: string;
+  resumeLabel?: string;
+}
+const { lang, title, toc = [], parallel = false, resumeKey, resumeLabel } = Astro.props;
+const _ = t(lang);
+---
+
+<div class="reader-bar no-print" data-resume-key={resumeKey} data-resume-label={resumeLabel} data-pagefind-ignore>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="container rb-inner">
+    {
+      toc.length > 0 && (
+        <button type="button" class="rb-btn" popovertarget="reader-toc" aria-label={_('reader.contents')}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h10" />
+          </svg>
+          <span class="rb-text">{_('reader.contents')}</span>
+        </button>
+      )
+    }
+    <p class="rb-title">{title}</p>
+    <div class="rb-actions">
+      {
+        parallel && (
+          <button type="button" class="rb-btn rb-parallel" aria-pressed="false" data-action="parallel" title={_('reader.sideBySide')}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <rect x="3" y="4" width="7.5" height="16" />
+              <rect x="13.5" y="4" width="7.5" height="16" />
+            </svg>
+            <span class="rb-text">{_('reader.sideBySide')}</span>
+          </button>
+        )
+      }
+      <button type="button" class="rb-btn" data-action="print" aria-label={_('reader.print')} title={_('reader.print')}>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M7 8V3h10v5M7 17H4v-7h16v7h-3M7 14h10v7H7z" />
+        </svg>
+      </button>
+      <button type="button" class="rb-btn" data-action="focus" aria-pressed="false" aria-label={_('reader.focus')} title={_('reader.focus')}>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />
+        </svg>
+      </button>
+      <button type="button" class="rb-btn rb-aa" popovertarget="reader-settings" aria-label={_('reader.settings')} title={_('reader.settings')}>
+        <span aria-hidden="true">A<small>a</small></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div popover id="reader-settings" class="reader-panel" aria-label={_('reader.settings')} data-pagefind-ignore>
+  <fieldset>
+    <legend class="label">{_('reader.fontSize')}</legend>
+    <div class="seg" role="group">
+      <button type="button" data-step="size" data-dir="-1" aria-label={_('reader.small')}>A−</button>
+      <output data-out="size">3</output>
+      <button type="button" data-step="size" data-dir="1" aria-label={_('reader.large')}>A+</button>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend class="label">{_('reader.lineHeight')}</legend>
+    <div class="seg" role="group">
+      {
+        [1, 2, 3].map((n) => (
+          <button type="button" data-set="leading" data-value={n} aria-pressed="false" aria-label={`${_('reader.lineHeight')} ${n}`}>
+            <span class="lines" style={`--gap:${n + 1}px`} aria-hidden="true">
+              <i />
+              <i />
+              <i />
+            </span>
+          </button>
+        ))
+      }
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend class="label">{_('reader.theme')}</legend>
+    <div class="seg themes" role="group">
+      <button type="button" data-set="theme" data-value="paper" aria-pressed="false" class="sw sw-paper">{_('reader.theme.paper')}</button>
+      <button type="button" data-set="theme" data-value="white" aria-pressed="false" class="sw sw-white">{_('reader.theme.white')}</button>
+      <button type="button" data-set="theme" data-value="night" aria-pressed="false" class="sw sw-night">{_('reader.theme.night')}</button>
+    </div>
+  </fieldset>
+</div>
+
+{
+  toc.length > 0 && (
+    <nav popover id="reader-toc" class="reader-toc" aria-label={_('reader.contents')} data-pagefind-ignore>
+      <div class="note-head">
+        <span class="label">{_('reader.contents')}</span>
+        <button type="button" class="note-close" popovertarget="reader-toc" popovertargetaction="hide" aria-label={_('reader.close')}>
+          ×
+        </button>
+      </div>
+      <ol>
+        {toc.map((item) => (
+          <li>
+            <a href={item.href} aria-current={item.current ? 'page' : undefined}>
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )
+}
+
+<button type="button" class="focus-exit no-print" data-action="focus" hidden>{_('reader.focusExit')}</button>
+
+<script>
+  import { initReader } from '../scripts/reader.ts';
+  initReader();
+</script>
+
+<style>
+  .reader-bar {
+    position: sticky;
+    top: var(--header-h);
+    z-index: 40;
+    background: color-mix(in srgb, var(--bg) 94%, transparent);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .progress {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 2px;
+  }
+  .progress span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: var(--accent);
+    transform-origin: left;
+    transform: scaleX(var(--p, 0));
+  }
+  .rb-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 52px;
+  }
+  .rb-title {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--fg-muted);
+  }
+  .rb-actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .rb-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 40px;
+    min-width: 40px;
+    justify-content: center;
+    padding: 0 10px;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    color: var(--fg);
+    font-family: var(--font-label);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .rb-btn:hover,
+  .rb-btn[aria-pressed='true'] {
+    border-color: var(--rule);
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+  }
+  .rb-aa span {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+  .rb-aa small {
+    font-size: 0.75em;
+  }
+  .rb-parallel {
+    display: none;
+  }
+  @media (min-width: 1080px) {
+    .rb-parallel {
+      display: inline-flex;
+    }
+  }
+  @media (max-width: 640px) {
+    .rb-text {
+      display: none;
+    }
+  }
+
+  .reader-panel,
+  .reader-toc {
+    position: fixed;
+    inset: auto;
+    margin: 0;
+    background: var(--surface, #fff);
+    color: var(--fg);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--accent);
+    box-shadow: 0 18px 40px rgba(0, 23, 42, 0.18);
+    padding: 18px 20px;
+  }
+  .reader-panel {
+    top: calc(var(--header-h) + 60px);
+    right: max(16px, calc((100vw - var(--max-width)) / 2 + 16px));
+    width: min(320px, calc(100vw - 32px));
+  }
+  :global(html.focus-mode) .reader-panel {
+    top: 60px;
+  }
+  .reader-panel fieldset {
+    border: 0;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+  .reader-panel fieldset:last-child {
+    margin: 0;
+  }
+  .reader-panel legend {
+    color: var(--accent);
+    margin-bottom: 8px;
+    padding: 0;
+  }
+  .seg {
+    display: flex;
+    border: 1px solid var(--rule);
+  }
+  .seg > * {
+    flex: 1;
+    min-height: 44px;
+    display: grid;
+    place-items: center;
+    background: none;
+    border: 0;
+    color: var(--fg);
+    font: 500 1rem var(--font-display);
+    cursor: pointer;
+  }
+  .seg > * + * {
+    border-left: 1px solid var(--rule);
+  }
+  .seg button[aria-pressed='true'] {
+    background: color-mix(in srgb, var(--accent) 16%, transparent);
+  }
+  .seg output {
+    font-family: var(--font-label);
+    font-size: 0.8rem;
+  }
+  .lines {
+    display: grid;
+    gap: var(--gap);
+    width: 22px;
+  }
+  .lines i {
+    height: 1.5px;
+    background: currentColor;
+  }
+  .themes .sw {
+    font-family: var(--font-label);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .sw-paper {
+    background: #f7f3ea !important;
+    color: #1a1f26 !important;
+  }
+  .sw-white {
+    background: #fff !important;
+    color: #002239 !important;
+  }
+  .sw-night {
+    background: #00172a !important;
+    color: #e9e4d8 !important;
+  }
+  .themes .sw[aria-pressed='true'] {
+    outline: 2px solid var(--accent);
+    outline-offset: -4px;
+  }
+
+  .reader-toc {
+    top: calc(var(--header-h) + 60px);
+    left: max(16px, calc((100vw - var(--max-width)) / 2 + 16px));
+    width: min(380px, calc(100vw - 32px));
+    max-height: calc(100vh - var(--header-h) - 80px);
+    overflow-y: auto;
+  }
+  :global(html.focus-mode) .reader-toc {
+    top: 60px;
+    max-height: calc(100vh - 80px);
+  }
+  .reader-toc ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: none;
+  }
+  .reader-toc a {
+    display: block;
+    padding: 8px 0;
+    border-top: 1px solid var(--rule);
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+  .reader-toc a:hover {
+    color: var(--accent);
+  }
+  .reader-toc a[aria-current='page'] {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .focus-exit {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 60;
+    padding: 10px 14px;
+    background: var(--navy-900);
+    color: var(--white);
+    border: 0;
+    font-family: var(--font-label);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0.85;
+  }
+</style>

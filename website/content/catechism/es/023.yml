@@ -1,0 +1,77 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 23
+question: ¿Dejó Dios que toda la humanidad pereciera en el estado de pecado y miseria?
+answer: Dios, habiendo elegido a algunos para vida eterna, por Su puro beneplácito, desde toda la eternidad, hizo un Pacto de Gracia para librarlos del estado de pecado y miseria e introducirlos en un estado de salvación por medio de un Redentor.
+sections:
+  - - q: ¿Será recuperada una parte de la raza humana de las ruinas de la Caída?
+      a: Sí. «EL REMANENTE SERÁ SALVO» (Rom. 9:27).
+    - q: ¿Está segura la salvación de este remanente?
+      a: Sí. «El propósito de Dios conforme a su elección [permanecerá]» (Rom. 9:11).
+    - q: ¿Serán dejados todos los demás para que perezcan en sus pecados?
+      a: Sí. «Los demás fueron endurecidos» (Rom. 11:7).
+    - q: Pero ¿es el decreto de Dios la causa que impulsa su ruina?
+      a: No, porque «después, cuando la pasión ha concebido, da a luz el pecado; y cuando el pecado es consumado, engendra la muerte» (Stg. 1:15).
+  - - q: ¿Son todos los santos objeto de la elección eterna de Dios?
+      a: Sí. «Dios os ha escogido desde el principio» (2 Tes. 2:13).
+    - q: ¿Son elegidos [todos los santos] para felicidad como fin?
+      a: Sí. «Porque no nos ha destinado Dios para ira, sino para obtener salvación» (1 Tes. 5:9).
+    - q: ¿[Son elegidos todos los santos] para santificación como el medio [para dicho fin]?
+      a: Sí. «Os ha escogido para salvación mediante la santificación» (2 Tes. 2:13).
+    - q: ¿Son escogidos [todos los santos] en Cristo?
+      a: Sí. «Según nos escogió en Él» (Efe. 1:4).
+    - q: ¿Y es cierto el número de los que son escogidos de esta manera?
+      a: Sí. «El Señor conoce a los que son suyos» (2 Tim. 2:19).
+  - - q: En un sentido comparativo, ¿se extiende el decreto de elección a unos pocos?
+      a: Sí. «Pocos son escogidos» (Mat. 22:14).[^41]
+    - q: Pero, ¿se extiende [el decreto de elección] a algunos [hombres] de todas las naciones?
+      a: Sí. «Compraste para Dios a gente de toda tribu, lengua, pueblo y nación» (Apo. 5:9).
+    - q: ¿[Se extiende el decreto de elección] a algunos de los más grandes pecadores?
+      a: Sí. Pablo era «un instrumento escogido», pero era «el primero de los pecadores» (Hch. 9:15 y 1 Tim. 1:15).
+    - q: ¿Y [se extiende el decreto de elección] a todos los que están dispuestos a venir a Cristo?
+      a: Sí. «Al que viene a mí, de ningún modo lo echaré fuera» (Jua. 6:37).
+    - q: Entonces, ¿es esto un estímulo para utilizar los medios?
+      a: Sí. «Esforzaos por entrar por la puerta estrecha» (Luc. 13:24).
+  - - q: ¿Está fundamentado el decreto de elección en la voluntad soberana de Dios?
+      a: Sí. «TENDRÉ MISERICORDIA DEL QUE YO TENGAMISERICORDIA» (Rom. 9:15).
+    - q: ¿No [está fundamentado el decreto de elección] sobre nada en la criatura?
+      a: No. «Vosotros no me escogisteis a mí, sino que yo os escogí a vosotros» (Jua. 15:16).
+    - q: ¿Es secreto el decreto de elección?
+      a: Sí. Es llamado «el misterio de su voluntad» (Efe. 1:9).
+    - q: ¿Y [es] firme e irrevocable [el decreto de elección]?
+      a: Sí. «El sólido fundamento de Dios permanece firme» (2 Tim. 2:19).
+  - - q: ¿Ejerce Dios toda gracia especial por medio de Cristo?
+      a: Sí. «Nos ha bendecido con toda bendición espiritual en Cristo» (Efe. 1:3).
+    - q: ¿Hubo compromisos mutuos para este propósito entre el Padre y el Hijo?
+      a: Sí. «Habrá consejo de paz entre ellos dos» (Zac. 6:13).
+    - q: ¿Fueron hechas principalmente a Cristo todas las promesas del pacto?
+      a: Sí. Por eso se les llama «las fieles misericordias mostradas a David» (Isa. 55:3).[^42]
+    - q: ¿Le fueron exigidas a Cristo todas las condiciones del pacto?
+      a: Sí. «El SEÑOR hizo que cayera sobre Él la iniquidad de todos nosotros» (Isa. 53:6).
+    - q: ¿Asumió Cristo de manera voluntaria la obra de nuestra redención?
+      a: Sí. «HE AQUÍ, YO HE VENIDO […] PARAHACER, OH DIOS, TU VOLUNTAD» (Heb. 10:7).
+    - q: ¿Y se involucró el Padre para que se cumpliera la misión [del Hijo]?
+      a: Sí. «Debido a la angustia de su alma, Él lo verá y quedará satisfecho» (Isa. 53:11).
+  - - q: ¿Son dados a Cristo los santos en el pacto?
+      a: Sí. «Eran tuyos y me los diste» (Jua. 17:6).
+    - q: ¿Fueron entregados a Él para que los redima?
+      a: Sí. «Que redimiera a los que estaban bajo la ley» (Gál. 4:5).
+    - q: ¿[Fueron entregados a Él] para que los llame?
+      a: Sí. «Me es necesario traerlas» (Jua. 10:16).
+    - q: ¿[Fueron entregados a Él] para que los preserve?
+      a: Sí. «A los que me diste, los guardé» (Jua. 17:12).
+    - q: ¿[Fueron entregados a Él] para que finalmente los glorifique?
+      a: Sí. «Le diste autoridad sobre todo ser humano para que dé vida eterna a todos los que tú le has dado» (Jua. 17:2).
+    - q: ¿Y se cumplirá todo esto ciertamente?
+      a: Sí. «La voluntad del SEÑOR en su mano prosperará» (Isa. 53:10).
+  - - q: ¿Podríamos ser salvos por medio del primer pacto?
+      a: No. «Porque si se hubiera dado una ley capaz de impartir vida, entonces la justicia ciertamente hubiera dependido de la ley» (Gál. 3:21).[^43]
+    - q: Entonces, ¿es el Nuevo Pacto un gran privilegio?
+      a: Sí. Son «buenas nuevas de gran gozo» (Luc. 2:10).
+    - q: ¿Y deberíamos aceptarlo como tal?
+      a: Sí. Debería ser «toda nuestra salvación y todo nuestro deseo» (2 Sam. 23:5).
+notes:
+  "41": En el original hay un error en la referencia; dice Mateo 20:16, pero el autor está citando las palabras de Mateo 22:14.
+  "42": En el original hay un error en la referencia; dice Isaías 53:7, pero el autor está citando las palabras de Isaías 55:3.
+  "43": En el original hay un error en la referencia; dice Gálatas 3:12, pero el autor está citando las palabras de Gálatas 3:21.

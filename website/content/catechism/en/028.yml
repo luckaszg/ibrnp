@@ -1,0 +1,9 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 28
+question: How doth Christ execute the Office of a Priest?
+answer: Christ executeth the Office of a Priest, in his once offering up of himself a Sacrifice to satisfy Divine Justice[^1], and reconcile us to God[^2], and in making continual Intercession for us[^3].
+notes:
+  "1": Heb. 9:14, 28
+  "2": Heb. 2:17
+  "3": Heb. 7:24–25

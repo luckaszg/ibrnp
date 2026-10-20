@@ -1,0 +1,7 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 100
+question: How is Baptism rightly administered?
+answer: Baptism is rightly administered, by Immersion, wore dipping the whole Body of the Party in Water, into the Name of the Father, and of the Son, and of the Holy Spirit, according to Christ's Institution, and the Practice of the Apostles[^1]; and not by the sprinkling or pouring of Water, or dipping some Part of the Body, after the Tradition of Men.
+notes:
+  "1": Matt. 3:16; John 3:23; Matt. 28:19–20; Acts 8:38; Acts 10:48; Rom. 6:4; Col. 2:12

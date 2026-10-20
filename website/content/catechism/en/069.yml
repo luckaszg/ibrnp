@@ -1,0 +1,9 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 69
+question: What is required in the fifth Commandment?
+answer: The fifth Commandment requireth the preserving the Honour, and performing the Duties belonging to every one in their several Places and Relations, as Superiours[^1], Inferiors[^2], or Equals[^3].
+notes:
+  "1": Eph. 5:21
+  "2": 1 Pet. 2:17
+  "3": Rom. 12:10

@@ -1,0 +1,43 @@
+# General church details. Shown on the home page, in the footer and on "Visit us".
+name: Iglesia Bautista Reformada Nuevo Pacto
+shortName: IBRNP
+tagline:
+  es: Una iglesia bautista reformada y confesional
+  en: A confessional Reformed Baptist church
+
+address:
+  street: Tuyutí
+  city: Luque
+  region: Central
+  postalCode: "110917"
+  country: Paraguay
+# Building coordinates (for the map)
+map:
+  lat: -25.26074368686096
+  lng: -57.51099283773383
+
+# Phone and email are optional; when empty they are not shown.
+# phone: "+595 …"
+# email: contacto@…
+youtubeChannel: https://www.youtube.com/@NuevoPactoLuque
+
+# Weekly service times (AC-4). "day" is one of: MO TU WE TH FR SA SU
+serviceTimes:
+  - day: SU
+    time: "09:00"
+    label: { es: Escuela dominical, en: Sunday school }
+  - day: SU
+    time: "10:15"
+    label: { es: Culto de adoración, en: Morning worship }
+  - day: WE
+    time: "19:30"
+    label: { es: Reunión de oración, en: Prayer meeting }
+
+# Home page verse
+verse:
+  es:
+    text: Toda la Escritura es inspirada por Dios, y útil para enseñar, para redargüir, para corregir, para instruir en justicia.
+    reference: 2 Timoteo 3:16
+  en:
+    text: All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness.
+    reference: 2 Timothy 3:16

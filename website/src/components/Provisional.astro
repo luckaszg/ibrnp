@@ -1,0 +1,14 @@
+---
+// "Contenido provisional" badge, shown in development and preview builds only (§8.2).
+import { showPlaceholders } from '../lib/content.ts';
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+  show?: boolean;
+}
+const { lang, show = true } = Astro.props;
+---
+
+{show && showPlaceholders && <span class="provisional" data-pagefind-ignore>{t(lang)('common.provisional')}</span>}

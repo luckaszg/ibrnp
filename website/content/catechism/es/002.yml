@@ -1,0 +1,41 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 2
+question: ¿Deben todos creer que hay un Dios?
+answer: Todos deben creer que hay un Dios, y quienes no lo crean [cometen] gran pecado y necedad.
+sections:
+  - - q: ¿Hay algunos que no creen en la existencia de un Dios?
+      a: Sí. «Han dicho en su corazón que no hay Dios» (Sal. 14:1).
+    - q: ¿Y hacer esto abre una puerta a todo tipo de inmoralidades?
+      a: Sí. «Se han corrompido, han cometido hechos abominables» (Ibíd.).
+    - q: Entonces, ¿es la existencia de Dios un artículo necesario de la Fe cristiana?
+      a: Sí. «El que se acerca a Dios crea que Él existe» (Heb. 11:6).
+    - q: ¿Y es este el fundamento de toda práctica religiosa?
+      a: Sí. «Cómo invocarán a aquel en quien no han creído» (Rom. 10:14).
+    - q: ¿Es la existencia de Dios un pensamiento que trae consuelo a los santos?
+      a: Sí. «Ciertamente hay un Dios que juzga en la tierra» (Sal. 58:11).
+    - q: ¿Y es [la existencia de Dios] un pensamiento terrible para los impíos?
+      a: Sí. «¿No me teméis? declara el SEÑOR» (Jer. 5:22).
+  - - q: ¿Creía el primer hombre en la existencia de un Dios?
+      a: Sí, porque «lo oyó en el huerto y tuvo miedo» (Gén. 3:10).
+    - q: ¿Creían también otros hombres que vivieron en los primeros tiempos en [la existencia de un Dios]?
+      a: Sí, porque «comenzaron a invocar el nombre del SEÑOR» (Gén. 4:26).
+    - q: ¿No todas las naciones han creído en [la existencia de un Dios]?
+      a: Sí. «Aunque conocían a Dios, no le honraron como a Dios» (Rom. 1:21).
+    - q: ¿Creen los espíritus santos de arriba en [la existencia de un Dios]?
+      a: "Sí. «Ellos día y noche no cesaban de decir: SANTO, SANTO, SANTO, es EL SEÑOR DIOS, EL TODOPODEROSO» (Apo. 4:8)."
+    - q: ¿Creen los demonios en [la existencia de un Dios]?
+      a: Sí. «Los demonios creen, y tiemblan» (Stg. 2:19).
+    - q: ¿Hacemos bien los que creemos en [la existencia de un Dios]?
+      a: Sí. «Tú crees que Dios es uno. Haces bien» (Ibíd.).
+  - - q: ¿Es una necedad ignorar a Dios?
+      a: Sí. «Porque mi pueblo es necio, no me conoce» (Jer. 4:22).
+    - q: ¿Es una vergüenza [ignorar a Dios]?
+      a: Sí. «Algunos no tienen conocimiento de Dios, para vergüenza vuestra lo digo» (1 Cor. 15:34).
+    - q: ¿Es pecado [ignorar a Dios]?
+      a: Sí. «Han pervertido su camino, han olvidado al SEÑOR su Dios» (Jer. 3:21).
+    - q: ¿Es esto un pecado inexcusable?
+      a: Sí. «No tienen excusa» (Rom. 1:20).
+    - q: ¿Y es un pecado que lleva a la destrucción?
+      a: Sí. «Ciertamente tales son las moradas del impío, este es el lugar del que no conoce a Dios» (Job 18:21).

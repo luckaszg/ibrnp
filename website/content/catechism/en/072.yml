@@ -1,0 +1,7 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 72
+question: What is the sixth Commandment?
+answer: The sixth Commandment is, "Thou shalt not kill"[^1].
+notes:
+  "1": Exod. 20:13

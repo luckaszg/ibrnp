@@ -1,0 +1,7 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 81
+question: Which is the ninth Commandment?
+answer: The ninth Commandment is, "Thou shalt not bear false Witness against thy Neighbour"[^1].
+notes:
+  "1": Exod. 20:16

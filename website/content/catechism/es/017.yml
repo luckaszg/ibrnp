@@ -1,0 +1,27 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 17
+question: ¿Qué es el pecado?
+answer: El pecado es cualquier falta de conformidad con la ley de Dios, o la transgresión de esta.
+sections:
+  - - q: ¿El pecado supone una ley?
+      a: Sí, porque «donde no hay ley, tampoco hay transgresión» (Rom. 4:15).
+    - q: ¿Es pecado la transgresión de la ley?
+      a: Sí, porque «es infracción de la ley» (1 Jua. 3:4).
+    - q: ¿Es pecado la omisión de lo que la ley exige?
+      a: Sí. «Porque no han escuchado mis palabras, y han desechado mi ley» (Jer. 6:19).
+    - q: ¿Es pecado la comisión de lo que la ley prohíbe?
+      a: Sí. «Porque se han rebelado contra mi ley» (Ose. 8:1).
+    - q: Entonces, ¿se agrava el pecado por el conocimiento de la ley de Dios?
+      a: Sí. «Y conoces su voluntad, siendo instruido por la ley» (Rom. 2:18).
+  - - q: ¿Se extiende la ley de Dios a nuestros pensamientos?
+      a: Sí. «El que mire a una mujer para codiciarla ya cometió adulterio con ella en su corazón» (Mat. 5:28).
+    - q: ¿[Se extiende la ley de Dios] a nuestras palabras?
+      a: Sí. «No salga de vuestra boca ninguna palabra mala» (Efe. 4:29).
+    - q: ¿[Se extiende la ley de Dios] a nuestras acciones?
+      a: Sí. «No hagáis ahora esta cosa abominable que yo aborrezco» (Jer. 44:4).
+    - q: ¿[Se extiende la ley de Dios] al temperamento de nuestra mente?
+      a: Sí. «AMARÁS AL SEÑOR TU DIOS CON TODO TU CORAZÓN, Y CONTODA TU ALMA, Y CON TODA TU MENTE» (Mat. 22:37).
+    - q: ¿Y es pecaminosa toda infracción de la ley?
+      a: Sí. «Toda injusticia es pecado» (1 Jua. 5:17).

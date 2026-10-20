@@ -1,0 +1,14 @@
+---
+import Series from '../../../views/Series.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { sermons } from '../../../lib/content.ts';
+
+export async function getStaticPaths() {
+  const used = new Set((await sermons()).map((s) => s.data.series?.id));
+  // Series without sermons yet (e.g. a series that is about to start) get no page.
+  return (await getCollection('series')).filter((series) => used.has(series.id)).map((series) => ({ params: { slug: series.id }, props: { series } }));
+}
+const { series } = Astro.props as { series: CollectionEntry<'series'> };
+---
+
+<Series lang="es" series={series} />
