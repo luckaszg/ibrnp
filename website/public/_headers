@@ -1,0 +1,9 @@
+# Response headers for Cloudflare static assets.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+
+# Fingerprinted assets (CSS, JS, fonts, images) never change.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
