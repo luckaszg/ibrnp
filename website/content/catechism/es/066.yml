@@ -1,0 +1,25 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 66
+question: ¿Qué se prohíbe en el cuarto mandamiento?
+answer: El cuarto mandamiento prohíbe la omisión o el cumplimiento descuidado de los deberes requeridos y la profanación del día {de reposo} por la ociosidad, por hacer aquello que es pecaminoso en sí, o por pensamientos, palabras u obras innecesarias relacionadas con ocupaciones o recreaciones de este mundo.
+sections:
+  - - q: ¿Es profanado el día de reposo al descuidarlo?
+      a: Sí. «Han escondido sus ojos de mis días de reposo, y he sido profanado entre ellos» (Eze. 22:26).
+    - q: ¿[Es profanado] por viajes, visitas y cosas semejantes que sean innecesarios?
+      a: Sí. «Quédese cada uno en su lugar, y que nadie salga de su lugar el séptimo día» (Éxo. 16:29).
+    - q: ¿[Es profanado] por pasatiempos y diversiones?
+      a: Sí. «No [busques] tu propio placer» (Isa. 58:13).
+    - q: ¿[Es profanado] por discursos {o conversaciones} ociosos y sin provecho?
+      a: Sí. «No [hables] de tus propios asuntos» (Isa. 58:13).
+    - q: ¿Y [es profanado] especialmente por medio de aquellas acciones que son siempre ilícitas?
+      a: Sí. «Han cometido adulterio […] en ese día y han profanado mis días de reposo» (Eze. 23:37, 38).
+  - - q: ¿Profanan el día de reposo los que cumplen sus deberes de manera descuidada?
+      a: Sí. «“Traéis lo robado, o cojo, o enfermo”» (Mal. 1:13).
+    - q: ¿[Lo profanan los que cumplen sus deberes] hipócritamente?
+      a: Sí. «“SU CORAZÓN ESTÁ MUY LEJOS DE MÍ”» (Mat. 15:8).
+    - q: ¿[Lo profanan los que cumplen sus deberes] de mala gana?
+      a: Sí. Como Doeg, que fue «detenido delante del SEÑOR» (1 Sam. 21:7).
+    - q: ¿Y [lo profanan] aquellos que están cansados de este?
+      a: "Sí. «Diciendo: ¿Cuándo pasará la luna nueva para vender el grano, y el día de reposo para abrir el mercado de trigo?» (Amó. 8:5)."

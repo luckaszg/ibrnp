@@ -1,0 +1,190 @@
+{
+  "_instrucciones": [
+    "Complete los campos con los datos reales y devuélvame este archivo.",
+    "Los campos que terminan en _en son la versión en inglés: si los deja vacíos (\"\"), los traduzco yo.",
+    "Si un dato no aplica o aún no lo tiene, déjelo vacío (\"\") o borre el elemento de la lista; esa parte se ocultará o quedará pendiente.",
+    "Las listas (líderes, sermones, eventos, etc.) pueden tener tantos elementos como necesite: copie un elemento y cámbielo.",
+    "Fechas: AAAA-MM-DD. Horas: HH:MM (24 horas). Días de la semana: DO, LU, MA, MI, JU, VI, SA."
+  ],
+
+  "iglesia": {
+    "direccion": {
+      "calle": "Tuyuti",
+      "ciudad": "Luque",
+      "provincia_o_estado": "Central",
+      "codigo_postal": "110917",
+      "pais": "Paraguay"
+    },
+    "_ayuda_mapa": (-25.26074368686096, -57.51099283773383),
+    "mapa_latitud": -25.26074368686096,
+    "mapa_longitud":-57.51099283773383 ,
+    "telefono": "",
+    "correo": "",
+    "canal_youtube": "https://www.youtube.com/@NuevoPactoLuque",
+    "_ayuda_horarios": "Cultos y reuniones fijas de cada semana. Se muestran en la portada, el pie de página y el calendario.",
+    "horarios": [
+      { "dia": "DO", "hora": "09:00", "nombre": "Escuela Dominical", "nombre_en": "" },
+      { "dia": "DO", "hora": "10:15", "nombre": "Culto de adoración", "nombre_en": "" },
+      { "dia": "MI", "hora": "19:30", "nombre": "Reunión de oración", "nombre_en": "" }
+    ]
+  },
+
+  "lideres": [
+    {
+      "nombre": "Eduardo Acosta",
+      "cargo": "lider",
+      "_ayuda_cargo": "lider",
+      "titulo": "Encargado",
+      "_ayuda_titulo": "Encargado/Lider",
+      "biografia": "",
+      "biografia_en": "",
+      "foto": "",
+      "_ayuda_foto": "Nombre del archivo de la foto si me la envía (ej. juan-perez.jpg). Opcional."
+    },
+    {
+      "nombre": "Mauro Vargas",
+      "cargo": "lider",
+      "_ayuda_cargo": "lider",
+      "titulo": "Encargado",
+      "_ayuda_titulo": "Encargado/Lider",
+      "biografia": "",
+      "biografia_en": "",
+      "foto": "",
+      "_ayuda_foto": "Nombre del archivo de la foto si me la envía (ej. juan-perez.jpg). Opcional."
+    }
+  ],
+
+  "historia_de_la_iglesia": [
+    {
+      "anio": "",
+      "titulo": "",
+      "titulo_en": "",
+      "descripcion": "",
+      "descripcion_en": ""
+    }
+  ],
+
+  "paginas": {
+    "quienes_somos": {
+      "_ayuda": "Hay un texto de ejemplo en la página. Marque usar_borrador: true si le sirve tal cual, o escriba el suyo.",
+      "usar_borrador": true,
+      "texto_propio": "",
+      "membresia": "Aqui colocar solamente que creemos en la importancia de ser miembros de una iglesia local segun lo que nuestros hermanos reformados del pasado creyeron. Dejar en blanco cualquier cuestion practica"
+    },
+    "nuestro_culto": {
+      "orden_del_culto": [
+        "Lectura del catecismo",
+        "Invocación",
+        "Himnos",
+	"Lectura de la palabra",
+	"Predicación expositiva"
+      ],
+      "cena_del_senor": "Dos veces al mes",
+      "_ayuda_cena": "Cuando lo decidan, indique qué domingos (ej. primer y tercer domingo).",
+      "himnario_o_salterio": "",
+      "ninos": "¿Hay sala de cuna o sala de lactancia? (Hay) ¿Escuela dominical para niños? (No hay)",
+      "duracion_aproximada": "1h45m",
+      "estacionamiento": "No hay",
+      "accesibilidad": "Facil, es una ruta cerrada"
+    },
+    "el_evangelio": {
+      "_ayuda": "Hay un texto sugerido. Los ancianos pueden aprobarlo o enviar el suyo.",
+      "usar_borrador": true,
+      "texto_propio": ""
+    },
+    "pacto_de_iglesia": {
+      "_ayuda": "Pegue aquí el texto completo del pacto de la iglesia.",
+      "texto": "",
+      "texto_en": ""
+    },
+    "privacidad": {
+      "_ayuda": "Hay un texto de ejemplo. Márquelo como aprobado o indique cambios.",
+      "usar_borrador": false,
+      "cambios": ""
+    }
+  },
+
+  "predicadores": [
+    { "nombre": "Eduardo Acosta", "titulo": "Encargado" },
+    { "nombre": "Mauro Vargas", "titulo": "Encargado"}
+  ],
+
+  "series_de_sermones": [
+    {
+      "titulo": "Gálatas",
+      "titulo_en": "",
+      "descripcion": "",
+      "descripcion_en": ""
+    },
+    {
+      "titulo": "Un Cristianismo Auténtico",
+      "titulo_en": "",
+      "descripcion": "",
+      "descripcion_en": ""
+    }
+    
+  ],
+  
+  "sermones": [
+    {
+      "titulo": "",
+      "titulo_en": "",
+      "fecha": "AAAA-MM-DD",
+      "predicador": "",
+      "_ayuda_predicador": "El mismo nombre que en la lista de predicadores.",
+      "serie": "",
+      "_ayuda_serie": "El mismo título que en la lista de series. Vacío si no pertenece a una serie.",
+      "pasaje": "",
+      "_ayuda_pasaje": "Ej.: Romanos 8:28-39",
+      "enlace_youtube": "",
+      "_ayuda_youtube": "Pegue el enlace completo del video (https://www.youtube.com/watch?v=…).",
+      "resumen": "",
+      "resumen_en": ""
+    }
+  ],
+
+  "eventos": [
+    {
+      "titulo": "",
+      "titulo_en": "",
+      "descripcion": "",
+      "descripcion_en": "",
+      "fecha": "AAAA-MM-DD",
+      "hora_inicio": "",
+      "hora_fin": "",
+      "lugar": "",
+      "semanal": false,
+      "_ayuda_semanal": "true si se repite cada semana (ej. estudio bíblico de los jueves); en ese caso indique dias_semana.",
+      "dias_semana": []
+    }
+  ],
+
+  "recursos": {
+    "libros_recomendados": [
+      {
+        "titulo": "",
+        "autor": "",
+        "comentario": "",
+        "comentario_en": "",
+        "enlace": ""
+      }
+    ],
+    "articulos": [
+      {
+        "titulo": "",
+        "autor": "",
+        "fecha": "AAAA-MM-DD",
+        "resumen": "",
+        "texto": "",
+        "_ayuda": "Texto completo del artículo. Puede enviarlo también como archivo Word o PDF."
+      }
+    ]
+  },
+
+  "publicadora": {
+    "_ayuda": "Confirmar con Editorial Legado Bautista Confesional.",
+    "texto_de_credito": "Usado con permiso de Editorial Legado Bautista Confesional.",
+    "confirmar_correccion_hechos_11_29": "En el capítulo 27.2 el PDF cita Hch. 12:29, 30; lo corregí a Hch. 11:29, 30. ¿Correcto? (sí/no)",
+    "confirmar_notas_agregadas": "Ubiqué 4 notas que faltaban en el PDF (19.2, 23.5, 26.7 y 30.4). ¿Revisadas? (sí/no)"
+  }
+}

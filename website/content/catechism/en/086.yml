@@ -1,0 +1,9 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 86
+question: What is forbidden in the tenth Commandment?
+answer: The tenth Commandment forbiddeth all Discontentment with our own Estate[^1]; envying or grieving at the Good of our Neighbor[^2], and all inordinate Motions and Affections to any thing that is his[^3].
+notes:
+  "1": 1 Kgs. 21:4; Esth. 5:13; 1 Cor. 10:10
+  "2": Gal. 5:26; Jas. 3:14, 16
+  "3": Rom. 7:7–8; Rom. 13:9

@@ -1,0 +1,7 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 62
+question: Which is the fourth Commandment?
+answer: 'The fourth Commandment is, "Remember the Sabbath Day to keep it holy: Six Days shalt thou labour, and do all thy Work; but the Seventh Day is the Sabbath of the LORD thy God, in it thou shalt not do any Work, thou, nor thy Son, nor thy Daughter, thy Man-servant, nov thy Maid-servant, nor thy Cattel, nor the Stranger that is within thy Gates: For in six Days the LORD made Heaven and Earth, the Sea, and all that in them is, and rested the Seventh Day; wherefore the LORD blessed the Sabbath Day, and hallowed it"[^1].'
+notes:
+  "1": Exod. 20:8–11

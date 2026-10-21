@@ -1,0 +1,80 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 88
+question: ¿Son todas las transgresiones de la ley igualmente abominables?
+answer: Algunos pecados, en sí mismos y por causa de varios agravantes, son más abominables que otros ante los ojos de Dios.
+sections:
+  - - q: ¿Conoce Dios todos nuestros pecados?
+      a: Sí. «Ante mi rostro están» (Ose. 7:2).
+    - q: ¿Son todos los pecados atroces ante los ojos de Dios?
+      a: Sí. Lo provocan a la ira (Deu. 9:18).
+    - q: Pero, ¿son todos igualmente atroces?
+      a: No. «Aún verás mayores abominaciones que estas» (Eze. 8:15).
+    - q: ¿Y será el castigo por el pecado proporcional a los agravantes del mismo?
+      a: Sí. «Estos recibirán mayor condenación» (Mar. 12:40).
+  - - q: ¿Son agravados los pecados por el que peca?
+      a: "[^94] Sí. «Mi pueblo se ha levantado como enemigo» (Miq. 2:8)."
+    - q: ¿Son más atroces los pecados de los ancianos que los de los demás?
+      a: Sí. «¿Has visto lo que hacen en la oscuridad los ancianos de la casa de Israel?» (Eze. 8:12).
+    - q: ¿[Son más atroces los pecados] de los ministros [que los de los demás]?
+      a: Sí. «Tanto el profeta como el sacerdote están corrompidos» (Jer. 23:11).
+    - q: ¿[Son más atroces los pecados] de los magistrados [que los de los demás]?
+      a: Sí. «Abandonará a Israel a causa de los pecados que cometió Jeroboam» (1 Rey. 14:16).
+    - q: ¿Y [los pecados] de los profesores eminentes?
+      a: Sí. «Entre los cuales están Himeneo y Alejandro» (1 Tim. 1:20).
+  - - q: ¿También son agravados los pecados por causa de quién es el ofendido?
+      a: "[^95] Sí. «¿Contra quién […] sacáis la lengua?» (Isa. 57:4)."
+    - q: ¿Son agravados especialmente los pecados que se cometen directamente {lit. inmediatamente} contra Dios?
+      a: Sí. «Si un hombre peca contra el SEÑOR, ¿quién intercederá por él?» (1 Sam. 2:25).
+    - q: ¿[Son agravados especialmente los pecados que se cometen] contra Cristo?
+      a: "Sí. «Cuando los labradores vieron al [Hijo], dijeron entre sí: “Este es el heredero, venid, matémoslo”» (Mat. 21:38)."
+    - q: ¿[Son agravados especialmente los pecados que se cometen] contra la Persona del Espíritu Santo?
+      a: Sí. «La blasfemia contra el Espíritu no será perdonada» (Mat. 12:31).
+    - q: ¿[Son agravados los pecados que se cometen] contra los superiores?
+      a: Sí. «¿Por qué, pues, no temisteis hablar contra mi siervo, contra Moisés?» (Núm. 12:8).
+    - q: ¿[Son agravados los pecados que se cometen] contra cuerpos {o grupo de personas} y comunidades enteras?
+      a: "Sí. «Y Josué dijo: ¿Por qué nos has turbado? El SEÑOR te turbará hoy» (Jos. 7:25)."
+    - q: ¿Y [los pecados que se cometen] contra las almas de los hombres?
+      a: Sí. «Dando muerte a algunos que no debían morir y dejando con vida a otros que no debían vivir» (Eze. 13:19).
+  - - q: ¿Es la presunción un agravante del pecado?
+      a: Sí. «Pero aquel {o el alma} que obre con desafío» (Núm. 15:30).
+    - q: ¿[Es] el conocimiento [un agravante del pecado]?
+      a: Sí. «A aquel, pues, que sabe hacer lo bueno y no lo hace, le es pecado» (Stg. 4:17).
+    - q: ¿[Es] {el endurecimiento ante} la reprensión [un agravante del pecado]?
+      a: Sí. «El hombre que después de mucha reprensión endurece la cerviz, de repente será quebrantado sin remedio» (Pro. 29:1).
+    - q: ¿Y la perseverancia en el pecado?
+      a: Sí. «Siguió desviándose por el camino de su corazón» (Isa. 57:17).
+  - - q: ¿Son agravados los pecados {que se cometen} contra la luz de la naturaleza?
+      a: Sí. «Entre vosotros hay inmoralidad […] tal como no existe ni siquiera entre los gentiles» (1 Cor. 5:1).
+    - q: ¿[Son agravados] los pecados deliberados?
+      a: Sí. «Planea la iniquidad en su cama» (Sal. 36:4).
+    - q: ¿[Son agravados] los pecados públicos?
+      a: Sí. «Absalón se llegó a las concubinas de su padre a la vista de todo Israel» (2 Sam. 16:22).
+    - q: ¿Son agravados en gran manera los pecados contra la misericordia?
+      a: Sí. Así fue como Salomón se apartó del Señor, quien se le había aparecido dos veces (1 Rey. 11:9).
+    - q: ¿[Son agravados en gran manera] los pecados contra {o aun a pesar de} los juicios?
+      a: Sí. «A pesar de todo esto, todavía pecaron» (Sal. 78:32).
+    - q: ¿[Son agravados en gran manera] los pecados contra mandatos expresos?
+      a: Sí. «Hemos abandonado tus mandamientos, que por medio de tus siervos los profetas ordenaste» (Esd. 9:10, 11).
+    - q: ¿Y los pecados contra nuestros propios pactos y compromisos?
+      a: "Sí. «Dijiste: “No trasgrediré”»[^96] (Jer. 2:20)."
+  - - q: ¿Es un agravante del pecado cometerlo sin vergüenza?
+      a: Sí. «¿Se han avergonzado…? Ciertamente no se han avergonzado» (Jer. 6:15).
+    - q: ¿[Es un agravante del pecado cometerlo] con deleite?
+      a: Sí. «Su alma se deleita en sus abominaciones» (Isa. 66:3).
+    - q: ¿[Es un agravante del pecado] jactarse de ello?
+      a: Sí. «Cuya gloria está en su vergüenza» (Flp. 3:19).
+    - q: ¿Puede el lugar ser también un agravante del pecado?
+      a: Sí. «Obra injustamente en tierra de rectitud» (Isa. 26:10).
+    - q: ¿Y el tiempo?
+      a: Sí. «¿Acaso es tiempo de aceptar dinero y de aceptar ropa, olivares [y] viñas?» (2 Rey. 5:26).
+  - - q: ¿Deberíamos tener en cuenta los agravantes del pecado en nuestras confesiones?
+      a: Sí. «Aarón […] confesará […] las iniquidades de los hijos de Israel y todas sus transgresiones, todos sus pecados» (Lev. 16:21).
+    - q: Pero, aunque tengan agravantes, ¿podemos esperar que sean perdonados?
+      a: Sí. «Me has cansado con tus iniquidades. Yo, yo soy el que borro tus transgresiones por amor a mí mismo» (Isa. 43:24, 25).
+notes:
+  "93": En el original hay un error en la referencia; dice Salmos 103:3, pero el autor está citando las palabras de Salmos 130:3.
+  "94": "Esta es una traducción más dinámica. La pregunta original puede traducirse más literalmente así: «¿Reciben los pecados sus agravantes de las personas que delinquen?»."
+  "95": "Esta es una traducción más dinámica. La pregunta original puede traducirse más literalmente así: «¿Reciben los pecados sus agravantes de las personas ofendidas también?»."
+  "96": Esta es una traducción directa de la versión inglesa (KJV) usada por el autor. Hemos preservado esta frase para asegurar la fidelidad de la traducción. Sin embargo, estas palabras no aparecen en ninguna versión en español. Al parecer se trata de un error de traducción de la KJV. En lugar de traducir la palabra דב ע (servir), traduce la palabra רבע (pasar, atravesar, transgredir). A pesar de esto, la doctrina enseñada por Beddome en esta pregunta es una clara enseñanza de la Palabra de Dios (véase Ecl. 5:5; Pro. 20:25; Hch. 5:4).

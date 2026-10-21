@@ -1,0 +1,381 @@
+---
+import Base from '../layouts/Base.astro';
+import Seal from '../components/Seal.astro';
+import ServiceTimes from '../components/ServiceTimes.astro';
+import YouTube from '../components/YouTube.astro';
+import Provisional from '../components/Provisional.astro';
+import EventList from '../components/EventList.astro';
+import { getCollection, getEntry } from 'astro:content';
+import { settings, hasContactDetails } from '../lib/settings.ts';
+import ContactLinks from '../components/ContactLinks.astro';
+import { sermons, slugOf } from '../lib/content.ts';
+import { occurrences, today } from '../lib/events.ts';
+import { alternates, route, sermonPath } from '../i18n/routes.ts';
+import { t, pick, formatDate } from '../i18n/ui.ts';
+import { formatRef, parseReferences, refsOnly, type Lang, passageRefs } from '../lib/scripture.ts';
+import { churchJsonLd } from '../lib/seo.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const _ = t(lang);
+const verse = settings.verse[lang];
+const a = settings.address;
+
+const [latest] = await sermons();
+const preacher = latest ? await getEntry(latest.data.preacher) : undefined;
+const passage = latest ? passageRefs(latest.data.passage).map((r) => formatRef(r, lang, 'long')).join('; ') : '';
+const upcoming = occurrences(await getCollection('events'), today(), 90).slice(0, 4);
+
+const doctrine = [
+  { href: route('confession', lang), title: _('nav.confession'), text: _('beliefs.confessionBlurb'), mark: '1689' },
+  { href: route('catechism', lang), title: lang === 'es' ? 'Catecismo de Beddome' : 'The Baptist Catechism', text: _('beliefs.catechismBlurb'), mark: lang === 'es' ? '1752' : '1695' },
+  { href: route('gospel', lang), title: _('nav.gospel'), text: _('beliefs.gospelBlurb'), mark: '✠' },
+];
+---
+
+<Base lang={lang} title={settings.name} alternates={alternates('home')} jsonLd={[churchJsonLd(lang, Astro.site!)]}>
+  <section class="hero on-navy">
+    <div class="container hero-inner">
+      <Seal size={208} eager class="hero-seal" />
+      <p class="eyebrow">{_('home.welcome')}</p>
+      <h1><span class="h1-line">Iglesia Bautista Reformada</span> <span class="h1-name">Nuevo Pacto</span></h1>
+      <p class="hero-tagline">{settings.tagline[lang] ?? settings.tagline.es}</p>
+      <div class="hero-info">
+        <ServiceTimes lang={lang} />
+      </div>
+      <p class="hero-address">
+        {a.street}, {a.city}
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn--on-navy" href={route('visit', lang)}>{_('home.visitCta')}</a>
+        <a class="hero-link" href={route('worship', lang)}>{_('nav.worship')} →</a>
+      </div>
+      <Provisional lang={lang} show={settings.placeholder} />
+    </div>
+  </section>
+
+  <section class="verse-band">
+    <figure class="container narrow">
+      <blockquote>{verse.text}</blockquote>
+      <figcaption class="cite">— {verse.reference}</figcaption>
+    </figure>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container about-grid">
+      <div>
+        <p class="eyebrow">{_('home.whoWeAre')}</p>
+        <h2>{lang === 'es' ? 'Una iglesia histórica en sus convicciones' : 'A church with historic convictions'}</h2>
+        <p class="lede">
+          {
+            lang === 'es'
+              ? 'Somos una congregación de creyentes bautizados que confiesa la fe de la Reforma, tal como fue expresada por los bautistas particulares en la Confesión de 1689.'
+              : 'We are a congregation of baptized believers confessing the faith of the Reformation, as expressed by the Particular Baptists in the 1689 Confession.'
+          }
+        </p>
+        <a class="btn btn--outline" href={route('about', lang)}>{_('common.readMore')}</a>
+      </div>
+      <ul class="distinctives">
+        <li>
+          <span class="label">{lang === 'es' ? 'Reformada' : 'Reformed'}</span>
+          <p>{lang === 'es' ? 'Por gracia sola, por medio de la fe sola, en Cristo solo, según la Escritura sola.' : 'By grace alone, through faith alone, in Christ alone, according to Scripture alone.'}</p>
+        </li>
+        <li>
+          <span class="label">{lang === 'es' ? 'Bautista' : 'Baptist'}</span>
+          <p>{lang === 'es' ? 'Una iglesia de creyentes bautizados, que confiesa el orden bíblico de ancianos y diáconos.' : 'A church of baptized believers, confessing the biblical order of elders and deacons.'}</p>
+        </li>
+        <li>
+          <span class="label">{lang === 'es' ? 'Confesional' : 'Confessional'}</span>
+          <p>{lang === 'es' ? 'Suscribimos la Segunda Confesión Bautista de Fe de Londres de 1689.' : 'We subscribe to the Second London Baptist Confession of Faith of 1689.'}</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  {
+    latest && (
+      <section class="section">
+        <div class="container sermon-grid">
+          <div>
+            <p class="eyebrow">{_('home.latestSermon')}</p>
+            <h2>
+              <a href={sermonPath(slugOf(latest.id), lang)} class="plain">
+                {pick(latest.data.title, lang)}
+              </a>
+            </h2>
+            <p class="passage">{passage}</p>
+            <p class="muted">
+              {preacher?.data.name} · {formatDate(latest.data.date, lang)}
+            </p>
+            <a class="btn btn--outline" href={route('sermons', lang)}>
+              {_('common.seeAll')} — {_('nav.sermons')}
+            </a>
+          </div>
+          <YouTube id={latest.data.youtube} title={pick(latest.data.title, lang)} caption={passage} lang={lang} />
+        </div>
+      </section>
+    )
+  }
+
+  <section class="section section--navy">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">{_('home.doctrine')}</p>
+        <h2>{_('nav.beliefs')}</h2>
+      </div>
+      <div class="grid grid--3">
+        {
+          doctrine.map((d) => (
+            <a class="doc-card" href={d.href}>
+              <span class="doc-mark" aria-hidden="true">
+                {d.mark}
+              </span>
+              <h3>{d.title}</h3>
+              <p>{d.text}</p>
+              <span class="label">{_('common.readMore')} →</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  {upcoming.length > 0 && (
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{_('home.upcoming')}</p>
+        <h2>{_('nav.activities')}</h2>
+      </div>
+      <EventList lang={lang} items={upcoming} />
+      <p style="margin-top: 2rem"><a class="btn btn--outline" href={route('activities', lang)}>{_('common.seeAll')}</a></p>
+    </div>
+  </section>
+  )}
+
+  <section class="section section--tint visit-strip">
+    <div class="container visit-grid">
+      <div>
+        <p class="eyebrow">{_('home.findUs')}</p>
+        <h2>{_('nav.visit')}</h2>
+        <address>
+          {a.street}<br />{a.city}{a.region && `, ${a.region}`}<br />{a.country}
+        </address>
+        {
+          hasContactDetails && (
+            <p>
+              <ContactLinks inline />
+            </p>
+          )
+        }
+        <a class="btn" href={route('visit', lang)}>{_('home.visitCta')}</a>
+      </div>
+      <div class="times-box">
+        <h3 class="label">{_('common.serviceTimes')}</h3>
+        <ServiceTimes lang={lang} />
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    padding-block: clamp(56px, 9vw, 112px) clamp(64px, 9vw, 120px);
+    text-align: center;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.07), transparent 60%),
+      var(--navy-900);
+  }
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero :global(.hero-seal) {
+    width: clamp(150px, 22vw, 208px);
+    height: auto;
+    margin-bottom: 28px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15), 0 0 0 10px rgba(255, 255, 255, 0.03);
+  }
+  .hero h1 {
+    font-size: clamp(2rem, 5.2vw, 3.6rem);
+    font-weight: 500;
+    margin-bottom: 0.25em;
+  }
+  /* "Iglesia Bautista Reformada" stays on one line wherever it fits. */
+  .h1-line {
+    display: block;
+  }
+  @media (min-width: 640px) {
+    .h1-line {
+      white-space: nowrap;
+    }
+  }
+  .hero h1 .h1-name {
+    display: block;
+    font-style: italic;
+    color: var(--brass-400);
+  }
+  .hero-tagline {
+    font-family: var(--font-label);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #b9c6d4;
+    margin-bottom: 40px;
+  }
+  .hero-info {
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 24px 8px;
+    width: min(760px, 100%);
+  }
+  .hero-info :global(.times) {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 20px;
+  }
+  .hero-address {
+    margin: 22px 0 28px;
+    color: #dbe3ec;
+  }
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  .hero-link {
+    font-family: var(--font-label);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+  }
+  .hero-link:hover {
+    color: var(--brass-400);
+  }
+
+  .verse-band {
+    padding-block: clamp(56px, 8vw, 96px);
+    text-align: center;
+    border-bottom: 1px solid var(--navy-200);
+  }
+  .verse-band figure {
+    margin-block: 0;
+  }
+  .verse-band blockquote {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+    line-height: 1.35;
+    font-style: italic;
+  }
+
+  .about-grid,
+  .sermon-grid,
+  .visit-grid {
+    display: grid;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: center;
+  }
+  @media (min-width: 900px) {
+    .about-grid {
+      grid-template-columns: 1.1fr 1fr;
+    }
+    .sermon-grid {
+      grid-template-columns: 1fr 1.3fr;
+    }
+    .visit-grid {
+      grid-template-columns: 1.2fr 1fr;
+    }
+  }
+  .distinctives {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .distinctives li {
+    padding: 20px 0;
+    border-top: 1px solid var(--navy-200);
+  }
+  .distinctives li:last-child {
+    border-bottom: 1px solid var(--navy-200);
+  }
+  .distinctives .label {
+    color: var(--brass-700);
+  }
+  .distinctives p {
+    margin: 6px 0 0;
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    line-height: 1.35;
+  }
+  .plain {
+    text-decoration: none;
+  }
+  .plain:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--brass-700);
+  }
+  .passage {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--navy-700);
+    margin-bottom: 0.25em;
+  }
+
+  .doc-card {
+    display: flex;
+    flex-direction: column;
+    padding: 36px 32px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    text-decoration: none;
+    transition: border-color 120ms ease, background-color 120ms ease;
+  }
+  .doc-card:hover {
+    border-color: var(--brass-400);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--white);
+  }
+  .doc-mark {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--brass-400);
+    margin-bottom: 18px;
+  }
+  .doc-card h3 {
+    font-size: 1.7rem;
+  }
+  .doc-card p {
+    color: #c8d3de;
+    flex: 1;
+  }
+  .doc-card .label {
+    color: var(--brass-400);
+  }
+
+  .visit-strip address {
+    font-style: normal;
+    font-size: 1.25rem;
+    font-family: var(--font-display);
+    margin-bottom: 1rem;
+  }
+  .times-box {
+    background: var(--white);
+    border: 1px solid var(--navy-200);
+    padding: 32px;
+  }
+  .times-box .label {
+    color: var(--brass-700);
+    margin-bottom: 20px;
+  }
+</style>

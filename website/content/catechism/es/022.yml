@@ -1,0 +1,79 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 22
+question: ¿En qué consiste la miseria de ese estado en que cayó el hombre?
+answer: Toda la humanidad, por su Caída, perdió la comunión con Dios, está bajo Su ira y maldición, y así fue sujeta a todas las miserias en esta vida, a la muerte misma y a las penas del infierno para siempre.
+sections:
+  - - q: ¿Es el hombre caído indigno de la comunión con Dios?
+      a: Sí, porque «¿qué comunión [tiene] la luz con las tinieblas?» (2 Cor. 6:14).
+    - q: ¿Es [el hombre caído] no apto para la comunión con Dios?
+      a: Sí, porque «¿andan dos hombres juntos si no se han puesto de acuerdo?» (Amó. 3:3).
+    - q: ¿Y está [el hombre caído] excluido de la comunión con Dios?
+      a: Sí. «Vuestras iniquidades han hecho separación entre vosotros y vuestro Dios» (Isa. 59:2).
+    - q: Pero, ¿se puede reparar esta brecha?
+      a: Sí. «Vosotros, que en otro tiempo estabais lejos, habéis sido acercados por la sangre de Cristo» (Efe. 2:13).
+  - - q: ¿Está el hombre caído bajo la ira de Dios?
+      a: Sí. «Y éramos por naturaleza hijos de ira, lo mismo que los demás» (Efe. 2:3).
+    - q: ¿Alcanzará ciertamente esta ira a quienes están sujetos a ella?
+      a: Sí, porque no quedará «quien escape» (Esd. 9:14).
+    - q: Entonces, ¿es espantoso estar expuesto a esta ira?
+      a: Sí. «En presencia de Su indignación, ¿quién resistirá?» (Nah. 1:6).
+    - q: ¿Y son conscientes los santos de que es así?
+      a: Sí. «No me reprendas en tu enojo» (Sal. 38:1).
+  - - q: ¿Está el hombre caído bajo la maldición de Dios?
+      a: Sí. «Porque todos los que son de las obras de la ley están bajo maldición» (Gál. 3:10)[^38].
+    - q: ¿Hay maldición sobre los cuerpos de los impíos?
+      a: Sí. «Entró como agua en su cuerpo, y como aceite en sus huesos» (Sal. 109:18).
+    - q: ¿[Hay maldición] sobre las obras de los impíos?
+      a: Sí. «Esperáis mucho, pero he aquí, hay poco» (Hag. 1:9).
+    - q: ¿[Hay maldición] sobre las familias de los impíos?
+      a: Sí. «La maldición del SEÑOR está sobre la casa del impío» (Pro. 3:33).
+    - q: ¿Y [hay maldición] sobre los placeres del impío?
+      a: Sí. «Maldeciré vuestras bendiciones; y en verdad, ya las he maldecido» (Mal. 2:2).
+    - q: ¿Se extiende esta maldición a pecadores de todo tipo?
+      a: Sí. Esta «sale sobre la faz de toda la tierra»[^39] (Zac. 5:3).
+  - - q: ¿Están sujetos los hombres caídos a muchos males internos y espirituales?
+      a: Sí. «Esta es tu maldad. ¡Qué amarga! ¡Cómo ha penetrado hasta tu corazón!» (Jer. 4:18).
+    - q: ¿Están sujetos [los hombres caídos] a la tiranía de Satanás?
+      a: Sí. Satanás «opera en los hijos de desobediencia» (Efe. 2:2).
+    - q: ¿[Están sujetos los hombres caídos] a la ceguera judicial?
+      a: Sí. «DIOS LES DIO UN ESPÍRITU DE ESTUPOR, OJOSCON QUE NO VEN» (Rom. 11:8).
+    - q: ¿[Están sujetos los hombres caídos] a la dureza del corazón?
+      a: Sí. «Tienen cauterizada la conciencia» (1 Tim. 4:2).
+    - q: ¿[Están sujetos los hombres caídos] a pasiones degradantes?
+      a: Sí. «Por esta razón Dios los entregó a pasiones degradantes» (Rom. 1:26).
+    - q: ¿[Están sujetos los hombres caídos] a poderes engañosos?
+      a: Sí. «Por esto Dios les enviará un poder engañoso, para que crean en la mentira» (2 Tes. 2:11).
+    - q: ¿Y [están sujetos los hombres caídos] a gran angustia y perplejidad mental?
+      a: Sí. «Le alcanzan los terrores como una inundación; de noche le arrebata un torbellino» (Job 27:20).
+  - - q: ¿Está sujeto el hombre caído a muchos males externos?
+      a: Sí. «Muchos son los dolores del impío» (Sal. 32:10).
+    - q: ¿Está expuesto [el hombre caído] a enfermedades corporales?
+      a: Sí. «Te herirá el SEÑOR de tisis, de fiebre» (Deu. 28:22).
+    - q: ¿[Está expuesto el hombre caído] a la fatiga y el trabajo?
+      a: Sí. «Con el sudor de tu rostro comerás el pan» (Gén. 3:19).[^40]
+    - q: ¿[Está expuesto el hombre caído] a cruces y desengaños?
+      a: Sí. «Ellos edificarán, pero yo destruiré» (Mal. 1:4).
+    - q: ¿[Está expuesto el hombre caído] al desprecio y al reproche?
+      a: Sí. «Y vendrás a ser proverbio y burla» (Deu. 28:37).
+    - q: ¿Es todo esto una triste herencia de nuestros primeros padres?
+      a: Sí. «Porque el hombre nace para la aflicción, como las chispas vuelan hacia arriba» (Job 5:7).
+  - - q: ¿Está expuesta toda la humanidad a la muerte por causa de la Caída?
+      a: Sí. «Porque la paga del pecado es muerte» (Rom. 6:23).
+    - q: ¿Hace el pecado que la muerte sea terrible?
+      a: Sí. «El aguijón de la muerte es el pecado» (1 Cor. 15:56).
+    - q: ¿Y eso incluso para los santos?
+      a: Sí. Hay algunos de ellos, «quienes por el temor a la muerte, estaban sujetos a esclavitud durante toda la vida» (Heb. 2:15).
+  - - q: ¿Hemos perdido la felicidad del Cielo por causa del pecado?
+      a: Sí. «Los que es ensalzan [o se jactan] no estarán delante de tus ojos» (Sal. 5:5).
+    - q: ¿Nos hemos acarreado las penas [o dolores] del infierno?
+      a: Sí. «Que la muerte los sorprenda, que desciendan vivos al Seol» (Sal. 55:15).
+    - q: ¿Son eternos esos dolores?
+      a: Sí. «Estos sufrirán el castigo de eterna destrucción» (2 Tes. 1:9).
+    - q: ¿Y es esto lo que [justamente] merece el pecado?
+      a: Sí. «Porque [...] es justo delante de Dios retribuir con aflicción» (2 Tes. 1:6).
+notes:
+  "38": En el original hay un error en la referencia; dice Efesios 3:11, pero el autor está citando las palabras de Gálatas 3:10.
+  "39": "En la versión original en inglés, el autor utiliza también la segunda parte del texto para probar que la maldición del Señor se extiende a todo tipo de hombre. En la versión King James antigua este texto es traducido como «Then said he unto me, This is the curse that goeth forth over the face of the whole earth: for every one that stealeth shall be cut off as on this side according to it; and every one that sweareth shall be cut off as on that side according to it». La frase hebrea, compuesta por el pronombre relativo ֙הֶּזִמ (este, aquel) y la palabra ָהו ֹ֣מָּכ (según), la cual aparece dos veces en este versículo, es conectada en la King James con las palabras ץֶר ָ֑אָה־לָכ (toda la tierra), traduciendo la frase como «de este lugar de la tierra» y «aquel lugar de la tierra». Sin embargo, en otras versiones anglófonas y en las versiones hispanas, la frase hebrea es relacionada con la expresión רֶמ אֹּ֣יַו (entonces me dijo) con la que comienza el texto, traduciendo la frase como «según este lugar de lo que me dijo» y «según aquel lugar de lo que me dijo». Las versiones hispanas reemplazan la frase «lugar de lo que me dijo» por «en el rollo» (haciendo alusión al rollo en el que está escrita la Palabra de Dios). Por esa razón, en nuestras versiones en español no podemos ver con facilidad la conexión que el autor hace entre este texto y la idea de que el juicio de Dios se extiende sobre todo tipo de hombre que está en todos los rincones de la Tierra. Aunque este sea el caso, la Biblia deja en claro que la extensión del justo juicio de Dios alcanza todos los rincones del mundo y a todo tipo de pecadores (Isa. 26:21; Pro. 11:21; Rom. 2:5, 6; etc.)."
+  "40": En el original hay un error en la referencia; dice Génesis 3:9, pero el autor está citando las palabras de Génesis 3:19.

@@ -1,0 +1,9 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 107
+question: What doth the Preface of the Lord's Prayer teach us?
+answer: The Preface of the Lord's Prayer, which is, "Our Father which art in Heaven[^1]," teacheth us to draw near to God with all holy Reverence and Confidence, as Children to a Father, able and ready to help us[^2]; and that we should pray with and for others[^3].
+notes:
+  "1": Matt. 6:9
+  "2": Rom. 8:15; Luke 11:13
+  "3": Acts 12:5; 1 Tim. 2:1–2

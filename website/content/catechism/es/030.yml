@@ -1,0 +1,137 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 30
+question: ¿En qué consistió la humillación de Cristo?
+answer: La humillación de Cristo consistió en haber nacido, y haberlo hecho en una humilde condición; nacido bajo la ley, sufriendo las miserias de esta vida, la ira de Dios y la muerte maldita de la cruz; en haber sido sepultado y haber permanecido bajo el poder de la muerte por un tiempo.
+sections:
+  - - q: ¿Se humilló Cristo?
+      a: Sí. Él «se despojó a Sí mismo» (Flp. 2:7).
+    - q: ¿Era necesario que Cristo se humillara?
+      a: Sí. «Así está escrito, que el Cristo padeciera» (Luc. 24:46).
+    - q: ¿Se humilló Cristo en Su nacimiento?
+      a: Sí. Él «[tomó] forma de siervo» (Flp. 2:7).
+    - q: ¿Nació Cristo de un linaje pobre?
+      a: Sí. Él fue «como raíz de tierra seca» (Isa. 53:2).
+    - q: ¿Y [nació Cristo] en un lugar pobre?
+      a: Sí. Belén era «pequeña entre las familias de Judá» (Miq. 5:2).
+    - q: ¿Fue provisto Cristo pobremente?
+      a: Sí. «Ella dio a luz a su hijo primogénito; le envolvió en pañales y le acostó en un pesebre» (Luc. 2:7).
+    - q: ¿Era esto muy diferente de Su estado anterior?
+      a: Sí, porque «siendo rico, por amor a vosotros se hizo pobre» (2 Cor. 8:9).
+  - - q: ¿Nació Cristo bajo la ley?
+      a: Sí. Él «[nació] de mujer, [nació] bajo la ley» (Gál. 4:4).
+    - q: ¿Fue circuncidado?
+      a: Sí. Él fue circuncidado al octavo día (Luc. 2:21).
+    - q: ¿Estaba Él obligado a guardar toda la ley por esta razón?
+      a: Sí. «Y otra vez testifico a todo hombre que se circuncida, que está obligado a cumplir toda la ley» (Gál. 5:3).
+    - q: ¿Guardó la ley realmente?
+      a: Sí. «¿Quién de vosotros me prueba que tengo pecado?» (Jua. 8:46).
+    - q: ¿Observó Cristo tanto la ley ceremonial como la moral?
+      a: Sí. «Entonces Él también subió a la fiesta» (Jua. 7:10).
+    - q: ¿Y no solo obedeció los preceptos de la ley, sino que también soportó los castigos de la misma?
+      a: Sí. Él «[se hizo] maldición por nosotros» (Gál. 3:13).
+  - - q: ¿Sufrió Cristo las miserias de esta vida?
+      a: Sí. Él fue un «varón de dolores» (Isa. 53:3).
+    - q: ¿Fueron Sus tentaciones una dificultad para Él?
+      a: Sí. «Él mismo padeció siendo tentado» (Heb. 2:18 [RVR60]).
+    - q: ¿[Fue] Su poco éxito [una dificultad para Él]?
+      a: Sí. Él fue «entristecido por la dureza de sus corazones» (Mar. 3:5).
+    - q: ¿[Fueron] los sufrimientos de sus amigos [una dificultad para Él]?
+      a: Sí, porque «cuando Jesús vio [a María] llorando [...] se conmovió profundamente en el espíritu, y se entristeció» (Jua. 11:33).
+    - q: ¿[Fueron] las contradicciones por parte de Sus enemigos [una dificultad para Él]?
+      a: Sí. Él «soportó [la] hostilidad de los pecadores contra Sí mismo» (Heb. 12:3).
+    - q: ¿Hubo oposición contra Su doctrina?
+      a: Sí. Decían que extraviaba [o engañaba] a la gente (Jua. 7:12).
+    - q: ¿Fueron calumniados Sus milagros?
+      a: "Sí. «[C]uando los fariseos lo oyeron, dijeron: Este no expulsa los demonios sino por Beelzebú, el príncipe de los demonios» (Mat. 12:24)."
+    - q: ¿Y fueron tergiversadas Sus mejores acciones?
+      a: Sí. «“Mirad, un hombre glotón y bebedor de vino, amigo de recaudadores de impuestos y de pecadores”» (Luc. 7:34).
+  - - q: ¿Fue Cristo desconocido para el mundo?
+      a: Sí. «A quien ninguno de los príncipes de este siglo conoció» (1 Cor. 2:8 [RVR60]).
+    - q: ¿Fue despreciado?
+      a: Sí. Él «fue despreciado y desechado de los hombres» (Isa. 53:3).
+    - q: ¿Fue injuriado?
+      a: Sí. Él fue «oprobio de los hombres» (Sal. 22:6).
+    - q: ¿Fue perseguido?
+      a: Sí. «Los judíos volvieron a tomar piedras para apedrearle» (Jua. 10:31).
+    - q: ¿Tenía Cristo una morada fija?
+      a: No. «El Hijo del Hombre no tiene dónde recostar la cabeza» (Luc. 9:58).
+    - q: ¿Tenía Cristo algún tipo de manutención segura?
+      a: No, porque Él «tuvo hambre» y no tenía nada para comer (Mar. 11:12).
+    - q: ¿Fueron poco amables Sus compatriotas?
+      a: Sí. «A lo suyo vino, y los suyos no lo recibieron» (Jua. 1:11).
+    - q: ¿Resultaron ser falsos muchos de Sus amigos?
+      a: Sí. «Muchos de sus discípulos se apartaron y ya no andaban con Él» (Jua. 6:66).
+    - q: ¿Y fueron ingratos aquellos a los que Él concedió favores?
+      a: Sí. «¿No fueron diez los que quedaron limpios? Y los otros nueve […] ¿dónde están?» (Luc. 17:17).
+  - - q: ¿Fue la muerte de Cristo otro ejemplo de Su humillación?
+      a: Sí. «Él se humilló a Sí mismo, haciéndose obediente hasta la muerte, y muerte de cruz» (Flp. 2:8).
+    - q: ¿Fue dolorosa Su muerte?
+      a: Sí. Fue una «muerte de cruz» (Ibíd.).
+    - q: ¿Fue vergonzosa Su muerte?
+      a: Sí. «Él soportó la cruz, menospreciando la vergüenza» (Heb. 12:2).
+    - q: ¿Fue maldita Su muerte?
+      a: Sí. «MALDITO TODO EL QUE CUELGA DE UNMADERO» (Gál. 3:13).
+    - q: ¿Sufrió Él en Su cuerpo?
+      a: Sí, porque «hemos sido santificados mediante la ofrenda del cuerpo de Jesucristo una vez para siempre» (Heb. 10:10).
+    - q: ¿Sufrió Él en Su sentido del tacto?
+      a: Sí. «Horadaron Sus manos y Sus pies» (Sal. 22:16).
+    - q: ¿[Sufrió Él en Su sentido] del gusto?
+      a: Sí. «Le dieron a beber vinagre mezclado con hiel» (Mat. 27:34 [RVR60]).
+    - q: ¿[Sufrió Él en Su sentido] de la vista?
+      a: Sí. «Los que pasaban le injuriaban, meneando la cabeza» (Mat. 27:39).
+    - q: ¿[Sufrió Él en Su sentido] auditivo?
+      a: Sí. «Los que pasaban le injuriaban» (Ibíd.).
+    - q: ¿[Sufrió Él en Su sentido] del olfato?
+      a: Sí. «Lo llevaron a un lugar llamado Gólgota, que significa Lugar de la Calavera» (Mat. 27:33).
+    - q: ¿Sufrió Cristo también en Su alma?
+      a: Sí. «Ahora mi alma se ha angustiado» (Jua. 12:27).
+    - q: ¿Y fue este el más doloroso de todos Sus sufrimientos?
+      a: Sí. Él estaba «en agonía» (Luc. 22:44).
+  - - q: ¿Sufrió Cristo a manos del Padre?
+      a: Sí. «Él fue herido de Dios» (Isa. 53:4).
+    - q: ¿[Sufrió Cristo a manos] de Satanás?
+      a: Sí. «Tú lo herirás en el calcañar» (Gén. 3:15).
+    - q: ¿Y [sufrió Cristo a manos] de hombres?
+      a: Sí. «Esta hora y el poder de las tinieblas son vuestros» (Luc. 22:53).
+    - q: ¿Fue traicionado por un discípulo?
+      a: Sí. «El diablo había puesto en el corazón de Judas Iscariote [...] el que lo entregara» (Jua. 13:2).
+    - q: ¿[Fue] abandonado por el resto [de Sus discípulos]?
+      a: Sí. «Todos los discípulos le abandonaron y huyeron» (Mat. 26:56).
+    - q: ¿Fue acusado falsamente?
+      a: Sí. «Procuraban obtener falso testimonio contra Jesús» (Mat. 26:59).
+    - q: ¿[Fue] condenado injustamente?
+      a: "Sí, porque Pilato dijo: «No encuentro delito en este hombre» (Luc. 23:4)."
+    - q: ¿Y [fue] ejecutado de forma inhumana?
+      a: Sí, porque fue azotado, coronado de espinas y obligado a llevar Su propia cruz (Mat. 27:26, 29; Jua. 19:17).
+  - - q: ¿Murió Cristo para mostrar la justicia y santidad de Dios?
+      a: Sí. «Para demostrar Su justicia, a fin de que Él sea justo» (Rom. 3:26).
+    - q: ¿[Murió Cristo] para representar la gran maldad y malignidad del pecado?
+      a: Sí. Él «condenó al pecado en la carne» (Rom. 8:3).
+    - q: ¿[Murió Cristo] para darnos ejemplo de paciencia y resignación ante la voluntad divina?
+      a: Sí. «Puesto que Cristo ha padecido en la carne, armaos también vosotros con el mismo propósito» (1 Pedro 4:1).
+    - q: ¿[Murió Cristo] para glorificar aquella ley que el hombre ha quebrantado?
+      a: Sí. Él «[ha hecho] la ley grande y gloriosa» (Isa. 42:21).
+    - q: ¿[Murió Cristo] para destruir a Satanás?
+      a: Sí. «Para anular mediante la muerte el poder de aquel que tenía el poder de la muerte, es decir, el diablo» (Heb. 2:14).
+    - q: ¿[Murió Cristo] para romper el poder del pecado?
+      a: Sí. «Nuestro viejo hombre fue crucificado con Él, para que nuestro cuerpo de pecado fuera destruido» (Rom. 6:6).
+    - q: ¿[Murió Cristo] para traer una justicia justificadora?
+      a: Sí. «Por su conocimiento, el Justo, mi Siervo, justificará a muchos, y cargará las iniquidades de ellos» (Isa. 53:11).
+    - q: ¿[Murió Cristo] para procurar para nosotros el derecho al Cielo?
+      a: Sí, porque los santos «reinarán en vida por medio de uno, Jesucristo» (Rom. 5:17).
+    - q: ¿Fue por los elegidos que Cristo sufrió y murió así?
+      a: Sí, porque «amó a la iglesia y se dio a Sí mismo por ella» (Efe. 5:25).
+  - - q: ¿Fue sepultado Cristo?
+      a: Sí. «Que fue sepultado» (1 Cor. 15:4).
+    - q: ¿Fue sepultado a expensas de otro?
+      a: Sí. «Tomando José el cuerpo, lo envolvió en un lienzo limpio de lino, y lo puso en su sepulcro nuevo» (Mat. 27:59, 60).
+    - q: ¿Permaneció Cristo bajo el poder de la muerte por un tiempo?
+      a: Sí. «Así estará el Hijo del Hombre tres días y tres noches en el corazón de la tierra» (Mat. 12:40).
+    - q: ¿Y fue esto parte de la humillación de Cristo?
+      a: Sí. «Me has puesto en el polvo de la muerte» (Sal. 22:15).
+  - - q: ¿Deberían los sufrimientos de Cristo hacer temblar a los pecadores?
+      a: Sí. «Porque si en el árbol verde hacen esto, ¿qué sucederá en el seco?» (Luc. 23:31).
+    - q: ¿Y deberían [los sufrimientos de Cristo] hacer que los santos se regocijen?
+      a: Sí. «Pero jamás acontezca que yo me gloríe, sino en la cruz de nuestro Señor Jesucristo» (Gál. 6:14).

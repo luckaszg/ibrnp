@@ -1,0 +1,9 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 110
+question: What do we pray for in the third Petition?
+answer: In the third Petition, which is, "Thy Will be done on Earth, as it is in Heaven[^1]," we pray, that God by his Grace would make us able and willing to know, obey, and submit to his Will in all things[^2], as the Angels do in Heaven[^3].
+notes:
+  "1": Matt. 6:10
+  "2": Ps. 67; Ps. 119:36; Matt. 26:39; 2 Sam. 15:25; Job 1:21
+  "3": Ps. 103:20–21

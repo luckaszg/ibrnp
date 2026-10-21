@@ -1,0 +1,81 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 113
+question: ¿Qué oramos en la sexta petición?
+answer: "En la sexta petición, que es: «Y no nos metas en tentación, mas líbranos del mal», oramos que Dios nos guarde de ser tentados a pecar, o que nos sostenga y nos libre cuando seamos tentados."
+sections:
+  - - q: ¿Puede decirse que Dios mete en tentación?
+      a: Sí. «Aconteció que después de estas cosas, Dios probó a Abraham» (Gén. 22:1).
+    - q: ¿Hace esto a veces retirando Su gracia asistencial?
+      a: Sí. «Dios dejó solo [a Ezequías] para probarle» (2 Cró. 32:31).
+    - q: ¿[Hace esto a veces] dejando sueltos a nuestros enemigos espirituales?
+      a: "Sí. «Y el SEÑOR dijo: “¿Quién inducirá a Acab para que suba y caiga en Ramot de Galaad?”» (1 Rey. 22:20)."
+    - q: ¿Y administrando providencialmente ocasiones de pecado?
+      a: Sí. «No darás oído a las palabras de ese profeta o de ese soñador de sueños; porque el SEÑOR tu Dios te está probando» (Deu. 13:3).
+  - - q: ¿Proceden muchas tentaciones de nuestra propia concupiscencia?
+      a: Sí. «Cada uno es tentado cuando es llevado y seducido por su propia pasión» (Stg. 1:14).
+    - q: ¿[Proceden muchas tentaciones] del mundo?
+      a: Sí. «Porque todo lo que hay en el mundo, la pasión de la carne, la pasión de los ojos y la arrogancia de la vida, no proviene del Padre, sino del mundo» (1 Jua. 2:16).
+    - q: ¿[Proceden muchas tentaciones] de los hombres malvados?
+      a: Sí. «Los que te guían te hacen desviar» (Isa. 3:12).
+    - q: ¿[Proceden muchas tentaciones] de Satanás?
+      a: Sí. «Entonces Jesús fue llevado por el Espíritu al desierto para ser tentado por el diablo» (Mat. 4:1).
+    - q: ¿Y tienen estas tentaciones sus épocas particulares de fuerza y prevalencia?
+      a: Sí. «En el momento de la tentación sucumben» (Luc. 8:13).
+  - - q: ¿Tienta Satanás a los errores de la mente?
+      a: Sí. «Temo que, así como la serpiente con su astucia engañó a Eva, vuestras mentes sean desviadas de la sencillez y pureza de la devoción a Cristo» (2 Cor. 11:3).
+    - q: ¿[Tienta Satanás] a prácticas criminales?
+      a: Sí. Así fue como el demonio puso en el corazón de Judas el deseo de traicionar a Cristo (Jua. 13:2).
+    - q: ¿[Tienta Satanás] a la presunción?
+      a: Sí. «Si eres Hijo de Dios, lánzate abajo» (Mat. 4:6).
+    - q: ¿Y a la desesperación?
+      a: Sí. «No sea que en alguna manera este sea abrumado por tanta tristeza [y] Satanás […] tome ventaja de nosotros» (2 Cor. 2:7, 11).
+  - - q: ¿Es Satanás un enemigo poderoso?
+      a: Sí. Es un «león rugiente» (1 Ped. 5:8).
+    - q: ¿[Es] un enemigo astuto?
+      a: Sí. Leemos sobre las cosas profundas de Satanás (Apo. 2:24).
+    - q: ¿[Es] un enemigo industrioso[^118]?
+      a: Sí. Recorre la tierra y anda por ella (Job 1:7).
+    - q: Por tanto, ¿deberíamos orar para ser guardados de sus tentaciones?
+      a: Sí. «Velad y orad para que no entréis en tentación» (Mat. 26:41).
+    - q: ¿[Deberíamos orar] para ser sostenidos en medio de estas?
+      a: Sí, para que no seamos tentados más allá de lo que podemos soportar (1 Cor. 10:13).
+    - q: ¿Y [para ser] librados de estas?
+      a: Sí, para que «después de que [hayamos] sufrido un poco de tiempo, el Dios de toda gracia (…) [nos perfeccione, afirme, fortalezca y establezca]» (1 Ped. 5:10).
+    - q: ¿Deberían ser fervientes nuestras oraciones con este propósito?
+      a: Sí. «Estando en agonía, oraba con mucho fervor» (Luc. 22:44).
+    - q: ¿[Deberían ser] frecuentes?
+      a: Sí. «Acerca de esto, tres veces he rogado al Señor» (2 Cor. 12:8).
+    - q: ¿Y a veces [deberían estar] unidas al ayuno?
+      a: Sí. «Esta clase no sale sino con oración y ayuno» (Mat. 17:21).
+  - - q: ¿Podemos orar para ser librados de las aflicciones?
+      a: Sí. «Quita de mí tu plaga» (Sal. 39:10).
+    - q: Pero, ¿no son necesarias las aflicciones a veces?
+      a: Sí. «Si es necesario, seáis afligidos con diversas pruebas» (1 Ped. 1:6).
+    - q: ¿Y son útiles?
+      a: Sí. Los higos buenos fueron enviados a la tierra de los caldeos para su bien (Jer. 24:5).
+    - q: Por tanto, ¿deberíamos orar de manera absoluta en contra de las aflicciones?
+      a: No. «Repréndeme, oh SEÑOR, pero con justicia, no con tu ira, no sea que me reduzcas a nada» (Jer. 10:24).
+    - q: ¿Deberíamos recurrir únicamente a Dios en medio de las aflicciones?
+      a: Sí. «No sabemos qué hacer[,] pero nuestros ojos están vueltos hacia ti» (2 Cró. 20:12).
+    - q: ¿[Deberíamos] confiar en Él?
+      a: Sí. «El día en que temo, yo en ti confío» (Sal. 56:3).
+    - q: ¿Y tenemos razones para hacerlo?
+      a: Sí, porque el que «nos libró […] nos librará […] en quien hemos puesto nuestra esperanza de que Él aún nos ha de librar» (2 Cor. 1:10).
+  - - q: ¿Deberíamos desear especialmente ser librados del mal del pecado?
+      a: Sí, para que «[seamos librados] de toda obra mala» (2 Tim. 4:18).
+    - q: ¿Deberíamos orar para ser guardados de la práctica del pecado?
+      a: Sí. «Sustenta mis pasos en tus caminos, para que mis pies no resbalen» (Sal. 17:5 [RVR60]).
+    - q: ¿Y del dominio del pecado?
+      a: Sí. «Que ninguna iniquidad me domine» (Sal. 119:133).
+    - q: ¿Deberíamos orar para ser guardados de los pecados del corazón?
+      a: Sí. «No dejes que mi corazón se incline a nada malo» (Sal. 141:4).
+    - q: ¿[Deberíamos orar para ser guardados] de los pecados de la lengua?
+      a: Sí. «Vigila la puerta de mis labios» (Sal. 141:3).
+    - q: ¿Y de los pecados de la vida?
+      a: Sí, para que no practiquemos «obras impías con los hombres que hacen iniquidad» (Sal. 141:4).
+    - q: Pero, ¿no somos suficientes para guardarnos a nosotros mismos?
+      a: No, porque «no depende del hombre su camino, ni de quien anda el dirigir sus pasos» (Jer. 10:23).
+notes:
+  "118": "industrioso —«Que se dedica con ahínco al trabajo» (Diccionario de la lengua española, 23. @@a@@ ed., versión 23.4 en línea [Madrid, España: Real Academia Española, 2014], disponible en: ˂https://dle.rae.es˃)."

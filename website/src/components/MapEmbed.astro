@@ -1,0 +1,75 @@
+---
+// OpenStreetMap that loads only after a click (privacy, performance).
+import { settings } from '../lib/settings.ts';
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const _ = t(lang);
+const { lat, lng } = settings.map;
+const d = 0.006;
+const src = `https://www.openstreetmap.org/export/embed.html?bbox=${lng - d},${lat - d / 2},${lng + d},${lat + d / 2}&layer=mapnik&marker=${lat},${lng}`;
+const link = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=17/${lat}/${lng}`;
+---
+
+<div class="map" data-map={src}>
+  <button type="button" class="map-btn">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+      ><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg
+    >
+    <span class="label">{_('map.load')}</span>
+    <span class="small">{_('map.notice')}</span>
+  </button>
+</div>
+<p class="map-link"><a href={link} target="_blank" rel="noopener">{_('map.open')} ↗</a></p>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-map]').forEach((box) =>
+    box.querySelector('button')?.addEventListener('click', () => {
+      const f = document.createElement('iframe');
+      f.src = box.dataset.map!;
+      f.title = 'Mapa';
+      f.loading = 'lazy';
+      box.replaceChildren(f);
+    }),
+  );
+</script>
+
+<style>
+  .map,
+  .map :global(iframe),
+  .map-btn {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border: 0;
+  }
+  .map-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background:
+      repeating-linear-gradient(0deg, transparent 0 39px, rgba(0, 34, 57, 0.06) 39px 40px),
+      repeating-linear-gradient(90deg, transparent 0 39px, rgba(0, 34, 57, 0.06) 39px 40px),
+      var(--navy-50);
+    border: 1px solid var(--navy-200);
+    color: var(--navy-900);
+    cursor: pointer;
+  }
+  .map-btn:hover {
+    border-color: var(--navy-900);
+  }
+  .small {
+    font-size: 0.85rem;
+    color: var(--navy-500);
+  }
+  .map-link {
+    margin: 10px 0 0;
+    font-size: 0.95rem;
+  }
+</style>

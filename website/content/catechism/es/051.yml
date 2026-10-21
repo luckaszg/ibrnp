@@ -1,0 +1,72 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 51
+question: ¿Qué se exige en el primer mandamiento?
+answer: El primer mandamiento exige de nosotros que conozcamos y reconozcamos que Dios es el único Dios verdadero, que es nuestro Dios, y que lo adoremos y glorifiquemos como corresponde.
+sections:
+  - - q: ¿Es nuestro deber conocer a Dios?
+      a: Sí. «Reconoce[^66] al Dios de tu padre» (1 Cró. 28:9).
+    - q: ¿Y [es nuestro deber] reconocerlo?
+      a: Sí. «Reconócele en todos tus caminos» (Pro. 3:6).
+    - q: ¿Deberíamos hacer esto con un humilde temor de Él?
+      a: Sí. «Yo temo a Dios» (Gén. 42:18).
+    - q: ¿[Deberíamos hacer esto] con una sincera confianza en Él?
+      a: Sí. «En ti confío» (Sal. 25:2).
+    - q: ¿Y [deberíamos hacer esto] con una completa sumisión a Él?
+      a: Sí. «Someteos a Dios» (Stg. 4:7).
+  - - q: ¿Deberíamos reconocer a Dios como nuestro Dios?
+      a: "Sí. «Este dirá: “Yo soy del SEÑOR”» (Isa. 44:5)."
+    - q: ¿Y [deberíamos reconocerlo] como el único Dios verdadero?
+      a: Sí. «Os convertisteis de los ídolos a Dios para servir al Dios vivo y verdadero» (1 Tes. 1:9).
+    - q: ¿Deberíamos hacer esto públicamente y ante el mundo?
+      a: Sí. «Hiciste buena profesión en presencia de muchos testigos» (1 Tim. 6:12).
+    - q: ¿Deberíamos reconocerlo con discernimiento y entendimiento?
+      a: Sí. «Escoged hoy a quién habéis de servir» (Jos. 24:15).
+    - q: ¿Deberíamos reconocerlo con alegría y sin remordimientos?
+      a: Sí. El carcelero «se regocijó grandemente por haber creído en Dios con todos los suyos» (Hch. 16:34).
+    - q: ¿Deberíamos reconocerlo con sinceridad y sin engaños?
+      a: Sí. «Dame, hijo mío, tu corazón» (Pro. 23:26).
+    - q: ¿Deberíamos reconocerlo íntegramente y sin reservas?
+      a: Sí. «“[Caleb] ha seguido fielmente al SEÑOR”» (Deu. 1:36).
+    - q: ¿Deberíamos reconocerlo con determinación y sin titubear?
+      a: Sí. «No, sino que serviremos al SEÑOR» (Jos. 24:21).
+    - q: ¿Y deberíamos reconocerlo de manera definitiva y sin dar vuelta atrás?
+      a: Sí. «Entonces no nos apartaremos de ti» (Sal. 80:18).
+  - - q: ¿Deberíamos entregarnos {lit. darnos a nosotros mismos} a la voluntad de Dios?
+      a: Sí. «Aquí estoy, que haga conmigo lo que bien le parezca» (2 Sam. 15:26).
+    - q: ¿[Deberíamos] rendirnos a Su gobierno?
+      a: Sí. «En Ti solo confesamos tu nombre» (Isa. 26:13).
+    - q: ¿[Deberíamos] consagrarnos a Su servicio?
+      a: Sí. «Someteos al SEÑOR […] y servid al SEÑOR vuestro Dios» (2 Cró. 30:8).
+    - q: ¿Y tiene Dios un derecho justo a todo esto?
+      a: Sí. «De lo recibido de tu mano te damos» (1 Cró. 29:14).
+  - - q: ¿Es suficiente que nos consagremos de manera verbal?
+      a: No, porque debemos hacer votos al Señor nuestro Dios y cumplirlos (Sal. 76:11).
+    - q: Por tanto, ¿debemos adorar a Dios?
+      a: Sí. Somos «un sacerdocio santo, para ofrecer sacrificios espirituales […] a Dios» (1 Ped. 2:5).
+    - q: ¿Debemos hacer esto con el hombre interior?
+      a: Sí. «Bendice, alma mía, al SEÑOR» (Sal. 103:1).
+    - q: ¿Y [debemos hacer esto] con la totalidad de nuestro ser {lit. con todo el hombre}?
+      a: Sí. «Bendiga todo mi ser su santo nombre» (Ibíd.).
+    - q: ¿[Debemos hacer esto] mirando hacia Cristo?
+      a: Sí. «Sus sacrificios serán aceptos sobre mi altar» (Isa. 56:7).
+    - q: ¿[Debemos hacer esto] con la ayuda {lit. asistencia} del Espíritu?
+      a: Sí. «Fortalecidos con poder por su Espíritu en el hombre interior» (Efe. 3:16).
+    - q: ¿Y [debemos hacer esto] conforme a Sus propios mandamientos?
+      a: Sí, porque «EN VANO MERINDEN CULTO, ENSEÑANDO COMO DOCTRINAS PRECEPTOS DEHOMBRES» (Mat. 15:9).
+  - - q: ¿También deberíamos glorificar a Dios?
+      a: Sí. «Glorificad a Dios en vuestro cuerpo y en vuestro espíritu» (1 Cor. 6:20).
+    - q: ¿Deberíamos glorificar a Dios por medio del prestar constante atención a Sus ordenanzas?
+      a: Sí. «Todas las naciones […] vendrán y adorarán delante de ti, Señor, y glorificarán tu nombre» (Sal. 86:9).
+    - q: ¿[Deberíamos glorificar a Dios] por medio de una humilde confesión de nuestros pecados?
+      a: Sí. «Hijo mío […] da gloria a […] Dios […] y confiesa [tus pecados] a Él»[^67] (Jos. 7:19).
+    - q: ¿[Deberíamos glorificar a Dios] por medio de una carrera regular de obediencia?
+      a: Sí. «En esto es glorificado mi Padre, en que deis mucho fruto» (Jua. 15:8).
+    - q: ¿[Deberíamos glorificar a Dios] en caso de que seamos llamados a glorificarlo por medio del sufrir {o padecer} por Él?
+      a: Sí. «Esto dijo, dando a entender la clase de muerte con que Pedro glorificaría a Dios» (Jua. 21:19).
+    - q: ¿Y redundará esto para nuestro beneficio al final?
+      a: Sí. «Yo honraré a los que me honran» (1 Sam. 2:30).
+notes:
+  "66": En la versión King James se traduce el verbo hebreo ֩עַּד como «know» (conoce); el autor hace una distinción entre conocer y reconocer.
+  "67": "Esta es una traducción directa de la versión King James utilizada por el autor. Hay una diferencia entre esta versión y las versiones y traducciones posteriores: la KJV traduce la frase ֙יִל אָ֥נ־דֶּגַהְו como «make confession unto him» (confiesa a Él), conectando el verbo דג נ con la tercera persona gramatical del singular. Sin embargo, las traducciones posteriores, incluyendo las hispanas, conectan el verbo hebreo con la primera persona gramatical del singular; es decir, Josué le está diciendo a Acán que dé gloria al Señor y le confiese a él (Josué) lo que había hecho. Aunque lo más probable es que Josué 7:19 no esté hablando de «confesar» nuestros pecados a Dios, la Palabra de Dios nos enseña en muchos otros pasajes que debemos hacerlo como parte de nuestra adoración al único Dios verdadero. Véase Salmos 32:5, Proverbios 28:13 y 1 Juan 1:9."

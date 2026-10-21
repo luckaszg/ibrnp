@@ -1,0 +1,22 @@
+---
+// Email and phone from settings; each is shown only when it has been filled in.
+import { settings } from '../lib/settings.ts';
+
+interface Props {
+  inline?: boolean;
+}
+const { inline = false } = Astro.props;
+const links = [
+  settings.email && { href: `mailto:${settings.email}`, text: settings.email },
+  settings.phone && { href: `tel:${settings.phone.replace(/\s/g, '')}`, text: settings.phone },
+].filter(Boolean) as { href: string; text: string }[];
+---
+
+{
+  links.map((l, i) => (
+    <>
+      {i > 0 && (inline ? ' · ' : <br />)}
+      <a href={l.href}>{l.text}</a>
+    </>
+  ))
+}

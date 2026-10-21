@@ -1,0 +1,37 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 46
+question: ¿Dónde está resumida la ley moral?
+answer: La ley moral está resumida en los Diez Mandamientos.
+sections:
+  - - q: ¿Estaba vigente la ley moral antes de que se dieran los Diez Mandamientos?
+      a: Sí, porque Abraham mandó a sus hijos «que [guardaran] el camino del SEÑOR» (Gén. 18:19).
+    - q: ¿Fue publicada antes {de eso} alguna parte de la ley moral?
+      a: Sí. «El que derrame sangre de hombre, por el hombre su sangre será derramada» (Gén. 9:6).
+    - q: Pero, ¿fue finalmente resumida en los Diez Mandamientos?
+      a: Sí. «Él os declaró Su pacto […] los Diez Mandamientos» (Deu. 4:13).
+    - q: ¿Fueron dados estos mandamientos por medio de una voz audible?
+      a: Sí. «Oísteis [Su] voz» (Deu. 4:12).
+    - q: ¿Y fue Dios quien los dio de esta manera?
+      a: Sí. «Habló Dios todas estas palabras, diciendo…» (Éxo. 20:1).
+    - q: ¿Fueron escritos [estos mandamientos]?
+      a: Sí. «¿Qué está escrito en la ley?» (Luc. 10:26).
+    - q: ¿Y fue Dios quien los escribió?
+      a: Sí. «La escritura era escritura de Dios» (Éxo. 32:16).
+  - - q: ¿Estaba Cristo involucrado en dar la ley?
+      a: Sí. Habló a nuestros padres en el monte Sinaí (Hch. 7:38).
+    - q: ¿Fue dada por mano de Moisés?
+      a: Sí. «Porque la ley fue dada por medio de Moisés» (Jua. 1:17).
+    - q: ¿Y [fue dada] por la ministración de ángeles?
+      a: Sí. «[Recibieron] la ley por disposición de ángeles» (Hch. 7:53).
+  - - q: ¿Fue dada la ley con mucha pompa?
+      a: Sí. «El SEÑOR vino del Sinaí y les esclareció desde Seir […] y vino de en medio de diez millares de santos» (Deu. 33:2).
+    - q: ¿[Fue dada] con gran terror?
+      a: Sí. Hubo truenos y relámpagos, sonido de trompeta, y el monte humeaba (Éxo. 20:18).
+    - q: ¿Fue la visión {de estas cosas} algo terrible incluso para el mismo Moisés?
+      a: "Sí. «Dijo: ESTOY ATERRADO YTEMBLANDO» (Heb. 12:21)."
+    - q: ¿Y fue esto {algo} aterrador para el pueblo?
+      a: Sí. «Cuando el pueblo vio aquello, temblaron, y se mantuvieron a distancia» (Éxo. 20:18).
+    - q: Entonces, ¿es necesario obedecer con temor aquello que fue entregado con tanto terror?
+      a: Sí. «[Debemos ofrecer] a Dios un servicio aceptable con temor y reverencia» (Heb. 12:28).[^64]

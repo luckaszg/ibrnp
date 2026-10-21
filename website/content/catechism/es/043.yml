@@ -1,0 +1,71 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 43
+question: ¿Qué se hará a los malvados el Día del Juicio?
+answer: El Día del Juicio, los cuerpos de los malvados, al ser resucitados de sus sepulcros, serán sentenciados junto con sus almas a indecibles tormentos con el Diablo y sus ángeles para siempre.
+sections:
+  - - q: ¿Resucitarán los malvados?
+      a: Sí. «Habrá una resurrección tanto de los justos como de los impíos» (Hch. 24:15).
+    - q: ¿Se levantarán {o resucitarán} al llamado de Cristo?
+      a: Sí. «Oirán su voz, y saldrán» (Jua. 5:28, 29).[^61]
+    - q: ¿Será una resurrección vergonzosa para los malvados?
+      a: Sí. «Despertarán […] para la ignominia, para el desprecio eterno» (Dan. 12:2).
+    - q: ¿[Será una resurrección] espantosa [para los malvados]?
+      a: Sí. «Saldrán […] a resurrección de juicio» (Jua. 5:29).
+    - q: ¿Y le seguirá el Juicio?
+      a: Sí. El Señor viene «para ejecutar juicio» (Jud. 15).
+  - - q: ¿Se le llama al Día del Juicio, un gran día?
+      a: Sí. Es ese «gran día del Dios Todopoderoso» (Apo. 16:14).
+    - q: ¿Será un día de descubrimiento?
+      a: Sí. «El Señor […] sacará a la luz las cosas ocultas en las tinieblas» (1 Cor. 4:5).
+    - q: ¿[Será un día] de convicción {de pecado}?
+      a: Sí. «Para condenar a todos los impíos» (Jud. 15).
+    - q: ¿[Será un día] de retribución?
+      a: Sí. Dios «[retribuirá] con aflicción a los que os afligen» (2 Tes. 1:6).
+    - q: ¿Y [será un día] de ira?
+      a: Sí. «Ha llegado el gran día de la ira de Dios» (Apo. 6:177.
+    - q: ¿Se alegrarían los pecadores de no comparecer ese día?
+      a: "Sí. «[Dirán] a los montes y a las peñas: Caed sobre nosotros y escondednos de la presencia del que está sentado en el trono» (Apo. 6:16)."
+    - q: Pero, ¿deben comparecer?
+      a: Sí. «Y vi a los muertos, grandes y pequeños, de pie ante Dios» (Apo. 20:12 [RVR60]).
+  - - q: ¿Será público el Juicio?
+      a: Sí. «El convoca a los cielos desde lo alto, y a la tierra» (Sal. 50:4).
+    - q: ¿Será imparcial?
+      a: Sí. «Porque en Dios no hay acepción de personas» (Rom. 2:11).
+    - q: ¿Y [será] muy estricto?
+      a: Sí. «Porque Dios traerá toda obra a juicio» (Ecl. 12:14).
+    - q: ¿Se extenderá [el Juicio] a los pensamientos?
+      a: Sí, porque «Dios juzgará los secretos de los hombres mediante Cristo Jesús» (Rom. 2:16).
+    - q: ¿[Se extenderá] a las palabras?
+      a: Sí. «Por tus palabras serás justificado, y por tus palabras serás condenado» (Mat. 12:37).
+    - q: ¿[Se extenderá] a los pecados de omisión?
+      a: Sí. «Tuve hambre, y no me diste de comer» (Mat. 25:42).
+    - q: ¿Y [se extenderá] a los pecados de comisión?
+      a: Sí. «Porque el que procede con injusticia sufrirá las consecuencias del mal que ha cometido» (Col. 3:25).
+    - q: ¿Se dictará sentencia inmediatamente?
+      a: "Sí. «Entonces dirá también a los de su izquierda: “Apartaos de mí, malditos”» (Mat. 25:41)."
+    - q: ¿Y será rápidamente ejecutada [la sentencia del Juicio]?
+      a: Sí. «Estos irán al castigo eterno» (Mat. 25:46).
+  - - q: ¿Será el infierno el lugar de tormento del pecador?
+      a: Sí. «Los impíos volverán al Seol» (Sal. 9:17).
+    - q: ¿[Será] Dios quien infligirá el tormento?
+      a: Sí. «Sobre los impíos hará llover carbones encendidos; fuego, azufre y viento abrasador» (Sal. 11:6).
+    - q: ¿[Serán] los demonios los compañeros del pecador en ello?
+      a: Sí. «“Al fuego eterno que ha sido preparado para el diablo y sus ángeles”» (Mat. 25:41).
+    - q: ¿Y serán sujetos a ello tanto el cuerpo como el alma?
+      a: Sí. Todo el cuerpo será arrojado al infierno (Mat. 5:29).
+  - - q: ¿Será sin mezcla {o pura} la miseria de los condenados?
+      a: Sí. La ira de Dios se derrama sin mezcla {o pura} (Apo. 14:10).
+    - q: ¿[Será] extrema?
+      a: Sí. Es ira hasta el extremo (1 Tes. 2:16).
+    - q: ¿[Será] intolerable?
+      a: Sí. «¿Aguantará tu corazón?» (Eze. 22:14).
+    - q: ¿[Será] sin tregua?
+      a: Sí. «No tienen reposo, ni de día ni de noche» (Apo. 14:11).
+    - q: ¿[Será] sin fin {o eterna}?
+      a: Sí. «El humo de su tormento asciende por los siglos de los siglos» (Ibíd.).
+    - q: ¿Será esta la porción de todos los malvados?
+      a: Sí, porque «habrá ira e indignación. Habrá tribulación y angustia para toda alma humana que hace lo malo» (Rom. 2:8, 9).[^62]
+notes:
+  "61": Aunque la referencia que aparece en el original es Juan 5:28, el autor también está citando el versículo 29.

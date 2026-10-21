@@ -1,0 +1,10 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 66
+question: What is forbidden in the fourth Commandment?
+answer: The fourth Commandment forbiddeth the Omission or careless Performance of the Duties required[^1], and the profaning the Day by Idleness[^2], or doing that which is in it self sinful[^3]; or by unnecessary Thoughts, Words, or Works about worldly Employments or Recreations[^4].
+notes:
+  "1": Ezek. 22:26; Amos 8:5; Mal. 1:13
+  "2": Acts 20:7, 9
+  "3": Ezek. 23:38
+  "4": Jer. 17:24–27; Isa. 58:13

@@ -1,0 +1,139 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Provisional from '../components/Provisional.astro';
+import { resources } from '../lib/content.ts';
+import { alternates, resourcePath, route, routeAvailable } from '../i18n/routes.ts';
+import { t, formatDate } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const _ = t(lang);
+const list = await resources(lang);
+const groups = [
+  { key: 'article', title: _('resources.article') },
+  { key: 'book', title: _('resources.book') },
+  { key: 'document', title: _('resources.document') },
+] as const;
+---
+
+<Base lang={lang} title={_('nav.resources')} alternates={alternates('resources')}>
+  <PageHero lang={lang} title={_('nav.resources')} lede={lang === 'es' ? 'Lecturas recomendadas, artículos y documentos para el estudio personal y familiar.' : 'Recommended reading, articles and documents for personal and family study.'} />
+
+  <section class="section section--navy reading-docs">
+    <div class:list={['container grid', routeAvailable('covenant') ? 'grid--3' : 'grid--2']}>
+      <a class="doc" href={route('confession', lang)}>
+        <span class="label">{_('reader.download')} · EPUB</span>
+        <h2>{_('nav.confession')}</h2>
+        <p>{_('beliefs.confessionBlurb')}</p>
+      </a>
+      <a class="doc" href={route('catechism', lang)}>
+        <span class="label">{_('nav.catechism')}</span>
+        <h2>{lang === 'es' ? 'Catecismo Bautista' : 'Baptist Catechism'}</h2>
+        <p>{_('beliefs.catechismBlurb')}</p>
+      </a>
+      {routeAvailable('covenant') && (
+      <a class="doc" href={route('covenant', lang)}>
+        <span class="label">{_('reader.print')}</span>
+        <h2>{_('nav.covenant')}</h2>
+        <p>{lang === 'es' ? 'El compromiso de los miembros entre sí y delante de Dios.' : "Members' commitment to one another before God."}</p>
+      </a>
+      )}
+    </div>
+  </section>
+
+  {
+    groups.map((g, i) => {
+      const items = list.filter((r) => r.entry.data.category === g.key);
+      if (!items.length) return null;
+      return (
+        <section class:list={['section', { 'section--tint': i % 2 === 1 }]}>
+          <div class="container">
+            <h2>{g.title}</h2>
+            <ul class="res">
+              {items.map(({ slug, entry, untranslated }) => {
+                const d = entry.data;
+                const href = d.category === 'article' ? resourcePath(slug, lang) : d.link;
+                return (
+                  <li>
+                    <Provisional lang={lang} show={d.placeholder} />
+                    <h3>
+                      {href ? (
+                        <a href={href} lang={untranslated ? 'es' : undefined}>
+                          {d.title}
+                        </a>
+                      ) : (
+                        <span lang={untranslated ? 'es' : undefined}>{d.title}</span>
+                      )}
+                    </h3>
+                    <p class="label meta">
+                      {d.author}
+                      {d.date && <> · {formatDate(d.date, lang)}</>}
+                    </p>
+                    <p>{d.summary}</p>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </section>
+      );
+    })
+  }
+</Base>
+
+<style>
+  .doc {
+    display: block;
+    padding: 32px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    text-decoration: none;
+  }
+  .doc:hover {
+    border-color: var(--brass-400);
+    color: var(--white);
+  }
+  .doc .label {
+    color: var(--brass-400);
+  }
+  .doc h2 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+  }
+  .doc p {
+    color: #c8d3de;
+    margin: 0;
+  }
+  .res {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .res li {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--rule);
+    max-width: 820px;
+  }
+  .res h3 {
+    margin-bottom: 4px;
+  }
+  .res h3 a {
+    text-decoration: none;
+  }
+  .res h3 a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--brass-700);
+  }
+  .meta {
+    color: var(--brass-700);
+    margin-bottom: 8px;
+  }
+  .res p:last-child {
+    margin: 0;
+  }
+</style>

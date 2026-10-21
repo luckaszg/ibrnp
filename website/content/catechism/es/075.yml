@@ -1,0 +1,19 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 75
+question: ¿Cuál es el séptimo mandamiento?
+answer: "El séptimo mandamiento es: «No cometerás adulterio»."
+sections:
+  - - q: ¿Es el adulterio un pecado al que algunos están muy inclinados?
+      a: Sí. «Eran caballos cebados y fogosos, cada cual relinchando tras la mujer de su prójimo» (Jer. 5:8).
+    - q: Por tanto, ¿es necesario prohibirlo?
+      a: Sí. La ley ha sido instituida «para los inmorales» (1 Tim. 1:10).
+    - q: ¿Fue prohibido bajo el Antiguo Testamento?
+      a: Sí. «No te acostarás con la mujer de tu prójimo, contaminándote con ella» (Lev. 18:20).
+    - q: ¿Está prohibido bajo el Nuevo [Testamento]?
+      a: Sí. «Porque esta es la voluntad de Dios […] que os abstengáis de inmoralidad sexual» (1 Tes. 4:3).
+    - q: ¿Y es contrario a la ley de la naturaleza?
+      a: Sí, porque Abimelec llamó al adulterio «un pecado tan grande» (Gén. 20:9).
+notes:
+  "81": "[sin causa] —Esta es una traducción directa de la versión inglesa (KJV) usada por el autor. Corchetes añadidos."

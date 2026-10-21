@@ -1,0 +1,9 @@
+---
+// Church covenant: built only once content/pages/es/pacto-de-iglesia.md exists.
+import View from '../../../views/MarkdownPage.astro';
+import { routeAvailable } from '../../../i18n/routes.ts';
+
+export const getStaticPaths = () => (routeAvailable('covenant') ? [{ params: { covenant: 'church-covenant' } }] : []);
+---
+
+<View lang="en" slug="pacto-de-iglesia" routeKey="covenant" mode="reading" />

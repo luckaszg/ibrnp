@@ -1,0 +1,71 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 99
+question: ¿Deben ser bautizados los infantes de aquellos que profesan ser creyentes?
+answer: Los infantes de aquellos que profesan ser creyentes no deben ser bautizados, porque no hay mandamiento ni ejemplo en las Santas Escrituras, ni consecuencia segura {que se deduzca} de estas para bautizarlos.
+sections:
+  - - q: ¿Están establecidos claramente los sujetos del bautismo en la Palabra divina?
+      a: Sí. «Se bautizaban, tanto hombres como mujeres» (Hch. 8:12).
+    - q: ¿Y es equivalente a una prohibición el silencio de las Escrituras acerca de otros {sujetos}?
+      a: Sí. «¿Quién demanda esto de vosotros?» (Isa. 1:12).
+  - - q: ¿Tenían derecho los niños a la circuncisión según la ley?
+      a: Sí. «Todo varón de entre vosotros será circuncidado» (Gén. 17:10).
+    - q: ¿Y tenían los sirvientes el mismo {derecho}?
+      a: Sí. Abraham circuncidó a su hijo y a todos los que fueron comprados con su dinero el mismo día (Gén. 17:23).
+    - q: ¿Era esto un privilegio en sí mismo?
+      a: No, porque esto era una parte de «el documento de deuda […] contra nosotros» (Col. 2:14).
+    - q: ¿Y está abolido ahora?
+      a: Sí, porque Cristo «lo ha quitado de en medio, clavándolo en la cruz» (Col. 2:14).
+  - - q: ¿Sustituyó el bautismo a la circuncisión?
+      a: No, porque Cristo fue circuncidado y bautizado (Luc. 2:21; 3:21).
+    - q: ¿Tuvieron los apóstoles una oportunidad justa para mencionar tal sustitución, si esta hubiera tenido lugar?
+      a: "Sí, porque algunos decían: «Si no os circuncidáis conforme al rito de Moisés, no podéis ser salvos» (Hch. 15:1)."
+    - q: ¿E hicieron mención de ello?
+      a: No. Solo hicieron un decreto (Hch. 15:19, 28).
+  - - q: ¿Fue el pacto hecho con Abraham el Pacto de Gracia?
+      a: No, sino que [el pacto hecho con Abraham] fue un pacto mixto que consistió, en parte, en bendiciones temporales (Gén. 17:2 al 14). Pero, en la medida en que era un pacto de gracia,
+    - q: ¿no pertenecía a toda la simiente natural de Abraham?
+      a: No, porque no todos los que son descendientes de Abraham son sus hijos (Rom. 9:7).
+    - q: Pero, ¿no se dice que, por pacto eterno, Él sería su Dios y ellos serían Su descendencia delante de Él?
+      a: Sí, pero «los hijos de la promesa son considerados como descendientes» (v. 8).
+    - q: ¿Están excluidos todos los demás, ya sean infantes o adultos?
+      a: Sí, porque están «excluidos de la ciudadanía de Israel» (Efe. 2:12).
+  - - q: ¿No fue la circuncisión un sello del pacto?
+      a: No, sino que [la circuncisión] fue una señal del pacto (Gén. 17:11).
+    - q: ¿Fue un sello para Abraham?
+      a: Sí, y solo para él, fue un «sello de la justicia de la fe que tenía mientras aún era incircunciso» (Rom. 4:11).
+    - q: ¿No están incluidos en el pacto los hijos de los creyentes?
+      a: No. «No son los hijos de la carne los que son hijos de Dios» (Rom. 9:8).
+    - q: Por tanto, ¿deben ser de Cristo para ser la descendencia correcta?
+      a: Sí. «Si sois de Cristo, entonces sois descendencia de Abraham, herederos según la promesa» (Gál. 3:29).
+  - - q: ¿No fueron llevados los niños a Cristo para ser bautizados?
+      a: No, sino que [fueron llevados a Cristo] «para que [Él] pusiera [Sus] manos sobre ellos y orara» (Mat. 19:13).
+    - q: ¿E incluso esto parece haber sido algo inusual?
+      a: Sí, porque «los discípulos los reprendieron» (Ibíd.).
+    - q: Pero, ¿no dice el apóstol que la promesa es para vosotros y para vuestros hijos?
+      a: "Sí, pero él añade: «para tantos como el Señor nuestro Dios llame» (Hch. 2:39)."
+  - - q: ¿No podrían incluirse infantes en la casa de Crispo que fue bautizada?
+      a: No, porque leemos que él «creyó en el Señor con toda su casa» (Hch. 18:8).
+    - q: ¿[No podrían incluirse infantes] en la [casa] del carcelero?
+      a: No, porque «se regocijó grandemente por haber creído en Dios con todos los suyos» (Hch. 16:34).
+    - q: ¿[No podrían incluirse infantes] en la [casa] de Estéfanas?
+      a: No, porque se dedicaron «al servicio de los santos» (1 Cor. 16:15).
+    - q: ¿O en la de Lidia?
+      a: No, porque «los apóstoles fueron a casa de Lidia, y al ver a los hermanos, los consolaron y partieron» (Hch. 16:40).
+  - - q: ¿Los infantes no son miembros de la iglesia del evangelio como lo fueron una vez de la [iglesia] judía?
+      a: No, porque [la iglesia de Dios] consiste en aquellos «que han sido santificados en Cristo Jesús [y han sido] llamados a ser santos» (1 Cor. 1:2).
+    - q: ¿No pueden ser discípulos?
+      a: No, porque somos hechos discípulos, no nacemos como tales (Jua. 4:1).[^108]
+    - q: Pero, ¿no se dice que son santos?
+      a: Sí. En el mismo sentido que el esposo o la esposa que no son creyentes (1 Cor. 7:14).
+  - - q: "¿No favorece el bautismo infantil el pasaje que dice: «de los que son como estos es el reino de los cielos»?"
+      a: "No, porque Cristo lo explica añadiendo: «el que no reciba el reino de Dios como un niño, no entrará en él» (Mar. 10:15)."
+    - q: "¿Tampoco [favorece el bautismo infantil el pasaje que dice]: «si la raíz es santa, también lo son las ramas»?"
+      a: No, porque «lo que es nacido de la carne, carne es» (Jua. 3:6).
+    - q: ¿Deberíamos guiarnos por la Palabra de Dios en esta y en cualquier otra controversia?
+      a: Sí. «En cuanto a todo lo que os he dicho, estad alerta» (Éxo. 23:13).
+    - q: ¿Y no [deberíamos] prestar atención indebida a las costumbres u opiniones de los hombres?
+      a: No. «“No andéis en los estatutos de vuestros padres, ni guardéis sus decretos […] Yo soy el SEÑOR vuestro Dios”» (Eze. 20:18, 19).
+notes:
+  "107": Aunque la referencia que aparece en el original es Hechos 2:37, el autor también está citando el versículo 38.

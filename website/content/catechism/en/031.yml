@@ -1,0 +1,10 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 31
+question: Wherein consisteth Christ's Exaltation?
+answer: Christ's Exaltation consisteth in his rising again from the Dead on the third Day[^1], in ascending up into Heaven[^2], in sitting at the right Hand of God the Father[^3], and in coming to judg the World at the last Day[^4].
+notes:
+  "1": 1 Cor. 15:4
+  "2": Mark 16:19
+  "3": Eph. 1:20
+  "4": Acts 1:11; Acts 17:31

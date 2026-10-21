@@ -1,0 +1,15 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 78
+question: ¿Cuál es el octavo mandamiento?
+answer: "El octavo mandamiento es: «No hurtarás»."
+sections:
+  - - q: ¿Tiene Dios un derecho supremo y soberano sobre todas las cosas?
+      a: Sí. «Él es Señor de todos» (Hch. 10:36).
+    - q: Pero, ¿tienen los hombres un derecho delegado sobre las posesiones que les pertenecen legítimamente?
+      a: Sí. Dios ha dado la tierra a los hijos de los hombres (Sal. 115:16).
+    - q: Por tanto, ¿es pecado privar a alguien de este derecho que le ha sido dado?
+      a: Sí. «“No hurtaréis, ni engañaréis”» (Lev. 19:11).
+    - q: ¿Y era necesaria una prohibición así?
+      a: Sí. «Porque todo hermano obra con engaño» (Jer. 9:4).

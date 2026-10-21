@@ -1,0 +1,37 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 20
+question: ¿En qué estado introdujo la Caída a la humanidad?
+answer: La Caída introdujo a la humanidad en un estado de pecado y miseria.
+sections:
+  - - q: ¿Está toda la humanidad en un estado de pecado?
+      a: Sí, porque «tanto judíos como griegos están todos bajo pecado» (Rom. 3:9).
+    - q: ¿Fueron introducidos en este estado por la Caída?
+      a: Sí. «Porque todos pecaron» (Rom. 5:12).
+    - q: ¿Ha corrompido el pecado al hombre en su totalidad?
+      a: Sí. «Toda cabeza está enferma, y todo corazón desfallecido» (Isa. 1:5).
+    - q: ¿Se hace evidente una inclinación hacia el pecado [desde] muy temprano?
+      a: Sí. «Desde la matriz están desviados los impíos; desde su nacimiento se descarrían» (Sal. 58:3).
+    - q: ¿Y continúa [esta inclinación hacia el pecado] incluso después de que la gracia ha sido implantada?
+      a: Sí, porque «si decimos que no tenemos pecado, nos engañamos a nosotros mismos» (1 Jua. 1:8).
+  - - q: ¿Está la humanidad en un estado de miseria?
+      a: Sí. «¡Ay de nosotros, pues hemos pecado!» (Lam. 5:16).
+    - q: ¿Es toda la creación peor por causa del pecado?
+      a: Sí. «Porque la creación fue sometida a vanidad» (Rom. 8:20).
+    - q: Pero ¿experimentan los pecadores, más que todos los demás, sus tristes efectos?
+      a: Sí. «A los pecadores los persigue el mal» (Pro. 13:21).
+    - q: ¿Es la consecuencia de la Caída una gran miseria?
+      a: Sí. «La aflicción del hombre es mucha sobre él» (Ecl. 8:6).
+    - q: ¿Es intolerable?
+      a: Sí. «Mi castigo es demasiado grande para soportarlo» (Gén. 4:13).
+    - q: ¿Y es permanente?
+      a: Sí. «La ira de Dios permanece sobre él» (Jua. 3:36).
+  - - q: ¿Son conscientes de esto todos los hombres?
+      a: No, porque dicen que tendrán paz aunque anden en la terquedad de su corazón (Deu. 29:19).
+    - q: Pero, ¿deberían ser conscientes de ello?
+      a: Sí. «Entended ahora esto, los que os olvidáis de Dios, no sea que os despedace» (Sal. 50:22).
+    - q: ¿Serán conscientes de ello?
+      a: Sí. Ellos «verán al fin, y se avergonzarán» (Isa. 26:11 [RVR60]).
+    - q: ¿Y son conscientes de ello los santos?
+      a: Sí. «¡Miserable de mí! ¿Quién me libertará de este cuerpo de muerte?» (Rom. 7:24).

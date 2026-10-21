@@ -1,0 +1,173 @@
+---
+// Contact form (CT-1 … CT-3). Sent from the browser to an email-sending service
+// configured in .env. Without one, it opens the visitor's email app instead.
+import { settings } from '../lib/settings.ts';
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const _ = t(lang);
+const endpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT ?? '';
+const key = import.meta.env.PUBLIC_CONTACT_KEY ?? '';
+---
+
+<form class="contact" data-contact data-endpoint={endpoint} data-key={key} data-to={settings.email ?? ''} novalidate>
+  <div class="row2">
+    <label>
+      <span class="label">{_('contact.name')}</span>
+      <input name="name" required autocomplete="name" />
+      <span class="err" data-msg={_('contact.required')}></span>
+    </label>
+    <label>
+      <span class="label">{_('contact.email')}</span>
+      <input name="email" type="email" required autocomplete="email" />
+      <span class="err" data-msg={_('contact.invalidEmail')}></span>
+    </label>
+  </div>
+  <label>
+    <span class="label">{_('contact.phone')}</span>
+    <input name="phone" type="tel" autocomplete="tel" />
+  </label>
+  <label>
+    <span class="label">{_('contact.message')}</span>
+    <textarea name="message" rows="6" required></textarea>
+    <span class="err" data-msg={_('contact.required')}></span>
+  </label>
+  <!-- Honeypot: humans never see or fill this field (CT-2). -->
+  <label class="hp" aria-hidden="true">Website <input name="botcheck" tabindex="-1" autocomplete="off" /></label>
+  <button class="btn" type="submit" data-sending={_('contact.sending')}>{_('contact.send')}</button>
+  <p class="status" role="status" aria-live="polite" hidden></p>
+  <p class="fallback" hidden>
+    {_('contact.error')} {settings.email && <a href={`mailto:${settings.email}`}>{_('contact.mailto')}: {settings.email}</a>}
+  </p>
+</form>
+
+<script>
+  document.querySelectorAll<HTMLFormElement>('[data-contact]').forEach((form) => {
+    const status = form.querySelector<HTMLElement>('.status')!;
+    const fallback = form.querySelector<HTMLElement>('.fallback')!;
+    const button = form.querySelector<HTMLButtonElement>('button[type=submit]')!;
+    const es = document.documentElement.lang === 'es';
+
+    const validate = () => {
+      let ok = true;
+      form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('[required]').forEach((el) => {
+        const err = el.parentElement!.querySelector<HTMLElement>('.err')!;
+        const valid = el.value.trim() !== '' && el.checkValidity();
+        err.textContent = valid ? '' : err.dataset.msg!;
+        el.setAttribute('aria-invalid', String(!valid));
+        if (!valid && ok) el.focus();
+        ok &&= valid;
+      });
+      return ok;
+    };
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      fallback.hidden = true;
+      if (!validate()) return;
+      const data = Object.fromEntries(new FormData(form)) as Record<string, string>;
+      if (data.botcheck) return; // bot
+      const { endpoint, key, to } = form.dataset;
+      if (!endpoint) {
+        // No email service configured yet: open the visitor's email app.
+        const body = `${data.message}\n\n— ${data.name}\n${data.email}${data.phone ? `\n${data.phone}` : ''}`;
+        location.href = `mailto:${to}?subject=${encodeURIComponent((es ? 'Mensaje de ' : 'Message from ') + data.name)}&body=${encodeURIComponent(body)}`;
+        return;
+      }
+      const label = button.textContent;
+      button.disabled = true;
+      button.textContent = button.dataset.sending!;
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({ access_key: key, subject: (es ? 'Mensaje desde el sitio web: ' : 'Website message: ') + data.name, from_name: data.name, ...data }),
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        form.reset();
+        status.textContent = es ? 'Gracias. Hemos recibido su mensaje y le responderemos pronto.' : 'Thank you. We have received your message and will reply soon.';
+        status.hidden = false;
+      } catch {
+        fallback.hidden = false;
+      } finally {
+        button.disabled = false;
+        button.textContent = label;
+      }
+    });
+  });
+</script>
+
+<style>
+  .contact {
+    display: grid;
+    gap: 18px;
+  }
+  .row2 {
+    display: grid;
+    gap: 18px;
+  }
+  @media (min-width: 640px) {
+    .row2 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  label {
+    display: grid;
+    gap: 6px;
+  }
+  .label {
+    color: var(--brass-700);
+  }
+  input,
+  textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 12px;
+    border: 1px solid var(--navy-200);
+    border-radius: 2px;
+    background: var(--white);
+    color: var(--navy-900);
+    font: inherit;
+    font-size: 1rem;
+  }
+  textarea {
+    resize: vertical;
+  }
+  input:focus,
+  textarea:focus {
+    outline: 2px solid var(--brass-700);
+    outline-offset: 0;
+  }
+  [aria-invalid='true'] {
+    border-color: var(--burgundy-700);
+  }
+  .err {
+    min-height: 0;
+    font-size: 0.85rem;
+    color: var(--burgundy-700);
+  }
+  .err:empty {
+    display: none;
+  }
+  .hp {
+    position: absolute;
+    left: -9999px;
+  }
+  .btn {
+    justify-self: start;
+  }
+  .status {
+    padding: 14px 16px;
+    border-left: 3px solid var(--navy-900);
+    background: var(--navy-50);
+    margin: 0;
+  }
+  .fallback {
+    color: var(--burgundy-700);
+    margin: 0;
+  }
+</style>

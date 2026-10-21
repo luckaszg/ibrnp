@@ -1,0 +1,151 @@
+---
+// Full-text search powered by Pagefind (RD-7, SO-1). The index is built after
+// `astro build`, so search only works on the built site (npm run build && npm run preview).
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+  /** Restrict results to one section, e.g. "confession" or "catechism". */
+  filter?: string;
+  autofocus?: boolean;
+}
+const { lang, filter, autofocus = false } = Astro.props;
+const _ = t(lang);
+const label = filter === 'confession' ? (lang === 'es' ? 'Buscar en la Confesión' : 'Search the Confession') : filter === 'catechism' ? (lang === 'es' ? 'Buscar en el catecismo' : 'Search the catechism') : _('search.placeholder');
+---
+
+<div class="search no-print" data-search data-filter={filter} data-pagefind-ignore>
+  <label class="sr-only" for={`q-${filter ?? 'all'}`}>{label}</label>
+  <div class="field">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></svg>
+    <input id={`q-${filter ?? 'all'}`} type="search" placeholder={label} autocomplete="off" autofocus={autofocus} />
+  </div>
+  <p class="status muted" aria-live="polite"></p>
+  <ol class="results"></ol>
+</div>
+
+<script>
+  type PF = {
+    init: () => Promise<void>;
+    debouncedSearch: (q: string, o?: object, ms?: number) => Promise<{ results: { data: () => Promise<any> }[] } | null>;
+  };
+  let pagefind: PF | null = null;
+  const load = async () => {
+    if (pagefind) return pagefind;
+    try {
+      const path = '/pagefind/pagefind.js';
+      pagefind = (await import(/* @vite-ignore */ path)) as PF;
+      await pagefind.init();
+    } catch {
+      pagefind = null;
+    }
+    return pagefind;
+  };
+  const es = document.documentElement.lang === 'es';
+  document.querySelectorAll<HTMLElement>('[data-search]').forEach((box) => {
+    const input = box.querySelector('input')!;
+    const list = box.querySelector('.results')!;
+    const status = box.querySelector('.status')!;
+    const filter = box.dataset.filter;
+    const params = new URLSearchParams(location.search);
+    if (params.get('q') && !filter) input.value = params.get('q')!;
+    const run = async () => {
+      const q = input.value.trim();
+      list.innerHTML = '';
+      if (q.length < 2) {
+        status.textContent = '';
+        return;
+      }
+      const pf = await load();
+      if (!pf) {
+        status.textContent = es ? 'La búsqueda no está disponible.' : 'Search is not available.';
+        return;
+      }
+      const res = await pf.debouncedSearch(q, filter ? { filters: { section: filter } } : {}, 250);
+      if (!res) return; // superseded by a newer query
+      const items = await Promise.all(res.results.slice(0, 12).map((r) => r.data()));
+      status.textContent = res.results.length
+        ? es ? `${res.results.length} resultado(s)` : `${res.results.length} result(s)`
+        : es ? 'Sin resultados.' : 'No results.';
+      for (const d of items) {
+        const subs = (d.sub_results ?? []).filter((s: any) => s.url !== d.url).slice(0, 3);
+        const li = document.createElement('li');
+        li.innerHTML = `<a class="r-title" href="${d.url}">${d.meta?.title ?? d.url}</a><p class="r-excerpt">${d.excerpt}</p>${subs
+          .map((s: any) => `<a class="r-sub" href="${s.url}">${s.title}</a>`)
+          .join('')}`;
+        list.appendChild(li);
+      }
+    };
+    input.addEventListener('input', run);
+    if (input.value) run();
+  });
+</script>
+
+<style>
+  .search {
+    margin: 0 0 2.5rem;
+  }
+  .field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 14px;
+    border: 1px solid var(--rule);
+    background: var(--surface, var(--white));
+    color: var(--fg-muted);
+  }
+  .field:focus-within {
+    border-color: var(--accent);
+  }
+  .field svg {
+    width: 18px;
+    height: 18px;
+    flex: none;
+  }
+  input {
+    flex: 1;
+    min-width: 0;
+    min-height: 50px;
+    border: 0;
+    background: transparent;
+    color: var(--fg);
+    font: inherit;
+    font-size: 1.05rem;
+  }
+  input:focus {
+    outline: none;
+  }
+  .status {
+    margin: 8px 0 0;
+    font-size: 0.9rem;
+  }
+  .results {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .results :global(li) {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .results :global(.r-title) {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--fg);
+  }
+  .results :global(.r-excerpt) {
+    margin: 4px 0 0;
+    font-size: 0.98rem;
+    color: var(--fg-muted);
+  }
+  .results :global(mark) {
+    background: color-mix(in srgb, var(--accent) 22%, transparent);
+    color: inherit;
+  }
+  .results :global(.r-sub) {
+    display: inline-block;
+    margin: 6px 14px 0 0;
+    font-size: 0.9rem;
+  }
+</style>

@@ -1,0 +1,44 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+import { sermonPath } from '../i18n/routes.ts';
+import { formatDate, pick } from '../i18n/ui.ts';
+import { formatRef, parseReferences, refsOnly, type Lang, passageRefs } from '../lib/scripture.ts';
+import { slugOf } from '../lib/content.ts';
+
+interface Props {
+  sermon: CollectionEntry<'sermons'>;
+  lang: Lang;
+}
+const { sermon, lang } = Astro.props;
+const preacher = await getEntry(sermon.data.preacher);
+const series = sermon.data.series ? await getEntry(sermon.data.series) : undefined;
+const passage = passageRefs(sermon.data.passage).map((r) => formatRef(r, lang, 'long')).join('; ');
+---
+
+<a class="sermon card" href={sermonPath(slugOf(sermon.id), lang)}>
+  <span class="label">{formatDate(sermon.data.date, lang)}</span>
+  <h3>{pick(sermon.data.title, lang)}</h3>
+  <p class="passage">{passage}</p>
+  <p class="meta muted">
+    {preacher?.data.name}{series && <> · {pick(series.data.title, lang)}</>}
+  </p>
+</a>
+
+<style>
+  .sermon h3 {
+    font-size: 1.45rem;
+    margin: 6px 0 8px;
+  }
+  .passage {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.1rem;
+    margin: 0 0 12px;
+    color: var(--navy-700);
+  }
+  .meta {
+    margin: auto 0 0;
+    font-size: 0.95rem;
+  }
+</style>

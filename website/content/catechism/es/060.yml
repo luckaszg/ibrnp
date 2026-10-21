@@ -1,0 +1,37 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 60
+question: ¿Qué se prohíbe en el tercer mandamiento?
+answer: El tercer mandamiento prohíbe toda profanación y abuso de cualquier cosa por medio de la cual Dios se da a conocer.
+sections:
+  - - q: ¿Es un gran pecado profanar el nombre de Dios?
+      a: Sí. «Profanaron mi santo nombre» (Eze. 36:20).
+    - q: ¿Es una profanación del nombre de Dios usarlo como un expletivo[^73] o una obscenidad al hablar?
+      a: "Sí. «Sea vuestro hablar: “Sí, sí” o “No, no”; y lo que es más de esto, procede del mal» (Mat. 5:37)."
+    - q: ¿[Es una profanación del nombre de Dios usarlo] como un amuleto?
+      a: "Sí. Como aquellos exorcistas que dijeron: «Os ordeno por Jesús» (Hch. 19:13)."
+    - q: ¿O [usarlo] cruelmente como una sanción?
+      a: "Sí. «Vuestros hermanos que os aborrecen, que os excluyen, han dicho: Sea el SEÑOR glorificado» (Isa. 66:5)."
+    - q: ¿Se profana también el nombre de Dios al menospreciar las cosas sagradas?
+      a: Sí. «¡Maldito el que […] promete, pero sacrifica [lo] dañado al Señor! Porque yo soy el Gran Rey —dice el SEÑOR de los ejércitos—y mi nombre es temido» (Mal. 1:14).
+  - - q: ¿Es la blasfemia una infracción de este mandamiento?
+      a: "Sí. Un «pueblo insensato ha blasfemado tu nombre (Sal. 74:18 [RVR60]). ¿Y la hipocresía? Sí. «Pero al impío Dios le dice: ¿Qué derecho tienes tú de hablar de mis estatutos?» (Sal. 50:16). ¿Es este un gran pecado? Sí. «Su corazón es infiel; ahora serán hallados culpables» (Ose. 10:2). ¿[Es este] un pecado destructivo? Sí. «Los impíos de corazón acumulan la ira» (Job 36:13). Por tanto, ¿deberíamos tener cuidado para evitarlo? Sí. «Guardaos de la levadura de los fariseos, que es la hipocresía» (Luc. 12:1)."
+  - - q: ¿Es quebrantado este mandamiento por el acto pecaminoso e innecesario de echar suerte?
+      a: Sí. «Se echó el Pur, es decir la suerte, delante de Amán para cada día» (Est. 3:7).
+    - q: ¿[Es quebrantado] por maldiciones profanas?
+      a: Sí. «De la misma boca proceden bendición y maldición. Hermanos míos, esto no debe ser así» (Stg. 3:10).
+    - q: ¿[Es quebrantado] por juramentos precipitados?
+      a: Sí. «Sobre todo, hermanos míos, no juréis» (Stg. 5:12).
+    - q: ¿Y por juramentos falsos?
+      a: Sí. «No juraréis en falso por mi nombre» (Lev. 19:12).
+  - - q: ¿Es un gran pecado jurar en falso?
+      a: Sí. Porque blasfema «el buen nombre por el cual habéis sido llamados» (Stg. 2:7).
+    - q: ¿Es un pecado que trae maldición sobre las personas que lo cometen?
+      a: Sí. Por «robar, matar, cometer adulterio, jurar falsamente […] os echaré de mi presencia» (Jer. 7:9, 15).
+    - q: ¿[Es un pecado que trae maldición] sobre las familias de las personas que lo cometen?
+      a: Sí. «Entrará [la maldición] (…) en casa del que jura por mi nombre en falso» (Zac. 5:4).
+    - q: ¿Y sobre la tierra?
+      a: Sí. «A causa de la maldición se ha enlutado la tierra» (Jer. 23:10).
+notes:
+  "73": expletivo —Este término viene del latín expletivus, que significa llenar del todo. Se dice de la palabra o expresión que no es necesaria para el sentido de la frase pero que le añade valores expresivos. Por lo tanto, utilizar el nombre de Dios como expletivo al hablar significa mencionarlo como «relleno» en la forma de expresarnos en una conversación; lo cual implica «hablar por hablar» sin considerar su importancia o la reverencia con la que deberíamos hablar de Él. También se usa en algunas ocasiones para referirse a una palabra o forma obscena de hablar.

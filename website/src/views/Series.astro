@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import SermonCard from '../components/SermonCard.astro';
+import type { CollectionEntry } from 'astro:content';
+import { sermons } from '../lib/content.ts';
+import { seriesPath } from '../i18n/routes.ts';
+import { t, pick } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+  series: CollectionEntry<'series'>;
+}
+const { lang, series } = Astro.props;
+const _ = t(lang);
+const list = (await sermons()).filter((s) => s.data.series?.id === series.id).reverse(); // in preaching order
+---
+
+<Base lang={lang} title={pick(series.data.title, lang)} description={pick(series.data.description, lang) || undefined} alternates={{ es: seriesPath(series.id, 'es'), en: seriesPath(series.id, 'en') }}>
+  <PageHero lang={lang} eyebrow={_('sermons.series')} title={pick(series.data.title, lang)} lede={pick(series.data.description, lang) || undefined} placeholder={series.data.placeholder} />
+  <section class="section" style="padding-top: 0">
+    <div class="container grid grid--3">
+      {list.map((s) => <SermonCard sermon={s} lang={lang} />)}
+    </div>
+  </section>
+</Base>

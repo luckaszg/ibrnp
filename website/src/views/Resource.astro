@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { render, type CollectionEntry } from 'astro:content';
+import { resourcePath, route } from '../i18n/routes.ts';
+import { t, formatDate } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+  slug: string;
+  entry: CollectionEntry<'resources'>;
+  untranslated: boolean;
+}
+const { lang, slug, entry, untranslated } = Astro.props;
+const _ = t(lang);
+const { Content } = await render(entry);
+const d = entry.data;
+---
+
+<Base lang={lang} mode="reading" title={d.title} description={d.summary} alternates={{ es: resourcePath(slug, 'es'), en: resourcePath(slug, 'en') }} untranslated={untranslated}>
+  <PageHero lang={lang} eyebrow={_('resources.article')} title={d.title} lede={[d.author, d.date && formatDate(d.date, lang)].filter(Boolean).join(' · ')} placeholder={d.placeholder} />
+  <div class="container reading" style="padding-bottom: clamp(56px, 8vw, 104px)">
+    <div class="prose" lang={untranslated ? 'es' : undefined}><Content /></div>
+    <p class="prose" style="margin-top: 3rem"><a href={route('resources', lang)}>← {_('nav.resources')}</a></p>
+  </div>
+</Base>

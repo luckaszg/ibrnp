@@ -1,0 +1,331 @@
+---
+import Seal from './Seal.astro';
+import { settings } from '../lib/settings.ts';
+import { route, type Alternates, type RouteKey } from '../i18n/routes.ts';
+import { t, type UiKey } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+  alternates: Alternates;
+}
+const { lang, alternates } = Astro.props;
+const _ = t(lang);
+const other: Lang = lang === 'es' ? 'en' : 'es';
+
+const nav: [RouteKey, UiKey][] = [
+  ['about', 'nav.about'],
+  ['beliefs', 'nav.beliefs'],
+  ['worship', 'nav.worship'],
+  ['sermons', 'nav.sermons'],
+  ['resources', 'nav.resources'],
+  ['activities', 'nav.activities'],
+];
+const path = Astro.url.pathname;
+const isActive = (key: RouteKey) => {
+  const href = route(key, lang);
+  if (key === 'beliefs') return path.startsWith(href) || path.startsWith(route('gospel', lang));
+  if (key === 'about') return path.startsWith(href) || path.startsWith(route('history', lang));
+  return path.startsWith(href);
+};
+---
+
+<header class="site-header on-navy">
+  <div class="container bar">
+    <a class="brand" href={route('home', lang)}>
+      <Seal size={48} eager />
+      <span class="brand-text">
+        <span class="brand-line1">Iglesia Bautista Reformada</span>
+        <span class="brand-line2">Nuevo Pacto</span>
+      </span>
+    </a>
+
+    <nav class="primary" id="primary-nav" aria-label={lang === 'es' ? 'Principal' : 'Main'}>
+      <ul>
+        {
+          nav.map(([key, label]) => (
+            <li>
+              <a href={route(key, lang)} aria-current={isActive(key) ? 'page' : undefined}>
+                {_(label)}
+              </a>
+            </li>
+          ))
+        }
+        <li class="nav-visit">
+          <a class="btn btn--on-navy" href={route('visit', lang)}>{_('nav.visit')}</a>
+        </li>
+      </ul>
+      <div class="nav-extra">
+        <a class="icon-link" href={route('search', lang)} aria-label={_('nav.search')}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"
+            ><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></svg
+          >
+          <span class="mobile-only">{_('nav.search')}</span>
+        </a>
+        <a class="lang" href={alternates[other]} hreflang={other} lang={other} aria-label={_('lang.switchLabel')}>
+          <span aria-hidden="true" class:list={{ current: lang === 'es' }}>ES</span>
+          <span aria-hidden="true" class="sep">|</span>
+          <span aria-hidden="true" class:list={{ current: lang === 'en' }}>EN</span>
+        </a>
+      </div>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-open={_('nav.menu')} data-close={_('nav.close')}>
+      <span class="bars" aria-hidden="true"><span></span><span></span></span>
+      <span class="menu-label">{_('nav.menu')}</span>
+    </button>
+  </div>
+</header>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+  const header = document.querySelector('.site-header');
+  toggle?.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    toggle.setAttribute('aria-expanded', String(open));
+    header?.classList.toggle('is-open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    const label = toggle.querySelector('.menu-label');
+    if (label) label.textContent = (open ? toggle.dataset.close : toggle.dataset.open) ?? '';
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && header?.classList.contains('is-open')) toggle?.click();
+  });
+</script>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    height: var(--header-h);
+    max-width: 1400px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--white);
+    text-decoration: none;
+    flex: none;
+  }
+  .brand-text {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+  }
+  .brand-line1 {
+    font-family: var(--font-label);
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #b9c6d4;
+  }
+  .brand-line2 {
+    font-family: var(--font-display);
+    font-size: 1.45rem;
+    font-weight: 550;
+    letter-spacing: 0.02em;
+  }
+
+  .primary {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .nav-visit .btn {
+    white-space: nowrap;
+  }
+  .primary ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .primary ul a:not(.btn) {
+    position: relative;
+    display: inline-block;
+    padding-block: 8px;
+    color: var(--white);
+    font-family: var(--font-label);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .primary ul a:not(.btn)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    height: 1px;
+    background: var(--brass-400);
+    transform: scaleX(0);
+    transition: transform 150ms ease;
+  }
+  .primary ul a:not(.btn):hover::after,
+  .primary ul a[aria-current='page']::after {
+    transform: scaleX(1);
+  }
+  .nav-visit .btn {
+    min-height: 40px;
+    padding: 0.65em 1.2em;
+    font-size: 0.68rem;
+  }
+  .nav-extra {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .icon-link,
+  .lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-label);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+  }
+  .icon-link svg {
+    width: 20px;
+    height: 20px;
+    flex: none;
+  }
+  .lang span {
+    opacity: 0.55;
+  }
+  .lang .current {
+    opacity: 1;
+  }
+  .lang:hover span {
+    opacity: 1;
+  }
+  .mobile-only {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: 0;
+    color: var(--white);
+    font-family: var(--font-label);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 12px 0;
+    min-height: 44px;
+  }
+  .bars {
+    display: grid;
+    gap: 6px;
+    width: 22px;
+  }
+  .bars span {
+    height: 1.5px;
+    background: currentColor;
+    transition: transform 150ms ease;
+  }
+  .is-open .bars span:first-child {
+    transform: translateY(3.75px) rotate(45deg);
+  }
+  .is-open .bars span:last-child {
+    transform: translateY(-3.75px) rotate(-45deg);
+  }
+
+  @media (max-width: 1365px) {
+    .menu-toggle {
+      display: inline-flex;
+    }
+    .primary {
+      position: fixed;
+      inset: var(--header-h) 0 0 0;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+      gap: 32px;
+      padding: 32px var(--gutter) 40px;
+      background: var(--navy-900);
+      overflow-y: auto;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 150ms ease, visibility 150ms;
+    }
+    .is-open .primary {
+      visibility: visible;
+      opacity: 1;
+    }
+    .primary ul {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+    .primary ul li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .primary ul a:not(.btn) {
+      display: block;
+      padding: 18px 0;
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      text-transform: none;
+    }
+    .primary ul a:not(.btn)::after {
+      display: none;
+    }
+    .nav-visit {
+      border: 0 !important;
+      padding-top: 28px;
+    }
+    .nav-visit .btn {
+      width: 100%;
+      min-height: 52px;
+    }
+    .nav-extra {
+      justify-content: space-between;
+    }
+    .mobile-only {
+      display: inline;
+    }
+  }
+  @media (max-width: 420px) {
+    .brand-line1 {
+      font-size: 0.55rem;
+      letter-spacing: 0.12em;
+    }
+    .brand-line2 {
+      font-size: 1.25rem;
+    }
+    .menu-label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+    }
+  }
+</style>

@@ -1,0 +1,27 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 70
+question: ¿Qué se prohíbe en el quinto mandamiento?
+answer: El quinto mandamiento prohíbe descuidar o hacer cualquier cosa en contra del honor y el deber que correspondan a cada cual en sus distintos puestos y relaciones.
+sections:
+  - - q: ¿Es pecado que los hijos sean irreverentes con sus padres?
+      a: Sí. «“Maldito el que desprecie a su padre o a su madre”» (Deu. 27:16).
+    - q: ¿[Es pecado que los hijos sean] desobedientes [a sus padres]?
+      a: Sí. «Al ojo que se mofa del padre, y escarnece a la madre, lo sacarán los cuervos del valle, y lo comerán los aguiluchos» (Pro. 30:17).
+    - q: ¿[Es pecado que los hijos sean] derrochadores?
+      a: Sí. «El que asalta a su padre y echa fuera a su madre es un hijo que trae vergüenza y desgracia» (Pro. 19:26).
+    - q: ¿[Es pecado que los hijos sean] incorregibles?
+      a: Sí. «Pero ellos no escucharon la voz de su padre» (1 Sam. 2:25).
+    - q: ¿Es pecado que los padres no amen a sus hijos?
+      a: Sí. «Sin afecto natural» (Rom. 1:31 [RVR60]).
+    - q: ¿O que sean negligentes en la educación de sus hijos?
+      a: Sí. «Pues sus hijos trajeron sobre sí una maldición, y él no los reprendió» (1 Sam. 3:13).
+  - - q: ¿Es pecado que los inferiores sean ásperos y desleales para con sus superiores?
+      a: Sí, porque «el joven se alzará contra el anciano, y el indigno contra el honorable» (Isa. 3:5).
+    - q: ¿Y que los superiores sean duros y descorteses con los inferiores?
+      a: "Sí. «Al pobre decís: Tú estate allí de pie, o siéntate junto a mi estrado» (Stg. 2:3)."
+    - q: ¿Es pecado desear la preeminencia entre iguales?
+      a: Sí. «Se suscitó también entre ellos un altercado, sobre cuál de ellos debería ser considerado como el mayor» (Luc. 22:24).
+    - q: ¿O ser irritante y pendenciero?
+      a: Sí. «Que quizá haya pleitos, celos, enojos, rivalidades» (2 Cor. 12:20).

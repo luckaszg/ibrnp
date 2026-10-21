@@ -1,0 +1,177 @@
+---
+import Seal from './Seal.astro';
+import ServiceTimes from './ServiceTimes.astro';
+import { settings, hasContactDetails } from '../lib/settings.ts';
+import ContactLinks from './ContactLinks.astro';
+import { route, routeAvailable, type Alternates, type RouteKey } from '../i18n/routes.ts';
+import { t, type UiKey } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+  alternates: Alternates;
+}
+const { lang, alternates } = Astro.props;
+const _ = t(lang);
+const other: Lang = lang === 'es' ? 'en' : 'es';
+const a = settings.address;
+
+const columns: [UiKey, [RouteKey, UiKey][]][] = [
+  ['nav.about', [['about', 'nav.about'], ['leadership', 'nav.leadership'], ['history', 'nav.history'], ['worship', 'nav.worship']]],
+  ['nav.beliefs', [['beliefs', 'nav.beliefs'], ['confession', 'nav.confession'], ['catechism', 'nav.catechism'], ['covenant', 'nav.covenant'], ['gospel', 'nav.gospel']]],
+  ['nav.sermons', [['sermons', 'nav.sermons'], ['resources', 'nav.resources'], ['activities', 'nav.activities'], ['visit', 'nav.visit']]],
+];
+---
+
+<footer class="site-footer on-navy">
+  <div class="container top">
+    <div class="identity">
+      <Seal size={112} />
+      <p class="name">{settings.name}</p>
+      <p class="tagline">{settings.tagline[lang] ?? settings.tagline.es}</p>
+    </div>
+
+    <div class="info">
+      <h2 class="label">{_('common.address')}</h2>
+      <address>
+        {a.street}<br />
+        {a.city}{a.region && `, ${a.region}`}<br />
+        {a.country}
+      </address>
+      {
+        hasContactDetails && (
+          <>
+            <h2 class="label">{_('common.contact')}</h2>
+            <p>
+              <ContactLinks />
+            </p>
+          </>
+        )
+      }
+      {
+        settings.youtubeChannel && (
+          <p>
+            <a href={settings.youtubeChannel} target="_blank" rel="noopener">
+              YouTube ↗
+            </a>
+          </p>
+        )
+      }
+    </div>
+
+    <div class="info">
+      <h2 class="label">{_('common.serviceTimes')}</h2>
+      <ServiceTimes lang={lang} compact />
+    </div>
+
+    <nav class="links" aria-label={lang === 'es' ? 'Pie de página' : 'Footer'}>
+      {
+        columns.map(([heading, all]) => {
+          const links = all.filter(([key]) => routeAvailable(key));
+          return (
+          <div>
+            <h2 class="label">{_(heading)}</h2>
+            <ul>
+              {links.map(([key, label]) => (
+                <li>
+                  <a href={route(key, lang)}>{_(label)}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          );
+        })
+      }
+    </nav>
+  </div>
+  <div class="container bottom">
+    <p>© {new Date().getFullYear()} {settings.name}. <a href={route('privacy', lang)}>{_('nav.privacy')}</a></p>
+    <p>
+      <a href={alternates[other]} hreflang={other} lang={other}>{_('lang.switch')}</a>
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--navy-950);
+    padding-top: clamp(56px, 7vw, 88px);
+    font-size: 1rem;
+  }
+  .top {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) {
+    .top {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (min-width: 1080px) {
+    .top {
+      grid-template-columns: 1.1fr 0.9fr 0.9fr 2fr;
+    }
+  }
+  .identity .name {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    line-height: 1.25;
+    margin: 20px 0 6px;
+  }
+  .tagline {
+    color: var(--fg-muted);
+    font-size: 0.95rem;
+  }
+  .label {
+    color: var(--brass-400);
+    margin: 0 0 12px;
+  }
+  .info .label:not(:first-child) {
+    margin-top: 24px;
+  }
+  address {
+    font-style: normal;
+    color: #dbe3ec;
+  }
+  .site-footer a {
+    color: #dbe3ec;
+    text-decoration: none;
+  }
+  .site-footer a:hover {
+    color: var(--white);
+    text-decoration: underline;
+    text-decoration-color: var(--brass-400);
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 32px;
+  }
+  .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .links li {
+    margin-bottom: 8px;
+  }
+  .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 56px;
+    padding-block: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.85rem;
+    color: var(--fg-muted);
+  }
+  .bottom p {
+    margin: 0;
+  }
+  .bottom a {
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.4);
+  }
+</style>

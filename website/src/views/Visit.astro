@@ -1,0 +1,121 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import ServiceTimes from '../components/ServiceTimes.astro';
+import MapEmbed from '../components/MapEmbed.astro';
+import ContactForm from '../components/ContactForm.astro';
+import { settings, hasContactDetails, contactFormAvailable } from '../lib/settings.ts';
+import ContactLinks from '../components/ContactLinks.astro';
+import { alternates, route } from '../i18n/routes.ts';
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const _ = t(lang);
+const a = settings.address;
+const expect =
+  lang === 'es'
+    ? [
+        ['La Palabra', 'Un culto sencillo, centrado en la lectura y la predicación expositiva de la Escritura.'],
+        ['Los cantos', 'Himnos cantados por toda la congregación.'],
+        ['Las familias', 'Los niños permanecen con sus padres durante el culto. Hay sala de cuna y sala de lactancia.'],
+      ]
+    : [
+        ['The Word', 'A simple service centred on the reading and expository preaching of Scripture.'],
+        ['Singing', 'Hymns sung by the whole congregation.'],
+        ['Families', 'Children stay with their parents during the service. There is a nursery and a nursing room.'],
+      ];
+---
+
+<Base lang={lang} title={_('nav.visit')} alternates={alternates('visit')}>
+  <PageHero
+    lang={lang}
+    title={_('nav.visit')}
+    lede={lang === 'es' ? 'Será bienvenido cualquier Día del Señor. Aquí encontrará cómo llegar y qué esperar.' : 'You are welcome any Lord’s Day. Here is how to find us and what to expect.'}
+    placeholder={settings.placeholder}
+  />
+
+  <section class="section section--tint">
+    <div class="container visit">
+      <div>
+        <h2 class="label">{_('common.address')}</h2>
+        <address>
+          {a.street}<br />{a.city}{a.region && `, ${a.region}`}{a.postalCode && ` ${a.postalCode}`}<br />{a.country}
+        </address>
+        <h2 class="label">{_('common.serviceTimes')}</h2>
+        <ServiceTimes lang={lang} />
+        {
+          hasContactDetails && (
+            <>
+              <h2 class="label">{_('common.contact')}</h2>
+              <p>
+                <ContactLinks />
+              </p>
+            </>
+          )
+        }
+      </div>
+      <MapEmbed lang={lang} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{lang === 'es' ? 'Qué esperar' : 'What to expect'}</p>
+        <h2>{_('nav.worship')}</h2>
+      </div>
+      <div class="grid grid--3">
+        {
+          expect.map(([title, text]) => (
+            <div class="card">
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </div>
+          ))
+        }
+      </div>
+      <p style="margin-top: 2rem"><a class="btn btn--outline" href={route('worship', lang)}>{_('common.readMore')}</a></p>
+    </div>
+  </section>
+
+  {
+    contactFormAvailable && (
+  <section class="section section--tint" id={lang === 'es' ? 'contacto' : 'contact'}>
+    <div class="container narrow">
+      <h2>{_('contact.title')}</h2>
+      <ContactForm lang={lang} />
+    </div>
+  </section>
+    )
+  }
+</Base>
+
+<style>
+  .visit {
+    display: grid;
+    gap: 40px;
+  }
+  @media (min-width: 900px) {
+    .visit {
+      grid-template-columns: 1fr 1.3fr;
+      align-items: start;
+    }
+  }
+  .visit .label {
+    color: var(--brass-700);
+    margin: 0 0 10px;
+  }
+  .visit .label:not(:first-child) {
+    margin-top: 28px;
+  }
+  address {
+    font-style: normal;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    line-height: 1.4;
+  }
+</style>

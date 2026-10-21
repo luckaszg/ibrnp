@@ -1,0 +1,12 @@
+---
+import Resource from '../../views/Resource.astro';
+import { resources } from '../../lib/content.ts';
+
+const LANG = 'es';
+export async function getStaticPaths() {
+  return (await resources('es')).filter((r) => r.entry.data.category === 'article').map((r) => ({ params: { slug: r.slug }, props: r }));
+}
+const props = Astro.props as Awaited<ReturnType<typeof resources>>[number];
+---
+
+<Resource lang={LANG} {...props} />

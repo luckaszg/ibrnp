@@ -1,0 +1,8 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 87
+question: Is any Man able perfectly to keep the Commandments of God?
+answer: No meer Man since the Fall, is able in this Life, perfectly to keep the Commandments of God[^1], but doth daily break them, in Thought, Work, or Deed[^2].
+notes:
+  "1": Eccl. 7:20; 1 John 1:8, 10; Gal. 5:17
+  "2": Gen. 6:5; Gen. 8:21; Rom. 3:9–21; Jas. 3:2–13

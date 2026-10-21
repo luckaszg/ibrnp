@@ -1,0 +1,21 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 50
+question: ¿Cuál es el primer mandamiento?
+answer: "El primer mandamiento es: «No tendrás otros dioses delante de mí»."
+sections:
+  - - q: ¿Es el creer en una Deidad y adorarla uno de los principios de la religión natural?
+      a: Sí, porque todos los pueblos andan cada uno en el nombre de su dios (Miq. 4:5).
+    - q: Pero, ¿se inculca esto con mayor fuerza en la Palabra divina?
+      a: Sí. «Adorad al SEÑOR» (Sal. 29:2).
+  - - q: ¿Prevaleció el pecado de tener muchos dioses en los primeros años del mundo?
+      a: Sí. «¿Por qué robaste mis dioses?» (Gén. 31:30).
+    - q: ¿Y el propio pueblo de Dios se infectó pronto con ello?
+      a: Sí. «Levántate, haznos un dios» (Éxo. 32:1).
+    - q: ¿Se prohíbe este pecado de manera absoluta en el primer mandamiento?
+      a: "Sí, porque «el más importante [de todos los mandamientos] es: “ESCUCHA, ISRAEL; EL SEÑORNUESTRO DIOS, EL SEÑOR UNO ES”» (Mar. 12:29)."
+    - q: ¿Y fue severamente castigado en aquellos que fueron hallados culpables de ello?
+      a: Sí, pues «el SEÑOR hirió al pueblo por lo que hicieron con el becerro» (Éxo. 32:35).
+notes:
+  "65": Un pacto nacional que era peculiar de la economía judía; lo que se dice en esta respuesta solo puede aplicarse con propiedad a verdaderos santos bajo la dispensación del evangelio.

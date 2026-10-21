@@ -1,0 +1,86 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 5
+question: ¿Pueden todos los hombres hacer uso de las Santas Escrituras?
+answer: A todos los hombres no solo se les permite, sino que también se les ordena y exhorta leer, escuchar y entender las Santas Escrituras.
+sections:
+  - - q: ¿Deberían ser leídas las Escrituras?
+      a: Sí. «Buscad en el libro del SEÑOR, y leed» (Isa. 34:16).
+    - q: ¿Deberíamos leerlas por nosotros mismos?
+      a: Sí. «Regresaba [el eunuco] sentado en su carruaje, y leía al profeta Isaías» (Hch. 8:28).
+    - q: ¿Deberíamos leérselas a otros?
+      a: Sí. «Leerás esta ley delante de todo Israel» (Deu. 31:11).
+    - q: ¿Y deberíamos hacer que otros las lean?
+      a: Sí. «Hacedla leer también en la iglesia de los laodicenses» (Col. 4:16).
+  - - q: ¿Deberían ser leídas las Escrituras cuidadosamente?
+      a: "[^25] Sí. «¿Qué está escrito en la ley? ¿Qué lees en ella?» (Luc. 10:26)."
+    - q: ¿Deberían ser leídas diligentemente?
+      a: Sí. «Escudriñad las Escrituras» (Jua. 5:39 [RVR60]).
+    - q: ¿Deberíamos perseverar en leerlas?
+      a: Sí. «La leerá todos los días de su vida» (Deu. 17:19).
+    - q: ¿Deberíamos hacer esto particularmente en el día de reposo?
+      a: Sí, pues se leían «todos los días de reposo» (Hch. 13:27).
+    - q: ¿Y deberíamos preferirlas sobre todos los otros escritos?
+      a: Sí. «¿Qué tiene que ver la paja con el grano?» (Jer. 23:28).
+  - - q: ¿Era el leer las Escrituras una costumbre antigua?
+      a: Sí. «Porque Moisés desde generaciones antiguas es leído en las sinagogas» (Hch. 15:21).
+    - q: ¿Era esta la costumbre de Cristo?
+      a: Sí. «Según su costumbre, entró en la sinagoga el día de reposo, y se levantó a leer» (Luc. 4:16).
+    - q: ¿Es digno de nuestra atención aquello que está contenido en las Escrituras?
+      a: Sí. «Vosotros pensáis que en ellas tenéis vida eterna» (Jua. 5:39).
+    - q: ¿Conduce el descuido de las Escrituras a la ignorancia y al error?
+      a: Sí. «Estáis equivocados por no comprender las Escrituras» (Mat. 22:29).
+    - q: ¿Hay una bendición prometida por el uso diligente de las Escrituras?
+      a: Sí. «Bienaventurado el que lee y los que oyen las palabras de la profecía» (Apo. 1:3).
+  - - q: ¿Debería ser oída la Palabra de Dios?
+      a: Sí. «El que es de Dios escucha las palabras de Dios» (Jua. 8:47).
+    - q: ¿Debería ser oída toda la Palabra de Dios?
+      a: Sí. «Estamos aquí presentes para oír todo lo que el Señor te ha mandado» (Hch. 10:33).
+    - q: ¿Deberíamos oír la Palabra de Dios con una reverencia santa?
+      a: Sí. El Señor mirará «al que tiembla ante» Su Palabra (Isa. 66:2).
+    - q: ¿[Deberíamos oírla] con deleite?
+      a: Sí. «La gran multitud escuchaba [a Cristo] con gusto» (Mar. 12:37).
+    - q: ¿[Deberíamos oírla] con fe?
+      a: Sí. «Confiad en sus profetas y triunfaréis» (2 Cró. 20:20).
+    - q: ¿[Deberíamos oírla] con humildad?
+      a: "[^26] Sí. «Recibid con humildad la palabra implantada» (Stg. 1:21)."
+    - q: ¿[Deberíamos oírla] con una firme resolución de obedecer?
+      a: Sí. Debemos «cuidar de cumplir» (Deu. 32:46 [RVR60]).
+    - q: ¿Deberíamos desear escuchar la Palabra una y otra vez?
+      a: Sí. «Les rogaba que el siguiente día de reposo les hablaran de estas cosas» (Hch. 13:42).
+  - - q: ¿Todos oyen así la Palabra?
+      a: No. Algunos «la rechazaron» (Hch. 13:46).
+    - q: ¿Es esto un ejemplo de su necedad?
+      a: Sí. «He aquí, ellos han desechado la palabra del SEÑOR, ¿y qué clase de sabiduría tienen?» (Jer. 8:9).
+    - q: ¿Y será esto para su perjuicio?
+      a: Sí. «El que desprecia la palabra pagará por ello» (Pro. 13:13).
+  - - q: ¿Deberíamos ser cuidadosos para entender las Escrituras?
+      a: Sí. «El que lea, que entienda» (Mat. 24:15).
+    - q: ¿Hay algunas cosas en las Escrituras que son difíciles de entender?
+      a: Sí. «En las cuales hay algunas cosas difíciles de entender» (2 Pedro 3:16).
+    - q: ¿Esto requiere diligencia?
+      a: Sí. «Si la buscas como a plata, y la procuras como a tesoros escondidos, entonces entenderás el temor del SEÑOR, y descubrirás el conocimiento de Dios» (Pro. 2:4, 5).
+    - q: ¿Y [esto requiere] oración?
+      a: Sí. «Abre mis ojos, para que vea las maravillas de tu ley» (Sal. 119:18).
+  - - q: ¿Tienen todos un entendimiento de las Escrituras?
+      a: No. Algunos son «sin entendimiento» (Rom. 1:31).
+    - q: ¿Se debe esto en parte a una negligencia deliberada?
+      a: Sí. «No saben ni entienden» (Sal. 82:5).
+    - q: ¿[Se debe esto] por otra parte a una ceguera judicial?
+      a: Sí. «Haz insensible el corazón de este pueblo, endurece sus oídos, y nubla sus ojos, no sea que vea con sus ojos, y oiga con sus oídos, y entienda» (Isa. 6:10).
+    - q: ¿Pueden ser torcidas las Escrituras por quienes no las entienden?
+      a: Sí. Las cuales «los ignorantes e inestables tuercen» (2 Pedro 3:16).
+    - q: ¿Y algo así es deplorable?
+      a: Sí. «Si nuestro evangelio está velado, para los que se pierden está velado» (2 Cor. 4:3).
+  - - q: ¿No solo se nos permite, sino que también se nos ordena y exhorta hacer uso de las Sagradas Escrituras?
+      a: Sí. «El que tiene oído, oiga lo que el Espíritu dice a las iglesias» (Apo. 2:29).
+    - q: ¿Es este el deber de todos?
+      a: Sí. «Oíd, oh cielos, y dejadme hablar; y escuche la tierra las palabras de mi boca» (Deu. 32:1).
+    - q: ¿Es este el deber tanto de los ministros como de las [demás] personas?
+      a: Sí. «Ocúpate en la lectura» (1 Tim. 4:13).
+    - q: ¿Y [es este el deber] tanto de los jóvenes como de los ancianos?
+      a: Sí. «Que desde la niñez has sabido las Sagradas Escrituras» (2 Tim. 3:15).
+notes:
+  "25": El original utiliza el adverbio «attentively», que implica poner toda la atención o cuidado al considerar algo.
+  "26": humildad —El original utiliza la palabra «meekness», que puede ser traducida como mansedumbre. En la RVR60 se utiliza la palabra mansedumbre; sin embargo, LBLA traduce humildad. Por eso se prefiere verter «meekness» como humildad. La idea es que el creyente debe recibir la Palabra de Dios con una disposición santa de acatar lo que esta dice, es decir, con humildad y mansedumbre.

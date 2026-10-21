@@ -1,0 +1,31 @@
+---
+import Provisional from './Provisional.astro';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+  eyebrow?: string;
+  title: string;
+  lede?: string;
+  placeholder?: boolean;
+  navy?: boolean;
+}
+const { lang, eyebrow, title, lede, placeholder = false, navy = false } = Astro.props;
+---
+
+<header class:list={['page-hero', { 'section--navy': navy }]}>
+  <div class="container">
+    <Provisional lang={lang} show={placeholder} />
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    <h1>{title}</h1>
+    {lede && <p class="lede">{lede}</p>}
+    <div class="ornament" aria-hidden="true"><span>✠</span></div>
+    <slot />
+  </div>
+</header>
+
+<style>
+  .ornament {
+    margin-bottom: 0;
+  }
+</style>

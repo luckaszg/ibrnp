@@ -1,0 +1,7 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 17
+question: What is Sin?
+answer: Sin is any want of Conformity unto, or Transgression of the Law of God[^1].
+notes:
+  "1": 1 John 3:4

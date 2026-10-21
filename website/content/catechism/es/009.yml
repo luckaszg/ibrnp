@@ -1,0 +1,69 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 9
+question: ¿Cuántas Personas hay en la Divinidad?
+answer: Hay tres Personas en la Divinidad el Padre, el Hijo y el Espíritu Santo; y estos tres son un solo Dios, el mismo en esencia, igual en poder y gloria.
+sections:
+  - - q: ¿Hay una pluralidad en la Divinidad?
+      a: "Sí, porque Dios dijo: «Hagamos al hombre» (Gén. 1:26)."
+    - q: ¿Consiste la Divinidad en tres Personas?
+      a: Sí. «Porque tres son los que dan testimonio en el cielo» (1 Jua. 5:7).
+    - q: ¿Es el Padre una Persona distinta del Hijo y del Espíritu?
+      a: Sí. «Mi Padre que me las dio es mayor que todos» (Jua. 10:29).
+    - q: ¿Es el Hijo una Persona distinta del Padre y del Espíritu?
+      a: "Sí. «Dice el SEÑOR (es decir, el Padre) a mi Señor (es decir, el Hijo): Siéntate a mi diestra» (Sal. 110:1)."
+    - q: ¿Y es el Espíritu una Persona distinta, tanto del Padre como del Hijo?
+      a: Sí. «El Consolador, el Espíritu Santo, a quien el Padre enviará en mi nombre, Él os enseñará todas las cosas» (Jua. 14:26).
+    - q: ¿Son Estos el mismo en esencia, afecto y operación?
+      a: Sí. «Estos tres son uno» (1 Jua. 5:7).
+    - q: Entonces, ¿puede decirse con propiedad que hay tres Dioses?
+      a: No. «El SEÑOR será uno, y uno su nombre» (Zac. 14:9).
+  - - q: ¿Se le llama Dios al Hijo?
+      a: Sí. «El cual está sobre todas las cosas, Dios bendito por los siglos» (Rom. 9:5).
+    - q: ¿Se le llama Dios al Espíritu?
+      a: Sí. «¿Por qué ha llenado Satanás tu corazón para mentir al Espíritu Santo? No has mentido a los hombres sino a Dios» (Hch. 5:3, 4).
+    - q: ¿Se le llama Jehová al Hijo?
+      a: "Sí. «El SEÑOR [heb.: Jehová], justicia nuestra» (Jer. 23:6)."
+    - q: ¿Se le llama Jehová al Espíritu?
+      a: "Sí. «Tentaron al SEÑOR [heb.: Jehová]» (Éxo. 17:77, en comparación con «Contristaron su Santo Espíritu» (Isa. 63:10)."
+    - q: "¿Se le da este nombre [SEÑOR (heb.: Jehová)] a alguien aparte de Dios?"
+      a: No. «Para que sepan que sólo tú, que te llamas el SEÑOR, eres el Altísimo sobre toda la tierra» (Sal. 83:18).
+  - - q: ¿Es el Hijo eterno como el Padre?
+      a: Sí. «Antes que Abraham naciera, yo soy» (Jua. 8:58).
+    - q: ¿Es eterno el Espíritu?
+      a: Sí. Se le llama «el Espíritu eterno» (Heb. 9:14).
+    - q: ¿Es el Hijo omnipresente?
+      a: Sí. «Donde están dos o tres reunidos en mi nombre, allí estoy yo en medio de ellos» (Mat. 18:20).
+    - q: ¿Lo es también el Espíritu?
+      a: Sí. «¿Adónde me iré de tu Espíritu?» (Sal. 139:7).
+    - q: ¿Es el Hijo omnisciente?
+      a: Sí. «Tú lo sabes todo» (Jua. 21:17).
+    - q: ¿Lo es también el Espíritu?
+      a: Sí. «El Espíritu todo lo escudriña» (1 Cor. 2:10).
+    - q: ¿Se le atribuye al Hijo la obra de la creación?
+      a: Sí. «Todas las cosas fueron hechas por medio de Él» (Jua. 1:3).
+    - q: ¿También se atribuye al Espíritu la obra de la creación?
+      a: Sí. «El Espíritu de Dios me ha hecho» (Job 33:4).
+    - q: ¿Y es la creación una obra peculiar de Dios?
+      a: Sí. «El que hace todas las cosas es Dios» (Heb. 3:4).
+  - - q: ¿Es el Padre el objeto de la oración?
+      a: Sí. «Ora a tu Padre que está en secreto» (Mat. 6:6).
+    - q: ¿Es el Hijo también el objeto de la oración?
+      a: Sí. «Señor Jesús, recibe mi espíritu» (Hch. 7:59).
+    - q: ¿Y [lo es también] el Espíritu?
+      a: Sí. «Gracia a vosotros y paz de los siete Espíritus que están delante de su trono»[^27] (Apo. 1:4).
+    - q: ¿Somos bautizados en el nombre de las tres Personas de la Trinidad?
+      a: Sí. «Bautizándolos en el nombre del Padre y del Hijo y del Espíritu Santo» (Mat. 28:19).
+    - q: ¿Es el culto religioso una prerrogativa de la Deidad?
+      a: Sí. «Adora a Dios» (Apo. 19:10; 22:9).
+  - - q: ¿Provienen las bendiciones divinas de las tres Personas en la Divinidad?
+      a: Sí. «La gracia del Señor Jesucristo, el amor de Dios y la comunión del Espíritu Santo sean con todos vosotros» (2 Cor. 13:14).
+    - q: ¿Tiene cada una de estas [Personas] una provincia [o competencia] distintiva en lo relacionado con la salvación del hombre?
+      a: Sí. «Por medio de Él los unos y los otros tenemos nuestra entrada al Padre en un mismo Espíritu» (Efe. 2:18).
+    - q: ¿Es la unidad en la Divinidad un motivo para la unidad entre los santos?
+      a: Sí. «Para que todos sean uno. Como tú, Oh Padre, estás en mí y yo en ti, que también ellos estén en nosotros» (Jua. 17:21).
+    - q: ¿Deberíamos retener esta doctrina?
+      a: Sí. «Retén la forma de las palabras sanas» (2 Tim. 1:13).
+notes:
+  "27": Es decir, el único Espíritu santo y eterno, quien es llamado así en alusión a las siete iglesias o para mostrar la variedad y perfección de Sus dones y gracias; Daniel 9:19 parece ser un ejemplo de oración dirigida hacia las tres Personas.

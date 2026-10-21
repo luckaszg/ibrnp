@@ -1,0 +1,25 @@
+---
+import MarkdownPage from './MarkdownPage.astro';
+import ServiceTimes from '../components/ServiceTimes.astro';
+import { route } from '../i18n/routes.ts';
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const _ = t(lang);
+---
+
+<MarkdownPage lang={lang} slug="nuestro-culto" routeKey="worship">
+  <section class="section section--navy">
+    <div class="container narrow" style="text-align: center">
+      <p class="eyebrow">{_('common.serviceTimes')}</p>
+      <div style="margin: 0 auto 2rem; max-width: 520px; text-align: left">
+        <ServiceTimes lang={lang} />
+      </div>
+      <a class="btn" href={route('visit', lang)}>{_('nav.visit')}</a>
+    </div>
+  </section>
+</MarkdownPage>

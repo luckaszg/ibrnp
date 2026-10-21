@@ -1,0 +1,81 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 47
+question: ¿Cuál es el resumen de los Diez Mandamientos?
+answer: El resumen de los Diez Mandamientos es amar al Señor nuestro Dios con todo nuestro corazón, con toda nuestra alma, con todas nuestras fuerzas y con toda nuestra mente; y a nuestro prójimo como a nosotros mismos.
+sections:
+  - - q: ¿Fueron escritos los Diez Mandamientos en dos tablas originalmente?
+      a: "Sí. «El Señor dijo: lábrate dos tablas de piedra, y yo escribiré sobre las tablas» (Deu. 10:1)."
+    - q: ¿Incluye el amor a Dios todos los deberes de la primera tabla?
+      a: Sí. «Este es el grande y el primer mandamiento» (Mat. 22:38).
+    - q: ¿E incluye el amor al prójimo todos los deberes de la segunda [tabla]?
+      a: "Sí. «El segundo es semejante a éste: Amarás a tu prójimo como a ti mismo» (v. 39)."
+    - q: Entonces, ¿se cumple toda la ley en el amor?
+      a: Sí. «Porque el amor es el cumplimiento de la ley» (Rom. 13:10).
+  - - q: ¿Es nuestro deber amar a Dios?
+      a: Sí. «Tened sumo cuidado, por vuestra vida, de amar al Señor vuestro Dios» (Jos. 23:11).
+    - q: ¿Está en Él todo lo que es hermoso?
+      a: Sí. «¡Cuánta [es] su hermosura!» (Zac. 9:17).
+    - q: ¿Será Él recíproco con nuestro amor?
+      a: Sí. «Amo a los que me aman» (Pro. 8:17).
+    - q: ¿Y lo recompensará?
+      a: Sí, porque «COSAS QUEOJO NO VIO, NI OÍDO OYÓ, [N]I HAN ENTRADO AL CORAZÓN DELHOMBRE, son LAS COSAS QUE DIOS HA PREPARADO PARA LOS QUELE AMAN (1 Cor. 2:9).
+  - - q: ¿Deberíamos manifestar nuestro amor a Dios en pensamientos frecuentes acerca de Él?
+      a: Sí. «Séale agradable mi meditación» (Sal. 104:34).
+    - q: ¿[Deberíamos manifestar nuestro amor a Dios] en fervientes deseos por Él?
+      a: Sí. «Mi alma tiene sed de ti, mi carne te anhela» (Sal. 63:1).
+    - q: ¿En pena por Su ausencia?
+      a: Sí. «¿Por qué […] te escondes?» (Sal. 10:1).
+    - q: ¿En una sumisión sincera a Su voluntad providencial?
+      a: Sí. «Mudo me he quedado, no abro la boca» (Sal. 39:9).
+    - q: ¿En una obediencia consciente a todos Sus mandamientos?
+      a: "Sí. «Porque este es el amor de Dios: que guardemos sus mandamientos» (1 Jua. 5:3)."
+    - q: ¿Y en la debida indignación {lit. resentimiento} contra todo lo que lo ofende?
+      a: Sí. «¿No odio a los que te aborrecen, SEÑOR? ¿Y no me repugnan los que se levantan contra ti?» (Sal. 139:21).
+  - - q: ¿Debería ser racional y juicioso nuestro amor a Dios?
+      a: Sí, para «que vuestro amor abunde aún más y más en conocimiento verdadero y en todo discernimiento» (Flp. 1:9).
+    - q: ¿[Debería ser] recto y sincero?
+      a: Sí. «La gracia sea con todos los que aman a nuestro Señor Jesucristo con amor incorruptible» (Efe. 6:24).
+    - q: ¿[Debería ser] fuerte y vehemente?
+      a: Sí. «Estoy [enfermo] de amor» (Cnt. 2:5).
+    - q: ¿[Debería ser] supremo y superlativo?
+      a: Sí. «El que ama al padre o a la madre más que a mí, no es digno de mí» (Mat. 10:37).
+    - q: ¿Y [debería ser] constante y permanente?
+      a: Sí. «Conservaos en el amor de Dios» (Jud. 21).
+  - - q: ¿Nuestro amor debe limitarse a Dios?
+      a: No. «El que ama a Dios, ame también a su hermano» (1 Jua. 4:21).
+    - q: ¿Deberíamos buscar el bien de los demás?
+      a: Sí. «[El amor] no busca lo suyo» (1 Cor. 13:5).
+    - q: ¿[Deberíamos] prestar oído compasivo a sus quejas?
+      a: Sí. «Para el abatido, debe haber compasión» (Job 6:14).
+    - q: ¿[Deberíamos] suplir sus necesidades?
+      a: Sí. No deberíamos «[impedir] a los pobres su deseo, [ni hacer] desfallecer los ojos de la viuda» (Job 31:16).
+    - q: ¿[Deberíamos] reprender sus pecados?
+      a: Sí. «Ciertamente [reprenderás] a tu prójimo» (Lev. 19:17).
+    - q: ¿[Deberíamos] orar por ellos?
+      a: Sí. «Orad unos por otros» (Stg. 5:16).
+    - q: ¿E incluso [deberíamos] arriesgar nuestras vidas por ellos si es necesario?
+      a: Sí. «Debemos poner nuestras vidas por los hermanos» (1 Jua. 3:16).
+  - - q: ¿Deberíamos amar a otros como Cristo nos amó a nosotros?
+      a: Sí. «Y andad en amor, así como también Cristo nos amó» (Efe. 5:2 [RVR60]).
+    - q: ¿[Deberíamos amar a otros] como nos amamos a nosotros mismos?
+      a: Sí. «[A]MARÁS A TU PRÓJIMO COMO A TI MISMO» (Mat. 19:19).
+    - q: ¿Deberíamos amarlos con la misma sinceridad [con la que nos amamos a nosotros mismos]?
+      a: Sí. «No amemos […] de lengua, sino de hecho y en verdad» (1 Jua. 3:18).
+    - q: ¿[Deberíamos amarlos] con el mismo fervor [con el que nos amamos a nosotros mismos]?
+      a: Sí. «Sobre todo, sed fervientes en vuestro amor los unos por los otros» (1 Pedro 4:8).
+    - q: ¿Y con la misma constancia?
+      a: Sí. «Permanezca el amor fraternal» (Heb. 13:1).
+    - q: ¿De ello se deduce que nosotros deberíamos hacer con los demás como nos gustaría que se hiciera con nosotros?
+      a: Sí. «Todo cuanto queráis que os hagan los hombres, así también haced vosotros con ellos» (Mat. 7:12).
+  - - q: ¿Es el amor el mandamiento nuevo de Cristo?
+      a: "Sí. «Un mandamiento nuevo os doy: que os améis los unos a los otros» (Jua. 13:34)."
+    - q: ¿Es [el amor] una prueba de que somos discípulos?
+      a: Sí. «En esto conocerán todos que sois mis discípulos, si os tenéis amor los unos a los otros» (Jua. 13:35).
+    - q: ¿Es colocado [el amor] en la cima de las gracias cristianas?
+      a: Sí. «El mayor de ellos es el amor» (1 Cor. 13:13).
+    - q: ¿Y es [el amor] una gracia que permanecerá y nos acompañará al Cielo?
+      a: Sí. «Ahora [permanece] el amor» (Ibíd.).
+notes:
+  "64": La ley moral se llama así porque es una regla fundamentada en las perfecciones de Dios que tiene sus principios generales en la luz de la naturaleza y es dada a la humanidad como criaturas inteligentes y sociales para la dirección de sus modales y comportamiento.

@@ -1,0 +1,67 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 82
+question: ¿Qué se exige en el noveno mandamiento?
+answer: El noveno mandamiento exige atenerse a la verdad y promoverla, hombre para con hombre, y preservar nuestro propio buen nombre y el de nuestro prójimo, especialmente al dar testimonio.
+sections:
+  - - q: ¿Deberíamos esforzarnos por conseguir un buen nombre?
+      a: Sí. «Si hay alguna virtud o algo que merece elogio, en esto meditad» (Flp. 4:8).
+    - q: ¿Y [deberíamos esforzarnos] por preservarlo?
+      a: Sí, porque una pequeña locura deshonra al que es estimado como sabio y honorable (Ecl. 10:1 [RVR60]).
+    - q: ¿Podemos vindicar nuestro carácter cuando seamos injuriados con el propósito [de preservar el buen nombre]?
+      a: Sí. «Me aferraré a mi justicia y no la soltaré» (Job 27:6).
+    - q: ¿Y [podemos] hablar con modestia a nuestro favor?
+      a: Sí. «En ningún sentido fui inferior a los más eminentes apóstoles, aunque nada soy» (2 Cor. 12:11).
+  - - q: ¿Honra a Dios un buen nombre?
+      a: Sí. «Por vosotros Él es glorificado» (1 Ped. 4:14).
+    - q: ¿[Da crédito un buen nombre] a la religión?
+      a: Sí. «“Iremos con vosotros, porque hemos oído que Dios está con vosotros”» (Zac. 8:23).
+    - q: ¿Y [es] un consuelo para nosotros mismos?
+      a: Sí, porque «las buenas noticias fortalecen los huesos» (Pro. 15:30).
+    - q: Pero, ¿disfrutan de esta bendición todos los que la merecen?
+      a: No. «Porque he oído las murmuraciones de muchos» (Jer. 20:10).
+  - - q: ¿Deberíamos ser compasivos con el buen nombre de los demás de la misma manera que {somos compasivos} con el nuestro?
+      a: Sí. «También nosotros damos testimonio» (3 Jua. 12).
+    - q: ¿Deberíamos cubrir sus faltas con este propósito?
+      a: Sí. «El que cubre una falta busca afecto» (Pro. 17:9).
+    - q: ¿[Deberíamos] hacer nuestras reprensiones en privado {lit. en secreto}?
+      a: Sí. «Repréndelo a solas» (Mat. 18:15).
+    - q: ¿Deberíamos pensar lo mejor[^85] de sus acciones?
+      a: Sí. «[El amor] no piensa mal»[^86] (1 Cor. 13:5).
+    - q: ¿[Deberíamos] desalentar la murmuración y la detracción?
+      a: Sí, debemos ahuyentar[^87] la lengua detractora con rostro airado (Pro. 25:23 [RVR60]).
+    - q: ¿También deberíamos reivindicarlos de calumnias injustas?
+      a: Sí. «No peque el rey contra David su siervo […] puesto que sus hechos han sido de mucho beneficio para ti» (1 Sam. 19:4).
+    - q: ¿[Deberíamos] recibir con alegría todo lo que se diga en beneficio suyo?
+      a: Sí. «Me alegré mucho cuando algunos hermanos vinieron y dieron testimonio de tu verdad» (3 Jua. 3).
+    - q: ¿Y el respeto por el buen nombre de los demás será la mejor seguridad para el respeto por el nuestro?
+      a: Sí. «Porque con la medida con que midáis, se os medirá» (Mat. 7:2).
+  - - q: ¿Es nuestro deber decir la verdad?
+      a: Sí. «Decid la verdad unos a otros» (Zac. 8:16).
+    - q: ¿[Es nuestro deber] decir toda la verdad cuando somos llamados a hacerlo?
+      a: Sí. «Samuel se lo contó todo [a Elí], sin ocultarle nada» (1 Sam. 3:18).
+    - q: ¿Y nada más que la verdad?
+      a: Sí. «Ciertamente, ellos son mi pueblo, hijos que no engañarán» (Isa. 63:8).
+    - q: ¿Debería observarse la verdad en nuestra conversación común?
+      a: Sí. «No mintáis los unos a los otros» (Col. 3:9).
+    - q: ¿Y en lo que prometemos y en nuestros compromisos?
+      a: Sí. «Es mejor que no hagas votos, a que hagas votos y no los cumplas» (Ecl. 5:5).
+    - q: Pero, ¿[debería observarse] de una manera especial al dar testimonio?
+      a: Sí, porque «el testigo veraz salva vidas» (Pro. 14:25).
+  - - q: ¿Deberíamos pensar antes de hablar con el propósito de decir la verdad?
+      a: Sí. «Todo lo que es verdadero […] en esto meditad» (Flp. 4:8).
+    - q: ¿[Deberíamos] evitar la locuacidad?
+      a: Sí, porque «en las muchas palabras, la transgresión es inevitable» (Pro. 10:19).
+    - q: ¿[Deberíamos] acostumbrarnos a hablar con sobriedad?
+      a: Sí. «Hablo palabras de verdad y de cordura» (Hch. 26:25).
+    - q: ¿[Deberíamos] tener cuidado de hacer promesas precipitadas?
+      a: Sí. «No permitas que tu boca te haga pecar, y no digas delante del mensajero de Dios que fue un error» (Ecl. 5:6).
+    - q: ¿[Deberíamos] esforzarnos por vencer el miedo al hombre?
+      a: Sí. «¿Y de quien […] tuviste miedo, cuando mentiste?» (Isa. 57:11).
+    - q: ¿Y no [deberíamos] hacer nada de lo que podamos avergonzarnos?
+      a: "No. Como Sara, quien primero se rió y luego lo negó, diciendo: «No me reí» (Gén. 18:15)."
+notes:
+  "85": En el texto original, el autor utiliza una frase idiomática formal («put the best construction on») que, en este contexto, significa pensar de la mejor manera con respecto a lo que alguien dice o la razón por la cual hace alguna cosa en particular. Es decir, siempre pensar que lo que alguien dice o hace es con las mejores intenciones.
+  "86": "Esta es una traducción literal de la versión de la Biblia utilizada por el autor. La frase griega que está siendo citada es οὐ λογίζεται τὸ κακόν, la cual ha sido traducida en la versión King James como «thinketh no evil» (no piensa mal). En otras versiones de la Biblia en inglés, al igual que en la gran mayoría de versiones en español, la frase no es traducida en ese sentido, sino como no lleva una cuenta o registro de las cosas malas. Probablemente, esta diferencia en la traducción se debe al hecho de que el verbo λογίζομαι puede significar tanto (1) una cuenta (o algo que es determinado por un proceso matemático) como (2) tener un punto de vista sobre algo, que puede ser vertido como pensar o creer algo. Las versiones en español y una buena cantidad de versiones en inglés toman el primer significado, mientas que la versión King James toma el último. Véase Frederick William Danker y Walter Bauer, A Greek-English Lexicon of the New Testament and Other Early Christian Literature (Chicago: University of Chicago Press, 2000), 597."
+  "87": LBLA traduce el verbo לֵֽל וֹ֣חְּת como «trae», mientras que las versiones King James y Reina Valera lo traducen como «ahuyenta». Por eso el sentido de la traducción es diferente. Al verterlo como «trae» (como hace LBLA), el «semblante airado» es el resultado de la «lengua murmuradora»; mientras que, al traducirlo como «ahuyenta» (como hacen la KJV y la RVR60), el «semblante airado» es la solución para la «lengua murmuradora».

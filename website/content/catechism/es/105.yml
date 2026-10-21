@@ -1,0 +1,81 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 105
+question: ¿Qué es la oración?
+answer: La oración es un ofrecimiento de nuestros deseos a Dios, mediante la ayuda del Espíritu Santo, por cosas que sean conformes a Su voluntad, en el nombre de Cristo, creyendo, junto con la confesión de nuestros pecados y el agradecido reconocimiento de Sus misericordias.
+sections:
+  - - q: ¿Es la oración el deber de todos los hombres?
+      a: Sí. «Ellos [deben] orar en todo tiempo» (Luc. 18:1).
+    - q: ¿Es el deber de los carnales?
+      a: Sí. «Ruega al Señor que si es posible se te perdone el intento de tu corazón» (Hch. 8:22).
+    - q: ¿Y [es el deber] de los que han recibido la gracia?
+      a: Sí. «A ti oraré» (Sal. 5:2 [RVR60]).
+    - q: ¿Es de una manera particular el deber de los afligidos?
+      a: Sí. «¿Sufre alguno entre vosotros? Que haga oración» (Stg. 5:13).
+    - q: Pero, ¿oran todos los hombres?
+      a: No. Algunos «menoscaban la oración delante de Dios» (Job 15:4 [RVR60]).
+  - - q: ¿Es la oración jaculatoria[^112] un deber?
+      a: Sí. «Entonces oré al Dios del cielo» (Neh. 2:4).
+    - q: ¿[Es] la oración secreta [un deber]?
+      a: Sí. «Cuando ores, entra en tu aposento» (Mat. 6:6).
+    - q: ¿[Es] la oración familiar [un deber]?
+      a: Sí. «Pero yo y mi casa, serviremos al SEÑOR» (Jos. 24:15).
+    - q: ¿[Es] la oración pública [un deber]?
+      a: Sí. «“MI CASA SERÁCASA DE ORACIÓN”» (Luc. 19:46).
+    - q: ¿Y deberíamos dedicarnos concienzudamente a todo tipo de oración?
+      a: Sí. «Con toda oración y súplica orad en todo tiempo» (Efe. 6:18).
+  - - q: ¿Es Dios el objeto de la oración?
+      a: Sí. «¡Oh tú, que escuchas la oración! Hasta ti viene todo hombre» (Sal. 65:2).
+    - q: ¿Y es el ofrecimiento de nuestros deseos a Él la esencia de la oración?
+      a: Sí. «A ti, oh SEÑOR, elevo mi alma» (Sal. 25:1).
+    - q: ¿Deben ser presentados estos deseos por medio de Cristo?
+      a: Sí. «Todo cuanto pidiereis al Padre en mi nombre, os lo dará» (Jua. 16:23 [RVR60]).
+    - q: ¿[Deben ser presentados estos deseos] con la ayuda del Espíritu Santo?
+      a: Sí. «Oraré con el Espíritu» (1 Cor. 14:15).
+    - q: ¿Y deben ser reguladas todas las cosas por Su voluntad revelada?
+      a: Sí. «Y esta es la confianza que tenemos delante de Él, que si pedimos cualquier cosa conforme a su voluntad, Él nos oye» (1 Jua. 5:14).
+  - - q: ¿Es la invocación parte de la oración?
+      a: Sí. «Oh Dios, tú eres mi Dios; te buscaré [temprano]» (Sal. 63:1).
+    - q: ¿[Es la] adoración [parte de la oración]?
+      a: Sí. «SEÑOR, Dios mío, cuán grande eres; te has vestido de esplendor y de majestad» (Sal. 104:1).
+    - q: ¿[Es la] confesión [parte de la oración]?
+      a: Sí. «“Padre, he pecado contra el cielo y ante ti”» (Luc. 15:21).
+    - q: ¿[Es la] súplica [parte de la oración]?
+      a: Sí. «Señor, si quieres, puedes limpiarme» (Mat. 8:2).
+    - q: ¿[Son las] rogativas [parte de la oración]?
+      a: Sí. «Acuérdate de la palabra dada a tu siervo» (Sal. 119:49).
+    - q: ¿[Es la] intercesión [parte de la oración]?
+      a: Sí. «Exhorto […] que se hagan rogativas […] por todos los hombres» (1 Tim. 2:1).
+    - q: ¿Y la acción de gracias?
+      a: Sí. «Te damos gracias, oh Dios, te damos gracias» (Sal. 75:1).
+  - - q: ¿Deberíamos orar con discernimiento {lit. con juicio}?
+      a: Sí. «Oraré con el entendimiento» (1 Cor. 14:15).
+    - q: ¿[Deberíamos orar] con humildad?
+      a: Sí. «No se enoje ahora el Señor, y hablaré solo esta vez» (Gén. 18:32).
+    - q: ¿[Deberíamos orar] con sinceridad?
+      a: Sí. «Me buscaréis y me encontraréis, cuando me busquéis de todo corazón» (Jer. 29:13).
+    - q: ¿Y en fe?
+      a: Sí. «Todo lo que pidáis en oración, creyendo, lo recibiréis» (Mat. 21:22).
+  - - q: ¿Deben ser específicas nuestras oraciones?
+      a: Sí. «Expondría ante Él mi causa» (Job 23:4).
+    - q: ¿[Deben ser] persistentes {lit. importunas}?
+      a: Sí. «No te soltaré si no me bendices» (Gén. 32:26).
+    - q: ¿[Deben ser] sumisas?
+      a: Sí. «No sea como yo quiero, sino como tú quieras» (Mat. 26:39).
+    - q: ¿[Deben ser] acompañadas de los esfuerzos adecuados?
+      a: Sí. «¿Por qué clamas a mí? Di a los hijos de Israel que se pongan en marcha» (Éxo. 14:15).
+    - q: ¿[Deben ser] constantes?
+      a: Sí. «Orad sin cesar» (1 Tes. 5:17).
+    - q: ¿Y es probable que tales oraciones sean eficaces?
+      a: Sí, porque Dios «cumplirá el deseo de los que le temen» (Sal. 145:19).
+  - - q: ¿Tendrá éxito en la oración todo aquel que ora?
+      a: No. «Aunque multipliquéis las oraciones, no escucharé» (Isa. 1:15).
+    - q: ¿Puede un mal principio obstaculizar el éxito de la oración?
+      a: Sí. «Si observo iniquidad en mi corazón, el Señor no me escuchará» (Sal. 66:18).
+    - q: ¿[Puede] una mala intención [obstaculizar el éxito de la oración]?
+      a: Sí. «Pedís y no recibís, porque pedís con malos propósitos, para gastarlo en vuestros placeres» (Stg. 4:3).
+    - q: ¿Y llevará la falta de éxito en la oración pronto a un descuido de ella?
+      a: Sí. «“¿Qué ganaríamos con rogarle?”» (Job 21:15).
+notes:
+  "112": "oración jaculatoria —«Oración breve y fervorosa» (Diccionario de la lengua española, 23. @@a@@ ed., versión 23.4 en línea (Madrid, España: Real Academia Española, 2014), disponible en: ˂https://dle.rae.es˃). Específicamente se refiere a las oraciones breves que elevamos a Dios en una situación de emergencia."

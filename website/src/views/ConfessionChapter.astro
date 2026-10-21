@@ -1,0 +1,155 @@
+---
+// One chapter of the 1689 Confession (RD-1 … RD-8, RD-12).
+import Base from '../layouts/Base.astro';
+import ReaderBar from '../components/ReaderBar.astro';
+import ProofNote from '../components/ProofNote.astro';
+import { confessionChapters } from '../lib/content.ts';
+import { renderInline, plainText } from '../lib/richtext.ts';
+import { confessionChapter, ROUTES } from '../i18n/routes.ts';
+import { t } from '../i18n/ui.ts';
+import type { Lang } from '../lib/scripture.ts';
+import { formatRef, parseReferences, refsOnly } from '../lib/scripture.ts';
+
+interface Props {
+  lang: Lang;
+  chapter: number;
+}
+const { lang, chapter } = Astro.props;
+const other: Lang = lang === 'es' ? 'en' : 'es';
+const _ = t(lang);
+
+const chapters = await confessionChapters(lang);
+const otherChapters = await confessionChapters(other);
+const entry = chapters.find((c) => c.data.chapter === chapter)!;
+const parallel = otherChapters.find((c) => c.data.chapter === chapter)!;
+const { title, paragraphs, notes } = entry.data;
+const prev = chapters.find((c) => c.data.chapter === chapter - 1);
+const next = chapters.find((c) => c.data.chapter === chapter + 1);
+
+const noteId = (n: string) => (notes[n] ? `n-${chapter}-${n}` : null);
+// The paragraph each note belongs to, for its popover label.
+const noteParagraph: Record<string, number> = {};
+for (const p of paragraphs) for (const m of p.text.matchAll(/\[\^(\d+)\]/g)) noteParagraph[m[1]] = p.n;
+
+const docTitle = lang === 'es' ? 'Confesión de Fe de 1689' : '1689 Confession of Faith';
+const description = plainText(paragraphs[0].text).slice(0, 155) + '…';
+const toc = chapters.map((c) => ({
+  href: confessionChapter(c.data.chapter, lang),
+  label: `${c.data.chapter}. ${c.data.title}`,
+  current: c.data.chapter === chapter,
+}));
+---
+
+<Base
+  lang={lang}
+  mode="reading"
+  title={`${_('reader.chapter')} ${chapter}: ${title}`}
+  description={description}
+  alternates={{ es: confessionChapter(chapter, 'es'), en: confessionChapter(chapter, 'en') }}
+>
+  <ReaderBar
+    lang={lang}
+    title={`${docTitle} · ${chapter}. ${title}`}
+    toc={toc}
+    parallel
+    resumeKey={`confession-${lang}`}
+    resumeLabel={`${_('reader.chapter')} ${chapter} ·`}
+  />
+
+  <article class="container reading" data-reading data-pagefind-filter="section:confession">
+    <header class="chapter-head reading-col">
+      <p class="eyebrow"><a href={ROUTES.confession[lang]} style="color: inherit; text-decoration: none">{docTitle}</a></p>
+      <span class="chapter-num" aria-hidden="true">{chapter}</span>
+      <h1><span class="sr-only">{_('reader.chapter')} {chapter}: </span>{title}</h1>
+      <div class="ornament" aria-hidden="true"><span>✠</span></div>
+    </header>
+
+    <div class="reading-col has-parallel">
+      <p class="parallel-col label" lang={other} aria-hidden="true" data-pagefind-ignore style="grid-column: 2; margin-bottom: 1.5rem">
+        {parallel.data.title}
+      </p>
+      {
+        paragraphs.map((p, i) => {
+          const id = `p-${p.n}`;
+          const twin = parallel.data.paragraphs.find((x) => x.n === p.n);
+          return (
+            <div class="para-pair">
+              <p class:list={['para', { 'drop-cap': false }]} id={id} data-resume-point data-label={`${chapter}.${p.n}`}>
+                <a class="para-num" href={`#${id}`} title={_('reader.copyLink')}>
+                  {chapter}.{p.n}
+                </a>
+                <Fragment set:html={renderInline(p.text, { noteId, noteLabel: _('reader.proofs') })} />
+              </p>
+              {twin && (
+                <p class="para parallel-col" lang={other} data-pagefind-ignore>
+                  <span class="para-num">
+                    {chapter}.{p.n}
+                  </span>
+                  <Fragment set:html={renderInline(twin.text)} />
+                </p>
+              )}
+            </div>
+          );
+        })
+      }
+    </div>
+
+    {
+      Object.entries(notes).map(([n, citation]) => (
+        <ProofNote id={`n-${chapter}-${n}`} lang={lang} citation={citation} label={`${chapter}.${noteParagraph[n] ?? ''} · ${n}`} />
+      ))
+    }
+
+    <section class="print-notes reading-col" aria-hidden="true">
+      <h2 class="label">{_('reader.proofs')}</h2>
+      <ol>
+        {
+          Object.entries(notes).map(([n, citation]) => (
+            <li value={Number(n)}>
+              {refsOnly(parseReferences(citation))
+                .map((r) => formatRef(r, lang))
+                .join('; ')}
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <nav class="chapter-nav reading-col no-print" aria-label={_('reader.contents')} data-pagefind-ignore>
+      {
+        prev && (
+          <a class="prev" href={confessionChapter(prev.data.chapter, lang)} rel="prev">
+            <span class="label">← {_('common.previous')}</span>
+            <span class="t">
+              {prev.data.chapter}. {prev.data.title}
+            </span>
+          </a>
+        )
+      }
+      {
+        next && (
+          <a class="next" href={confessionChapter(next.data.chapter, lang)} rel="next">
+            <span class="label">{_('common.next')} →</span>
+            <span class="t">
+              {next.data.chapter}. {next.data.title}
+            </span>
+          </a>
+        )
+      }
+    </nav>
+
+    <p class="credit reading-col" data-pagefind-ignore>
+      {
+        lang === 'es' ? (
+          <>
+            Traducción de Alan J. Torres Hernández; revisión de Samuel D. Renihan, Javier Martínez Pinto, Taylor E. Walls, Jorge A. Rodríguez Vega y Luis J.
+            Torrealba.
+            <br />© Editorial Legado Bautista Confesional. Usado con permiso.
+          </>
+        ) : (
+          <>Text of the 1677 first edition, public domain, with its original spelling. Proof texts follow the 1677 edition; verse text from the King James Version.</>
+        )
+      }
+    </p>
+  </article>
+</Base>

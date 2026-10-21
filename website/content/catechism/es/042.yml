@@ -1,0 +1,65 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 42
+question: Pero, ¿qué se hará a los malvados cuando mueran?
+answer: Cuando los malvados mueran, sus almas serán arrojadas a los tormentos del infierno y sus cuerpos yacerán en sus sepulcros hasta la resurrección y el Juicio del Gran Día.
+sections:
+  - - q: ¿Deben morir tanto los malvados como los justos?
+      a: Sí. «Está decretado que los hombres mueran una sola vez» (Heb. 9:27).
+    - q: ¿Deben morir aunque no quieran?
+      a: Sí, porque «el impío es derribado por su maldad» (Pro. 14:32).
+    - q: ¿Les sobreviene la muerte de manera inesperada a menudo?
+      a: "Sí. «Cuando estén diciendo: Paz y seguridad, entonces la destrucción vendrá sobre ellos repentinamente» (1 Tes. 5:3)."
+    - q: ¿Y los encuentra desprevenidos {lit. no preparados}?
+      a: Sí. «Y mientras ellas iban a comprar, vino el novio» (Mat. 25:10).
+  - - q: ¿Van las almas de los malvados a un lugar de tormentos cuando ellos mueren?
+      a: Sí. «En el Hades alzó sus ojos, estando en tormentos» (Luc. 16:23).
+    - q: ¿Permanecen bajo la ira de Dios?
+      a: Sí, porque «el SEÑOR en Su ira los devorará» (Sal. 21:9).
+    - q: ¿[Permanecen] bajo las agonías de una conciencia acusadora?
+      a: Sí. «Allí el gusano de ellos no muere» (Mar. 9:46).
+    - q: ¿Tienen algunos presagios de esto de antemano?
+      a: Sí. Tienen una «horrenda expectación de juicio, y la furia de UNFUEGO» (Heb. 10:27).
+    - q: ¿Y será su miseria igual a sus miedos?
+      a: Sí, «porque [Tu] furor {es} conforme al temor que se te debe» (Sal. 90:11).
+  - - q: ¿Conspirarán todas las cosas a su alrededor para hacerlos miserables?
+      a: Sí, porque «por todas partes le atemorizan terrores» (Job 18:11).
+    - q: ¿Tendrán piedad los santos?
+      a: No, porque «los justos verán esto […] y se reirán de él» (Sal. 52:6).
+    - q: ¿Podrá aliviar sus dolores el compañerismo {con otros malvados} en la miseria?
+      a: No, porque «se mirarán el uno al otro con asombro, rostros en llamas serán sus rostros» (Isa. 13:8).
+    - q: ¿Tendrán un triste recuerdo de su abundancia anterior?
+      a: Sí. «“Hijo, recuerda que durante tu vida recibiste tus bienes”» (Luc. 16:25).
+    - q: ¿[Tendrán] una perspectiva lejana de la felicidad celestial?
+      a: Sí. Verán a Abraham, Isaac y Jacob en el Reino de los Cielos, pero ellos mismos serán echados fuera (Luc. 13:28).
+    - q: ¿Y tenderá todo esto a llenarlos de inexpresable angustia, horror, furia y desesperación?
+      a: Sí. Habrá llanto y crujir de dientes (Mat. 13:42).
+  - - q: ¿No hay posibilidad de que los malvados escapen?
+      a: No. «¿Cómo escaparéis del juicio del infierno?» (Mat. 23:33).
+    - q: ¿Acaso no pueden escapar con astucia?
+      a: No. Dios «prende a los sabios en su propia astucia» (Job 5:13).
+    - q: ¿Ni con poder?
+      a: No, porque nadie prevalecerá por la fuerza (1 Sam. 2:9).
+    - q: ¿Ni por huir?
+      a: No. «¿Podrá alguno esconderse en escondites de modo que yo no lo vea?» (Jer. 23:24).
+    - q: ¿Ni por numerosidad?
+      a: No. «[Mano con mano][^60] el malvado no quedará sin castigo» (Pro. 11:21).
+    - q: ¿Será entonces el infierno lo suficientemente grande como para albergar a todos los malvados?
+      a: Sí, porque Dios «lo ha hecho profundo y ancho» (Isa. 30:33).
+  - - q: ¿Son depositados los cuerpos de los malvados en el sepulcro?
+      a: Sí. «Como ovejas son destinados para el Seol» (Sal. 49:14).
+    - q: ¿Los consume el sepulcro?
+      a: Sí. Así «[consumirá] el Seol a los que han pecado» (Job 24:19).
+    - q: ¿Estropea la belleza de los malvados?
+      a: Sí. La muerte los pastoreará (Sal. 49:14).
+    - q: ¿Los despoja de su gloria?
+      a: Sí. «Ni su gloria descenderá con él» (Sal. 49:17).
+    - q: ¿Y borra la memoria que había de ellos?
+      a: Sí. «Nunca más habrá de ellos memoria» (Job 24:20 [RVR60]).
+    - q: ¿Están siendo reservados allí para el Día del Juicio?
+      a: Sí. Dios «[reserva] a los injustos bajo castigo para el día del juicio» (2 Pedro 2:9).
+    - q: Entonces, ¿serán traídos a Él?
+      a: Sí. «Serán conducidos en el día de la ira» (Job 21:30).
+notes:
+  "60": La frase original en hebreo que es traducida como «ciertamente» (LBLA) significa literalmente mano con mano (darse las manos). La versión inglesa usada por Beddome traduce «Though hand join in hand, the wicked shall not be unpunished» (Aunque una mano se una con la otra {aunque se den las manos}, los impíos no quedarán sin castigo). En español no vemos la relación entre «ciertamente» y la numerosidad, o asociación para hacer el mal, a la que el versículo y Beddome se refieren.

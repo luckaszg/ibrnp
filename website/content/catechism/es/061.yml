@@ -1,0 +1,29 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 61
+question: ¿Cuál es la razón anexa al tercer mandamiento?
+answer: La razón anexa al tercer mandamiento es que, por más que los transgresores de este mandamiento puedan escapar del castigo de los hombres, el Señor nuestro Dios no permitirá que escapen de Su justo Juicio.
+sections:
+  - - q: ¿Los infractores de este mandamiento escapan a menudo del castigo de los hombres?
+      a: Sí. Los hombres oyen los juramentos, pero no dicen nada (Pro. 29:24).
+    - q: Por tanto, ¿se sienten seguros los infractores?
+      a: Sí. «Como la sentencia contra una mala obra no se ejecuta enseguida, por eso el corazón de los hijos de los hombres está en ellos entregado enteramente a hacer el mal» (Ecl. 8:11).
+    - q: Pero, ¿acaso los que se confabulan con este pecado participan en él?
+      a: Sí. «“Si alguien peca al ser llamado a testificar, siendo testigo de lo que ha visto o sabe, y no lo declara, será culpable”» (Lev. 5:1).
+  - - q: ¿Tienen los infractores esperanza de escapar de los juicios de Dios?
+      a: "Sí. «Se jactan con su boca […] pues dicen: ¿Quién oye?» (Sal. 59:7)."
+    - q: Sin embargo, ¿escaparán {de los juicios de Dios}?
+      a: No. «Vivo yo, que ciertamente mi juramento que él despreció […] lo haré recaer sobre su cabeza» (Eze. 17:19).
+  - - q: ¿Serán castigados los hipócritas?
+      a: Sí. «¡Ay de vosotros […] hipócritas!» (Mat. 23:13).
+    - q: ¿[Serán castigados] los burladores?
+      a: Sí. «Mirad, burladores, maravillaos y pereced» (Hch. 13:41).
+    - q: ¿[Serán castigados] los que rompen el pacto?
+      a: Sí. «Ciertamente en la tierra del rey que lo puso en el trono […] cuyo pacto rompió […] morirá» (Eze. 17:16).
+    - q: ¿Y los que usan el nombre de Dios en vano?
+      a: Sí. «De toda palabra vana que hablen los hombres, darán cuenta de ella» (Mat. 12:36).
+    - q: ¿Serán castigados los tales en este mundo?
+      a: Sí. «El SEÑOR hará horribles [sus] plagas» (Deu. 28:59).
+    - q: ¿Y [serán castigados] en el mundo venidero?
+      a: Sí. Ellos acumulan «ira para el día de la ira» (Rom. 2:5 [RVR60]).

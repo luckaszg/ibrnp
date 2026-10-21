@@ -1,0 +1,9 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 22
+question: What is the Misery of that Estate whereinto Man fell?
+answer: All Mankind by their Fall lost Communion with God[^1], are under his Wrath and Curse[^2]; and so make liable to all Miseries in this Life, to Death it self, and to the Pains of Hell for ever[^3].
+notes:
+  "1": Gen. 3:8, 10, 24
+  "2": Eph. 2:2–3; Gal. 3:10
+  "3": Lam. 3:39; Rom. 6:23; Matt. 25:41–46

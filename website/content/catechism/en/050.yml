@@ -1,0 +1,7 @@
+# The Baptist Catechism (1695), public domain. Beddome's sub-questions are not yet available in English.
+# [^n] markers point to the proof texts in "notes".
+number: 50
+question: Which is the first Commandment?
+answer: The first Commandment is, "Thou shalt have no other Gods before me"[^1].
+notes:
+  "1": Exod. 20:3

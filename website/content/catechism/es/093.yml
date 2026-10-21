@@ -1,0 +1,47 @@
+# Benjamin Beddome, A Scriptural Exposition of the Baptist Catechism (1752), Spanish translation.
+# Translation: Editorial Legado Bautista Confesional, used with permission. Source: assets/beddome_cathecism.pdf
+# Scripture quotations are from the LBLA unless another version is noted.
+number: 93
+question: ¿Por cuáles medios externos Cristo nos comunica {i. e., nos imparte} los beneficios de la redención?
+answer: Los medios externos y ordinarios por los cuales Cristo nos comunica {, nos imparte} los beneficios de la redención son Sus ordenanzas, especialmente la Palabra, el bautismo, la Cena del Señor y la oración; todos los cuales son hechos eficaces para los elegidos para salvación.
+sections:
+  - - q: ¿Hay ordenanzas que no han sido establecidas por Dios?
+      a: Sí. Leemos sobre «los estatutos de Omri» (Miq. 6:16).
+    - q: Pero, ¿son estas sin provecho alguno?
+      a: Sí. «Los que confían en vanidades huecas su propia misericordia abandonan»[^103] (Jon. 2:8).
+    - q: Por tanto, ¿deberían ser rechazadas?
+      a: Sí. «¿Por qué os sometéis a preceptos […] según [las] enseñanzas de los hombres?» (Col. 2:20, 22).[^104]
+  - - q: ¿Hay ordenanzas establecidas por Dios?
+      a: Sí. «Enséñales [mis] estatutos» (Éxo. 18:20).
+    - q: ¿Son la Palabra, los sacramentos y la oración las grandes ordenanzas del evangelio?
+      a: Sí. «Entonces los que habían recibido su palabra fueron bautizados […] Y se dedicaban continuamente a las enseñanzas de los apóstoles, a la comunión, al partimiento del pan y a la oración» (Hch. 2:41, 42).
+    - q: ¿Es el cantar salmos una ordenanza también?
+      a: Sí. «Venid, cantemos con gozo al SEÑOR, aclamemos con júbilo a la Roca de nuestra salvación» (Sal. 95:1).
+    - q: ¿Agrada mucho a Dios esta ordenanza?
+      a: Sí. «Esto agradará al SEÑOR más que el sacrificio de un buey o de un novillo» (Sal. 69:31).
+    - q: ¿[Es] muy útil e instructiva para los hombres?
+      a: Sí. «Enseñándoos y amonestándoos unos a otros con salmos, himnos y canciones espirituales» (Col. 3:16).
+    - q: Por tanto, ¿debería ser tomada muy en serio?
+      a: Sí. «Cantando a Dios con acción de gracias en [nuestros] corazones» (Ibíd.).
+    - q: ¿Son eficaces estas ordenanzas para todos los escogidos de Dios?
+      a: Sí, porque «creyeron cuantos estaban ordenados a vida eterna» (Hch. 13:48).
+    - q: ¿Y para nadie más sino {solamente} para los escogidos?
+      a: No. «Vosotros no creéis porque no sois de mis ovejas» (Jua. 10:26).
+  - - q: ¿Han sido influidos {o influenciados} algunos por el discurso religioso?
+      a: Sí. «El que anda con sabios será sabio» (Pro. 13:20).
+    - q: ¿[Han sido influidos] otros por sueños?
+      a: Sí. «En un sueño, en una visión nocturna […] Él abre el oído de los hombres, y sella su instrucción» (Job 33:15, 16).
+    - q: ¿[Han sido influidos] otros por providencias aflictivas?
+      a: Sí. «Cuando Manasés estaba en [aflicción][^105] (…) se humilló (…) delante del Dios de sus padres» (2 Cró. 33:12).
+    - q: ¿Y [han sido influidos] otros de una manera aún más milagrosa?
+      a: Sí. Así fue llamado Saulo por una voz del Cielo (Hch. 9:4).
+    - q: Pero, ¿son la Palabra y las ordenanzas de Dios el medio ordinario de salvación?
+      a: Sí. «Él dio […] pastores y maestros […] para la edificación del cuerpo de Cristo» (Efe. 4:11, 12).
+    - q: Por tanto, ¿deberíamos prestarles nuestra atención?
+      a: Sí. «Bienaventurado el hombre que me escucha» (Pro. 8:34).
+    - q: ¿Y deberíamos hacerlo con diligencia y constancia?
+      a: Sí. «Velando a mis puertas día a día [y] aguardando en los postes de mi entrada» (Ibíd).
+notes:
+  "103": Lectura alternativa del texto provista por LBLA.
+  "104": Aunque la referencia que aparece en el original es Colosenses 2:20, el autor también está citando el versículo 22.
+  "105": "[aflicción] —Esta es una traducción directa de la versión inglesa KJV usada por el autor. LBLA traduce «angustia». Corchetes añadidos."
