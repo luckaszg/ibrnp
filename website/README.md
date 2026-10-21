@@ -27,7 +27,20 @@ Copy `.env.example` to `.env`:
 
 ## Deploying
 
-### With Docker (recommended)
+### Cloudflare Workers
+
+The site is deployed as static assets (`wrangler.jsonc`). In the Worker's build settings:
+
+| Setting | Value |
+|---|---|
+| Root directory | `website` |
+| Build command | `npm run build` |
+| Deploy command | `npm run deploy` |
+| Preview command | `npm run deploy:preview` |
+
+The deploy scripts pass `--config wrangler.jsonc` on purpose: without it, Wrangler's automatic framework setup installs the Cloudflare Astro adapter during the build, which breaks the static build.
+
+### With Docker
 
 `../start.sh` (at the project root) builds the image (see `Dockerfile`: Node build + nginx) and starts or replaces the container on port 80:
 
